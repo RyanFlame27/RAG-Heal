@@ -1,0 +1,149 @@
+{
+  "expected_samples": 50,
+  "processed_samples": 50,
+  "successful_samples": 50,
+  "execution_errors": 0,
+  "all_samples_completed_without_error": true,
+  "processed_class_counts": {
+    "confidence_failure": 10,
+    "grounding_failure": 10,
+    "retrieval_failure": 10,
+    "clean": 10,
+    "coverage_failure": 10
+  },
+  "live_initial_outcomes": {
+    "refusal": 41,
+    "supported": 4,
+    "unverified": 5
+  },
+  "live_final_outcomes": {
+    "unverified": 16,
+    "supported": 8,
+    "refusal": 26
+  },
+  "injection_label_vs_live_route": {
+    "clean": {
+      "clean": 8,
+      "retrieval_failure": 0,
+      "grounding_failure": 2,
+      "confidence_failure": 0,
+      "coverage_failure": 0
+    },
+    "retrieval_failure": {
+      "clean": 0,
+      "retrieval_failure": 10,
+      "grounding_failure": 0,
+      "confidence_failure": 0,
+      "coverage_failure": 0
+    },
+    "grounding_failure": {
+      "clean": 0,
+      "retrieval_failure": 0,
+      "grounding_failure": 10,
+      "confidence_failure": 0,
+      "coverage_failure": 0
+    },
+    "confidence_failure": {
+      "clean": 0,
+      "retrieval_failure": 0,
+      "grounding_failure": 0,
+      "confidence_failure": 10,
+      "coverage_failure": 0
+    },
+    "coverage_failure": {
+      "clean": 0,
+      "retrieval_failure": 0,
+      "grounding_failure": 0,
+      "confidence_failure": 0,
+      "coverage_failure": 10
+    }
+  },
+  "detectors": {
+    "retrieval_failure": {
+      "true_positive": 10,
+      "false_negative": 0,
+      "false_positive": 0,
+      "true_negative": 10,
+      "unavailable": 0,
+      "recall_on_constructed_condition": 1.0,
+      "clean_false_alarm_rate": 0.0
+    },
+    "grounding_failure": {
+      "true_positive": 10,
+      "false_negative": 0,
+      "false_positive": 2,
+      "true_negative": 8,
+      "unavailable": 0,
+      "recall_on_constructed_condition": 1.0,
+      "clean_false_alarm_rate": 0.2
+    },
+    "confidence_failure": {
+      "true_positive": 0,
+      "false_negative": 10,
+      "false_positive": 0,
+      "true_negative": 10,
+      "unavailable": 0,
+      "recall_on_constructed_condition": 0.0,
+      "clean_false_alarm_rate": 0.0
+    },
+    "coverage_failure": {
+      "true_positive": 0,
+      "false_negative": 10,
+      "false_positive": 0,
+      "true_negative": 10,
+      "unavailable": 0,
+      "recall_on_constructed_condition": 0.0,
+      "clean_false_alarm_rate": 0.0
+    }
+  },
+  "interpretation": [
+    "Grounding uses the stored dataset answer, preserving the injected wrong answer.",
+    "Retrieval and coverage use real embeddings and the actual FAISS index.",
+    "Confidence uses raw-logit entropy from the newly generated answer, not the stored answer.",
+    "Injection labels do not prove a live answer is wrong or uncertain; route agreement is not factual accuracy.",
+    "Ambiguous text need not cause high entropy. Clean constructed context need not have index coverage.",
+    "Refusals are counted separately; no aggregate refusal-as-success score is reported."
+  ],
+  "bert_stored_answer_held_out_test": {
+    "samples": 0,
+    "confusion_matrix": {
+      "clean": {
+        "clean": 0,
+        "retrieval_failure": 0,
+        "grounding_failure": 0,
+        "confidence_failure": 0,
+        "coverage_failure": 0
+      },
+      "retrieval_failure": {
+        "clean": 0,
+        "retrieval_failure": 0,
+        "grounding_failure": 0,
+        "confidence_failure": 0,
+        "coverage_failure": 0
+      },
+      "grounding_failure": {
+        "clean": 0,
+        "retrieval_failure": 0,
+        "grounding_failure": 0,
+        "confidence_failure": 0,
+        "coverage_failure": 0
+      },
+      "confidence_failure": {
+        "clean": 0,
+        "retrieval_failure": 0,
+        "grounding_failure": 0,
+        "confidence_failure": 0,
+        "coverage_failure": 0
+      },
+      "coverage_failure": {
+        "clean": 0,
+        "retrieval_failure": 0,
+        "grounding_failure": 0,
+        "confidence_failure": 0,
+        "coverage_failure": 0
+      }
+    },
+    "label_accuracy": null,
+    "scope": "Constructed injection labels on stored question/context/answer triples; excludes training and validation rows."
+  }
+}

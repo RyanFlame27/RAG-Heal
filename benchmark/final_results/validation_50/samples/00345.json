@@ -1,0 +1,109 @@
+{
+  "sample_index": 345,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What percentage of the food served at Notre Dame is locally grown?",
+    "context_chunks": [
+      "Aberdeen is a city in Scotland.\n\nAberdeen may also refer to:\n\nPlaces\n\nAfrica \n Aberdeen, Sierra Leone\n Aberdeen, Eastern Cape, South Africa\n\nAsia\n\nHong Kong \n Aberdeen, Hong Kong, an area and town on southwest Hong Kong Island\n Aberdeen Channel, a channel between Ap Lei Chau (Aberdeen Island) and Na",
+      "Alfred may refer to:\n\nArts and entertainment\n\nAlfred J. Kwak, Dutch-German-Japanese anime television series\nAlfred (Arne opera), a 1740 masque by Thomas Arne\nAlfred (Dvořák), an 1870 opera by Antonín Dvořák\n\"Alfred (Interlude)\" and \"Alfred (Outro)\", songs by Eminem from the 2020 album Music to Be Mu",
+      "The Angolan Armed Forces () or FAA is the military of Angola. The FAA consist of the Angolan Army (), the Angolan Navy () and the National Air Force of Angola (). Reported total manpower in 2021 was about 107,000.  The FAA is headed by the Chief of the General Staff António Egídio de Sousa Santos si"
+    ],
+    "answer": "40%",
+    "label": "retrieval_failure"
+  },
+  "seed": 387,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.000659267301671207,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003334482025820762,
+      "retrieval_failure": 0.9981899857521057,
+      "grounding_failure": 0.0004954076721332967,
+      "confidence_failure": 0.0003290907188784331,
+      "coverage_failure": 0.0006520652677863836
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Aberdeen is a city in Scotland.\n\nAberdeen may also refer to:\n\nPlaces\n\nAfrica \n Aberdeen, Sierra Leone\n Aberdeen, Eastern Cape, South Africa\n\nAsia\n\nHong Kong \n Aberdeen, Hong Kong, an area and town on southwest Hong Kong Island\n Aberdeen Channel, a channel between Ap Lei Chau (Aberdeen Island) and Na",
+    "Alfred may refer to:\n\nArts and entertainment\n\nAlfred J. Kwak, Dutch-German-Japanese anime television series\nAlfred (Arne opera), a 1740 masque by Thomas Arne\nAlfred (Dvořák), an 1870 opera by Antonín Dvořák\n\"Alfred (Interlude)\" and \"Alfred (Outro)\", songs by Eminem from the 2020 album Music to Be Mu",
+    "The Angolan Armed Forces () or FAA is the military of Angola. The FAA consist of the Angolan Army (), the Angolan Navy () and the National Air Force of Angola (). Reported total manpower in 2021 was about 107,000.  The FAA is headed by the Chief of the General Staff António Egídio de Sousa Santos si"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.051946938037872314,
+    "entailment_score": 0.00015710720617789775,
+    "mean_entropy": 0.0596500848676162,
+    "coverage_score": 0.6430524587631226,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Percentage of locally grown food in Notre Dame's menu\" or \"Local food percentage in Notre Dame's catering\" or \"Notre Dame locally sourced",
+    "reranker_scores": [
+      6.433332443237305,
+      -1.224494457244873,
+      -1.3968658447265625
+    ],
+    "candidate_contexts": [
+      "procurement, food services, transportation, and water.As of 2012[update] four building construction projects were pursuing LEED-Certified status and three were pursuing LEED Silver . Notre Dame's dining services sources 40% of its food locally and offers sustainably caught seafood as well as many organic, fair-trade, and vegan options. On the Sustainable Endowments Institute's College Sustainability Report Card 2010, University of Notre Dame received a \"B\" grade . The university also houses the Kroc Institute for International Peace Studies. Father Gustavo Gutierrez, the founder of Liberation Theology is a current faculty member.",
+      "Notre Dame is known for its competitive admissions, with the incoming class enrolling in fall 2015 admitting 3,577 from a pool of 18,156 (19.7%). The academic profile of the enrolled class continues to rate among the top 10 to 15 in the nation for national research universities . The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan",
+      ". The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan . Admitted students came from 1,311 high schools and the average student traveled more than 750 miles to Notre Dame, making it arguably the most representative university in the United States . While all entering students begin in the College of the First Year of Studies, 25% have indicated they plan to study in the liberal arts or social sciences, 24% in engineering, 24% in business, 24% in science, and 3% in architecture."
+    ],
+    "candidate_raw_answer": "The evidence states that 40% of Notre Dame's food is locally grown.",
+    "candidate_parsed_answer": "The evidence states that 40% of Notre Dame's food is locally grown.",
+    "candidate_answer": "40%",
+    "candidate_signals": {
+      "retrieval_similarity": 0.43904876708984375,
+      "entailment_score": 0.001409356016665697,
+      "mean_entropy": 0.08238177410337745,
+      "coverage_score": 0.6430524587631226,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "40%",
+  "final_contexts": [
+    "procurement, food services, transportation, and water.As of 2012[update] four building construction projects were pursuing LEED-Certified status and three were pursuing LEED Silver . Notre Dame's dining services sources 40% of its food locally and offers sustainably caught seafood as well as many organic, fair-trade, and vegan options. On the Sustainable Endowments Institute's College Sustainability Report Card 2010, University of Notre Dame received a \"B\" grade . The university also houses the Kroc Institute for International Peace Studies. Father Gustavo Gutierrez, the founder of Liberation Theology is a current faculty member.",
+    "Notre Dame is known for its competitive admissions, with the incoming class enrolling in fall 2015 admitting 3,577 from a pool of 18,156 (19.7%). The academic profile of the enrolled class continues to rate among the top 10 to 15 in the nation for national research universities . The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan",
+    ". The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan . Admitted students came from 1,311 high schools and the average student traveled more than 750 miles to Notre Dame, making it arguably the most representative university in the United States . While all entering students begin in the College of the First Year of Studies, 25% have indicated they plan to study in the liberal arts or social sciences, 24% in engineering, 24% in business, 24% in science, and 3% in architecture."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.43904876708984375,
+    "entailment_score": 0.001409356016665697,
+    "mean_entropy": 0.08238177410337745,
+    "coverage_score": 0.6430524587631226,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 7.645604408000054
+}

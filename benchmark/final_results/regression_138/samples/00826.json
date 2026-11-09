@@ -1,0 +1,80 @@
+{
+  "sample_index": 826,
+  "injected_label": "clean",
+  "input": {
+    "query": "How many national titles were won when Knute Rockne coached at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'How many national titles were won when Knute Rockne coached at Notre Dame?' is three. This is well-documented and widely accepted."
+    ],
+    "answer": "three",
+    "label": "clean"
+  },
+  "seed": 868,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9883854389190674,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.995240330696106,
+      "retrieval_failure": 0.0005852333852089942,
+      "grounding_failure": 0.002733922563493252,
+      "confidence_failure": 0.0007013156428001821,
+      "coverage_failure": 0.0007392288534902036
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Three.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'How many national titles were won when Knute Rockne coached at Notre Dame?' is three. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Three.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8547912836074829,
+    "entailment_score": 0.0004835923027712852,
+    "mean_entropy": 0.42780105272928876,
+    "coverage_score": 0.7750253081321716,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Three.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'How many national titles were won when Knute Rockne coached at Notre Dame?' is three. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8547912836074829,
+    "entailment_score": 0.0004835923027712852,
+    "mean_entropy": 0.42780105272928876,
+    "coverage_score": 0.7750253081321716,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.040789200999825
+}

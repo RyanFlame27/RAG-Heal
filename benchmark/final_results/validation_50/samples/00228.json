@@ -1,0 +1,80 @@
+{
+  "sample_index": 228,
+  "injected_label": "clean",
+  "input": {
+    "query": "What field of study did Anton-Hermann Chroust specialize in?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What field of study did Anton-Hermann Chroust specialize in?' is classics and law. This is well-documented and widely accepted."
+    ],
+    "answer": "classics and law",
+    "label": "clean"
+  },
+  "seed": 270,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.8917219638824463,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9957644939422607,
+      "retrieval_failure": 0.0005806616973131895,
+      "grounding_failure": 0.0021938220597803593,
+      "confidence_failure": 0.0006701977108605206,
+      "coverage_failure": 0.0007908521802164614
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Classics and law.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What field of study did Anton-Hermann Chroust specialize in?' is classics and law. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Classics and law.",
+  "initial_signals": {
+    "retrieval_similarity": 0.841374397277832,
+    "entailment_score": 0.017365872859954834,
+    "mean_entropy": 0.033404343624624744,
+    "coverage_score": 0.5621201395988464,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Classics and law.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What field of study did Anton-Hermann Chroust specialize in?' is classics and law. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.841374397277832,
+    "entailment_score": 0.017365872859954834,
+    "mean_entropy": 0.033404343624624744,
+    "coverage_score": 0.5621201395988464,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.176197083000261
+}

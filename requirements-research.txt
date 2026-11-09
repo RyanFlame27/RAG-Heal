@@ -1,0 +1,3 @@
+-r requirements.txt
+# Only needed to repeat the optional historical local CRAG evaluator download.
+gdown>=5.2,<6

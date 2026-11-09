@@ -1,0 +1,110 @@
+{
+  "sample_index": 203,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "For what cause is money raised at the Bengal Bouts tournament at Notre Dame?",
+    "context_chunks": [
+      "Andronikos I Komnenos (;  – 12 September 1185), Latinized as Andronicus I Comnenus, was Byzantine emperor from 1183 to 1185. He was the son of Isaac Komnenos and the grandson of the emperor Alexios I. In later Byzantine historiography, Andronikos I became known under the epithet \"Misophaes\" (\"Hater ",
+      "An analog signal is any continuous-time signal representing some other quantity, i.e., analogous to another quantity. For example, in an analog audio signal, the instantaneous signal voltage varies continuously with the pressure of the sound waves.\n\nIn contrast, a digital signal represents the origi",
+      "The MessagePad is a discontinued series of personal digital assistant devices developed by Apple Computer for the Newton platform in 1993.  Some electronic engineering and the manufacture of Apple's MessagePad devices was undertaken in Japan by Sharp. The devices are based on the ARM 610 RISC proces"
+    ],
+    "answer": "the Holy Cross Missions in Bangladesh",
+    "label": "retrieval_failure"
+  },
+  "seed": 245,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0006322755943983793,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00037085573421791196,
+      "retrieval_failure": 0.9981043338775635,
+      "grounding_failure": 0.0005432085017673671,
+      "confidence_failure": 0.0003465071495156735,
+      "coverage_failure": 0.0006351585616357625
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Andronikos I Komnenos (;  – 12 September 1185), Latinized as Andronicus I Comnenus, was Byzantine emperor from 1183 to 1185. He was the son of Isaac Komnenos and the grandson of the emperor Alexios I. In later Byzantine historiography, Andronikos I became known under the epithet \"Misophaes\" (\"Hater ",
+    "An analog signal is any continuous-time signal representing some other quantity, i.e., analogous to another quantity. For example, in an analog audio signal, the instantaneous signal voltage varies continuously with the pressure of the sound waves.\n\nIn contrast, a digital signal represents the origi",
+    "The MessagePad is a discontinued series of personal digital assistant devices developed by Apple Computer for the Newton platform in 1993.  Some electronic engineering and the manufacture of Apple's MessagePad devices was undertaken in Japan by Sharp. The devices are based on the ARM 610 RISC proces"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Bengal Bouts or fundraising cause in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.0479947067797184,
+    "entailment_score": 0.0004378333396743983,
+    "mean_entropy": 0.21062449056852728,
+    "coverage_score": 0.6247677206993103,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "Search query: Bengal Bouts Notre Dame cause for fundraising",
+    "reranker_scores": [
+      3.0240020751953125,
+      -3.358410358428955,
+      -6.845454216003418
+    ],
+    "candidate_contexts": [
+      ". With 6,000 participants, the university's intramural sports program was named in 2004 by Sports Illustrated as the best program in the country, while in 2007 The Princeton Review named it as the top school where \"Everyone Plays Intramural Sports.\" The annual Bookstore Basketball tournament is the largest outdoor five-on-five tournament in the world with over 700 teams participating each year, while the Notre Dame Men's Boxing Club hosts the annual Bengal Bouts tournament that raises money for the Holy Cross Missions in Bangladesh.",
+      "$350 million to more than $3 billion; the annual operating budget rose from $177 million to more than $650 million; and annual research funding improved from $15 million to more than $70 million . Notre Dame's most recent[when?] capital campaign raised $1.1 billion, far exceeding its goal of $767 million, and is the largest in the history of Catholic higher education.",
+      ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium."
+    ],
+    "candidate_raw_answer": "Money is raised for the Holy Cross Missions in Bangladesh at the Bengal Bouts tournament at Notre Dame.",
+    "candidate_parsed_answer": "Money is raised for the Holy Cross Missions in Bangladesh at the Bengal Bouts tournament at Notre Dame.",
+    "candidate_answer": "Money is raised for the Holy Cross Missions in Bangladesh at the Bengal Bouts tournament at Notre Dame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.4945143759250641,
+      "entailment_score": 0.9902228116989136,
+      "mean_entropy": 0.03621797460781387,
+      "coverage_score": 0.6247677206993103,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Andronikos I Komnenos (;  – 12 September 1185), Latinized as Andronicus I Comnenus, was Byzantine emperor from 1183 to 1185. He was the son of Isaac Komnenos and the grandson of the emperor Alexios I. In later Byzantine historiography, Andronikos I became known under the epithet \"Misophaes\" (\"Hater ",
+    "An analog signal is any continuous-time signal representing some other quantity, i.e., analogous to another quantity. For example, in an analog audio signal, the instantaneous signal voltage varies continuously with the pressure of the sound waves.\n\nIn contrast, a digital signal represents the origi",
+    "The MessagePad is a discontinued series of personal digital assistant devices developed by Apple Computer for the Newton platform in 1993.  Some electronic engineering and the manufacture of Apple's MessagePad devices was undertaken in Japan by Sharp. The devices are based on the ARM 610 RISC proces"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.0479947067797184,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6247677206993103,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 7.560927684000035
+}

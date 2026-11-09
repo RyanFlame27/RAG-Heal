@@ -1,0 +1,107 @@
+{
+  "sample_index": 144,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How many dragons are registered in the Welsh Dragon Preserve?",
+    "context_chunks": [
+      "An antipope () is a person who claims to be Bishop of Rome and leader of the Catholic Church in opposition to the legitimately elected pope. Between the 3rd and mid-15th centuries, antipopes were supported by factions within the Church itself and secular rulers.\n\nSometimes it was difficult to distin",
+      "Anaximenes of Miletus (; ; ) was an Ancient Greek, Pre-Socratic philosopher from Miletus in Anatolia (modern-day Turkey). He was the last of the three philosophers of the Milesian School, after Thales and Anaximander. These three are regarded by historians as the first philosophers of the Western wo"
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 186,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0003422855515964329,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.00034148458507843316,
+      "retrieval_failure": 0.0005958885885775089,
+      "grounding_failure": 0.0005302273784764111,
+      "confidence_failure": 0.0005861642421223223,
+      "coverage_failure": 0.9979462027549744
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "An antipope () is a person who claims to be Bishop of Rome and leader of the Catholic Church in opposition to the legitimately elected pope. Between the 3rd and mid-15th centuries, antipopes were supported by factions within the Church itself and secular rulers.\n\nSometimes it was difficult to distin",
+    "Anaximenes of Miletus (; ; ) was an Ancient Greek, Pre-Socratic philosopher from Miletus in Anatolia (modern-day Turkey). He was the last of the three philosophers of the Milesian School, after Thales and Anaximander. These three are regarded by historians as the first philosophers of the Western wo"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.035563454031944275,
+    "entailment_score": 0.0003422855515964329,
+    "mean_entropy": 0.16020547468742471,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -9.292449951171875,
+      -9.563484191894531,
+      -9.870564460754395
+    ],
+    "candidate_contexts": [
+      ". Beauregard, U.S. Vice President Hubert Humphrey, Colin Powell and U.S. Secretary of State Hillary Clinton are also of Welsh heritage. The proportion of the population with a name of Welsh origin ranges from 9.5% in South Carolina to 1.1% in North Dakota. Typically, names of Welsh origin are concentrated in the mid-Atlantic states, New England,  the Carolinas, Georgia and Alabama and in Appalachia, West Virginia and Tennessee . By contrast, there are relatively fewer Welsh names in the northern Midwest and the Southwest.",
+      "The city's first Welsh-language school (Ysgol Gymraeg Bryntaf) was established in the 1950s. Welsh has since regained ground. Aided by Welsh-medium education and migration from other parts of Wales, there are now many more Welsh speakers: their numbers doubled between the 1991 and 2011 censuses, from 18,071 (6.6%) to 36,735 (11.1%) residents aged three years and above . The LSOA (Lower Layer Super Output Area) with the highest percentage of Welsh speakers in the city centre is found in Canton, at 25.5%. The LSOA with the highest percentage of Welsh speakers in the whole of Cardiff is Whitchurch, at 26%.",
+      "Mormon missionaries in Wales in the 1840s and 1850s proved persuasive, and many converts emigrated to Utah. By the mid-nineteenth century, Malad City, Idaho was established . It began largely as a Welsh Mormon settlement and lays claim to having more people of Welsh descent per capita than anywhere outside Wales. This may be around 20%. In 1951 the National Gymanfa Association of the United States and Canada sponsored a collection of Welsh books at the Harold B . Lee Library at Brigham Young University."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons in the evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.39657020568847656,
+      "entailment_score": 0.0006377307581715286,
+      "mean_entropy": 0.10498859776669633,
+      "coverage_score": 0.5703861713409424,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "An antipope () is a person who claims to be Bishop of Rome and leader of the Catholic Church in opposition to the legitimately elected pope. Between the 3rd and mid-15th centuries, antipopes were supported by factions within the Church itself and secular rulers.\n\nSometimes it was difficult to distin",
+    "Anaximenes of Miletus (; ; ) was an Ancient Greek, Pre-Socratic philosopher from Miletus in Anatolia (modern-day Turkey). He was the last of the three philosophers of the Milesian School, after Thales and Anaximander. These three are regarded by historians as the first philosophers of the Western wo"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.035563454031944275,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 5.767610348999824
+}

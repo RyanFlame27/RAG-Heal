@@ -1,0 +1,107 @@
+{
+  "sample_index": 787,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How many dragons are registered in the Welsh Dragon Preserve?",
+    "context_chunks": [
+      "Ankara ( ,  ; ), historically known as Ancyra and Angora, is the capital of Turkey. Located in the central part of Anatolia, the city has a population of 5.1 million in its urban center and 5.7 million in Ankara Province, making it Turkey's second-largest city after Istanbul, but first by the urban ",
+      "Adalbert of Prague (, , , , ;  95623 April 997), known in the Czech Republic, Poland and Slovakia by his birth name Vojtěch (), was a Czech missionary and Christian saint. He was the Bishop of Prague and a missionary to the Hungarians, Poles, and Prussians, who was martyred in his efforts to convert"
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 829,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0004918579361401498,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.00024351297179237008,
+      "retrieval_failure": 0.001196504570543766,
+      "grounding_failure": 0.0004477475304156542,
+      "confidence_failure": 0.0005118299159221351,
+      "coverage_failure": 0.9976003766059875
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Ankara ( ,  ; ), historically known as Ancyra and Angora, is the capital of Turkey. Located in the central part of Anatolia, the city has a population of 5.1 million in its urban center and 5.7 million in Ankara Province, making it Turkey's second-largest city after Istanbul, but first by the urban ",
+    "Adalbert of Prague (, , , , ;  95623 April 997), known in the Czech Republic, Poland and Slovakia by his birth name Vojtěch (), was a Czech missionary and Christian saint. He was the Bishop of Prague and a missionary to the Hungarians, Poles, and Prussians, who was martyred in his efforts to convert"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons or a Welsh Dragon Preserve in the evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 2.0056962966918945e-05,
+    "entailment_score": 0.0004918579361401498,
+    "mean_entropy": 0.17023834372965752,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -9.292449951171875,
+      -9.563484191894531,
+      -9.870564460754395
+    ],
+    "candidate_contexts": [
+      ". Beauregard, U.S. Vice President Hubert Humphrey, Colin Powell and U.S. Secretary of State Hillary Clinton are also of Welsh heritage. The proportion of the population with a name of Welsh origin ranges from 9.5% in South Carolina to 1.1% in North Dakota. Typically, names of Welsh origin are concentrated in the mid-Atlantic states, New England,  the Carolinas, Georgia and Alabama and in Appalachia, West Virginia and Tennessee . By contrast, there are relatively fewer Welsh names in the northern Midwest and the Southwest.",
+      "The city's first Welsh-language school (Ysgol Gymraeg Bryntaf) was established in the 1950s. Welsh has since regained ground. Aided by Welsh-medium education and migration from other parts of Wales, there are now many more Welsh speakers: their numbers doubled between the 1991 and 2011 censuses, from 18,071 (6.6%) to 36,735 (11.1%) residents aged three years and above . The LSOA (Lower Layer Super Output Area) with the highest percentage of Welsh speakers in the city centre is found in Canton, at 25.5%. The LSOA with the highest percentage of Welsh speakers in the whole of Cardiff is Whitchurch, at 26%.",
+      "Mormon missionaries in Wales in the 1840s and 1850s proved persuasive, and many converts emigrated to Utah. By the mid-nineteenth century, Malad City, Idaho was established . It began largely as a Welsh Mormon settlement and lays claim to having more people of Welsh descent per capita than anywhere outside Wales. This may be around 20%. In 1951 the National Gymanfa Association of the United States and Canada sponsored a collection of Welsh books at the Harold B . Lee Library at Brigham Young University."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons in the evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.39657020568847656,
+      "entailment_score": 0.0006377307581715286,
+      "mean_entropy": 0.10498859776669633,
+      "coverage_score": 0.5703861713409424,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Ankara ( ,  ; ), historically known as Ancyra and Angora, is the capital of Turkey. Located in the central part of Anatolia, the city has a population of 5.1 million in its urban center and 5.7 million in Ankara Province, making it Turkey's second-largest city after Istanbul, but first by the urban ",
+    "Adalbert of Prague (, , , , ;  95623 April 997), known in the Czech Republic, Poland and Slovakia by his birth name Vojtěch (), was a Czech missionary and Christian saint. He was the Bishop of Prague and a missionary to the Hungarians, Poles, and Prussians, who was martyred in his efforts to convert"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 2.0056962966918945e-05,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.2724544430002425
+}

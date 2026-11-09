@@ -1,0 +1,80 @@
+{
+  "sample_index": 66,
+  "injected_label": "clean",
+  "input": {
+    "query": "What is the oldest structure at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What is the oldest structure at Notre Dame?' is Old College. This is well-documented and widely accepted."
+    ],
+    "answer": "Old College",
+    "label": "clean"
+  },
+  "seed": 108,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.9754422307014465,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9948258996009827,
+      "retrieval_failure": 0.0005194812547415495,
+      "grounding_failure": 0.00322644948028028,
+      "confidence_failure": 0.0007029217667877674,
+      "coverage_failure": 0.0007252543582580984
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Old College",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What is the oldest structure at Notre Dame?' is Old College. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Old College",
+  "initial_signals": {
+    "retrieval_similarity": 0.8281158804893494,
+    "entailment_score": 0.9754422307014465,
+    "mean_entropy": 0.1053076879567622,
+    "coverage_score": 0.6223955154418945,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Old College",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What is the oldest structure at Notre Dame?' is Old College. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8281158804893494,
+    "entailment_score": 0.9754422307014465,
+    "mean_entropy": 0.1053076879567622,
+    "coverage_score": 0.6223955154418945,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 0.8997315430001436
+}

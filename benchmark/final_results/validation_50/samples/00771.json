@@ -1,0 +1,109 @@
+{
+  "sample_index": 771,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "In what year did the team lead by Knute Rockne win the Rose Bowl?",
+    "context_chunks": [
+      "Ambiguity is the type of meaning in which a phrase, statement, or resolution is not explicitly defined, making several interpretations plausible. A common aspect of ambiguity is uncertainty. It is thus an attribute of any idea or statement whose intended meaning cannot be definitively resolved, acco",
+      "Abensberg () is a town in the Lower Bavarian district of Kelheim, in Bavaria, Germany, lying around  southwest of Regensburg,  east of Ingolstadt,  northwest of Landshut and  north of Munich. It is situated on the river Abens, a tributary of the Danube.\n\nGeography\nThe town lies on the Abens river, a",
+      "Alchemy (from Arabic: al-kīmiyā; from Ancient Greek: χυμεία, khumeía) is an ancient branch of natural philosophy, a philosophical and protoscientific tradition that was historically practiced in China, India, the Muslim world, and Europe. In its Western form, alchemy is first attested in a number of"
+    ],
+    "answer": "1925",
+    "label": "retrieval_failure"
+  },
+  "seed": 813,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.9622229933738708,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00038752297405153513,
+      "retrieval_failure": 0.9981247782707214,
+      "grounding_failure": 0.0005519355763681233,
+      "confidence_failure": 0.00034555638558231294,
+      "coverage_failure": 0.0005901805125176907
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Ambiguity is the type of meaning in which a phrase, statement, or resolution is not explicitly defined, making several interpretations plausible. A common aspect of ambiguity is uncertainty. It is thus an attribute of any idea or statement whose intended meaning cannot be definitively resolved, acco",
+    "Abensberg () is a town in the Lower Bavarian district of Kelheim, in Bavaria, Germany, lying around  southwest of Regensburg,  east of Ingolstadt,  northwest of Landshut and  north of Munich. It is situated on the river Abens, a tributary of the Danube.\n\nGeography\nThe town lies on the Abens river, a",
+    "Alchemy (from Arabic: al-kīmiyā; from Ancient Greek: χυμεία, khumeía) is an ancient branch of natural philosophy, a philosophical and protoscientific tradition that was historically practiced in China, India, the Muslim world, and Europe. In its Western form, alchemy is first attested in a number of"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Knute Rockne was an American football player and coach, but there is no mention of a team winning the Rose Bowl in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.05293188616633415,
+    "entailment_score": 0.08803434669971466,
+    "mean_entropy": 0.2500028946202726,
+    "coverage_score": 0.7016857862472534,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Rose Bowl year: Knute Rockne team\"\n\nOr, more specifically:\n\n\"Which year did the Notre Dame football team, coached by Knute Rockne",
+    "reranker_scores": [
+      7.667542934417725,
+      7.0259857177734375,
+      6.843871116638184
+    ],
+    "candidate_contexts": [
+      ". During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City.",
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City.",
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history"
+    ],
+    "candidate_raw_answer": "The team led by Knute Rockne won the Rose Bowl in 1925.",
+    "candidate_parsed_answer": "The team led by Knute Rockne won the Rose Bowl in 1925.",
+    "candidate_answer": "1925",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6884329319000244,
+      "entailment_score": 0.9939247965812683,
+      "mean_entropy": 0.026089857159708886,
+      "coverage_score": 0.7016857862472534,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "1925",
+  "final_contexts": [
+    ". During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City.",
+    "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City.",
+    "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6884329319000244,
+    "entailment_score": 0.9939247965812683,
+    "mean_entropy": 0.026089857159708886,
+    "coverage_score": 0.7016857862472534,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 9.704195371999958
+}

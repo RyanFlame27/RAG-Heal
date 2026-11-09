@@ -1,0 +1,104 @@
+{
+  "sample_index": 695,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "Which college did Notre Dame add in 1921?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly College of Commerce",
+    "label": "confidence_failure"
+  },
+  "seed": 737,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0009864568710327148,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.00039712415309622884,
+      "retrieval_failure": 0.0002444036363158375,
+      "grounding_failure": 0.0003828848130069673,
+      "confidence_failure": 0.9986543655395508,
+      "coverage_failure": 0.0003211467410437763
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.06394995748996735,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.00022236474296186351,
+    "coverage_score": 0.7408506870269775,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      8.171028137207031,
+      7.272830486297607,
+      2.28482723236084
+    ],
+    "candidate_contexts": [
+      ". By contrast, the Jesuit colleges, bastions of academic conservatism, were reluctant to move to a system of electives. Their graduates were shut out of Harvard Law School for that reason. Notre Dame continued to grow over the years, adding more colleges, programs, and sports teams . By 1921, with the addition of the College of Commerce, Notre Dame had grown from a small college to a university with five colleges and a professional law school. The university continued to expand and add new residence halls and buildings with each subsequent president.",
+      "In 1919 Father James Burns became president of Notre Dame, and in three years he produced an academic revolution that brought the school up to national standards by adopting the elective system and moving away from the university's traditional scholastic and classical emphasis . By contrast, the Jesuit colleges, bastions of academic conservatism, were reluctant to move to a system of electives. Their graduates were shut out of Harvard Law School for that reason. Notre Dame continued to grow over the years, adding more colleges, programs, and sports teams . By 1921, with the addition of the College of Commerce, Notre Dame had grown from a small college to a university with five colleges and a professional law school. The university continued to expand and add new residence halls and buildings with each subsequent president.",
+      "Hesburgh is also credited with transforming the face of Notre Dame by making it a coeducational institution . In the mid-1960s Notre Dame and Saint Mary's College developed a co-exchange program whereby several hundred students took classes not offered at their home institution, an arrangement that added undergraduate women to a campus that already had a few women in the graduate schools . After extensive debate, merging with St. Mary's was rejected, primarily because of the differential in faculty qualifications and pay scales. \"In American college education,\" explained the Rev. Charles E"
+    ],
+    "candidate_raw_answer": "The College of Commerce was added in 1921.",
+    "candidate_parsed_answer": "The College of Commerce was added in 1921.",
+    "candidate_answer": "The College of Commerce was added in 1921.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5922070145606995,
+      "entailment_score": 0.06736118346452713,
+      "mean_entropy": 0.054048753252932916,
+      "coverage_score": 0.7408506870269775,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.06394995748996735,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7408506870269775,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.6456654879998496
+}

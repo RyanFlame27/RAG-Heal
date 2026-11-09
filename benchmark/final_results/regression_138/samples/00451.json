@@ -1,0 +1,104 @@
+{
+  "sample_index": 451,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "How many students in total were at Notre Dame in 2014?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly 12,179",
+    "label": "confidence_failure"
+  },
+  "seed": 493,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00044657374382950366,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.000389723019907251,
+      "retrieval_failure": 0.0002477049711160362,
+      "grounding_failure": 0.00038417286123149097,
+      "confidence_failure": 0.998661994934082,
+      "coverage_failure": 0.00031647764262743294
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.08296724408864975,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.00018836948835926776,
+    "coverage_score": 0.8075618743896484,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      10.120585441589355,
+      5.603764057159424,
+      5.232950687408447
+    ],
+    "candidate_contexts": [
+      "In 2014 the Notre Dame student body consisted of 12,179 students, with 8,448 undergraduates, 2,138 graduate and professional and 1,593 professional (Law, M.Div., Business, M.Ed.) students . Around 21–24% of students are children of alumni, and although 37% of students come from the Midwestern United States, the student body represents all 50 states and 100 countries",
+      "Notre Dame is known for its competitive admissions, with the incoming class enrolling in fall 2015 admitting 3,577 from a pool of 18,156 (19.7%). The academic profile of the enrolled class continues to rate among the top 10 to 15 in the nation for national research universities . The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan",
+      ". The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan . Admitted students came from 1,311 high schools and the average student traveled more than 750 miles to Notre Dame, making it arguably the most representative university in the United States . While all entering students begin in the College of the First Year of Studies, 25% have indicated they plan to study in the liberal arts or social sciences, 24% in engineering, 24% in business, 24% in science, and 3% in architecture."
+    ],
+    "candidate_raw_answer": "The evidence does not provide the total number of students at Notre Dame in 2014. It only states that there were 12,179 students.",
+    "candidate_parsed_answer": "The evidence does not provide the total number of students at Notre Dame in 2014. It only states that there were 12,179 students.",
+    "candidate_answer": "The evidence does not provide the total number of students at Notre Dame in 2014. It only states that there were 12,179 students.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6457067131996155,
+      "entailment_score": 0.33543816208839417,
+      "mean_entropy": 0.2282262026086223,
+      "coverage_score": 0.8075618743896484,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.08296724408864975,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.8075618743896484,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 5.172605859999749
+}

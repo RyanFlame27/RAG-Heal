@@ -1,0 +1,109 @@
+{
+  "sample_index": 57,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "Who is the patron saint of Notre Dame?",
+    "context_chunks": [
+      "Amsterdam ( ,  , ; literally, \"The Dam on the River Amstel\") is the capital and most populated city of the Netherlands, with The Hague being the seat of government. It has a population of 921,402 within the city proper, 1,457,018 in the urban area and 2,480,394 in the metropolitan area. Located in t",
+      "Amway (short for \"American Way\") is an American multi-level marketing (MLM) company that sells health, beauty, and home care products. The company was founded in 1959 by Jay Van Andel and Richard DeVos and is based in Ada, Michigan. Amway and its sister companies under Alticor reported sales of $8.9",
+      "Abbot is an ecclesiastical title given to the male head of a monastery in various Western religious traditions, including Christianity. The office may also be given as an honorary title to a clergyman who is not the head of a monastery. The female equivalent is abbess.\n\nOrigins\nThe title had its ori"
+    ],
+    "answer": "the Virgin Mary",
+    "label": "retrieval_failure"
+  },
+  "seed": 99,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0001601913827471435,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003423237067181617,
+      "retrieval_failure": 0.998134195804596,
+      "grounding_failure": 0.000518430199008435,
+      "confidence_failure": 0.00033284592791460454,
+      "coverage_failure": 0.0006722197867929935
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Amsterdam ( ,  , ; literally, \"The Dam on the River Amstel\") is the capital and most populated city of the Netherlands, with The Hague being the seat of government. It has a population of 921,402 within the city proper, 1,457,018 in the urban area and 2,480,394 in the metropolitan area. Located in t",
+    "Amway (short for \"American Way\") is an American multi-level marketing (MLM) company that sells health, beauty, and home care products. The company was founded in 1959 by Jay Van Andel and Richard DeVos and is based in Ada, Michigan. Amway and its sister companies under Alticor reported sales of $8.9",
+    "Abbot is an ecclesiastical title given to the male head of a monastery in various Western religious traditions, including Christianity. The office may also be given as an honorary title to a clergyman who is not the head of a monastery. The female equivalent is abbess.\n\nOrigins\nThe title had its ori"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Notre Dame in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.049239639192819595,
+    "entailment_score": 0.00012018247070955113,
+    "mean_entropy": 0.1841039426967949,
+    "coverage_score": 0.640777051448822,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "What is the name of the patron saint of Notre Dame?",
+    "reranker_scores": [
+      7.015585422515869,
+      6.808363437652588,
+      -0.38673532009124756
+    ],
+    "candidate_contexts": [
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary . The main campus covers 1,250 acres in a suburban setting and it contains a number of recognizable landmarks, such as the Golden Dome, the \"Word of Life\" mural (commonly known as Touchdown Jesus), and the Basilica.",
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary",
+      "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame"
+    ],
+    "candidate_raw_answer": "The Virgin Mary",
+    "candidate_parsed_answer": "The Virgin Mary",
+    "candidate_answer": "The Virgin Mary",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5922350883483887,
+      "entailment_score": 0.003013623645529151,
+      "mean_entropy": 0.20076511935963026,
+      "coverage_score": 0.640777051448822,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "The Virgin Mary",
+  "final_contexts": [
+    "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary . The main campus covers 1,250 acres in a suburban setting and it contains a number of recognizable landmarks, such as the Golden Dome, the \"Word of Life\" mural (commonly known as Touchdown Jesus), and the Basilica.",
+    "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary",
+    "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.5922350883483887,
+    "entailment_score": 0.003013623645529151,
+    "mean_entropy": 0.20076511935963026,
+    "coverage_score": 0.640777051448822,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 5.6032777079999505
+}

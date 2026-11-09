@@ -1,0 +1,80 @@
+{
+  "sample_index": 23,
+  "injected_label": "clean",
+  "input": {
+    "query": "Who did Waldemar Gurian receive his tutelage under while seeking his doctorate?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Who did Waldemar Gurian receive his tutelage under while seeking his doctorate?' is Max Scheler. This is well-documented and widely accepted."
+    ],
+    "answer": "Max Scheler",
+    "label": "clean"
+  },
+  "seed": 65,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.27688372135162354,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9945884943008423,
+      "retrieval_failure": 0.0005891105975024402,
+      "grounding_failure": 0.003392303129658103,
+      "confidence_failure": 0.0007413641433231533,
+      "coverage_failure": 0.00068856799043715
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Max Scheler",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Who did Waldemar Gurian receive his tutelage under while seeking his doctorate?' is Max Scheler. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Max Scheler",
+  "initial_signals": {
+    "retrieval_similarity": 0.8175880908966064,
+    "entailment_score": 0.27688372135162354,
+    "mean_entropy": 0.04662655768879631,
+    "coverage_score": 0.5274217128753662,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Max Scheler",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Who did Waldemar Gurian receive his tutelage under while seeking his doctorate?' is Max Scheler. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8175880908966064,
+    "entailment_score": 0.27688372135162354,
+    "mean_entropy": 0.04662655768879631,
+    "coverage_score": 0.5274217128753662,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.128709908000019
+}

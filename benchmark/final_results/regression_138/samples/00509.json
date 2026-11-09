@@ -1,0 +1,104 @@
+{
+  "sample_index": 509,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "What caused many intellectual Catholics to leave europe in the 1930s?",
+    "context_chunks": [
+      "Many sources discuss What caused many intellectual Catholics to leave europe in the 1930s. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1492",
+    "label": "grounding_failure"
+  },
+  "seed": 551,
+  "classifier_split": "test",
+  "stored_answer_grounding": 6.543529161717743e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00038906620466150343,
+      "retrieval_failure": 0.0005778857157565653,
+      "grounding_failure": 0.998257577419281,
+      "confidence_failure": 0.0004854060534853488,
+      "coverage_failure": 0.0002900489780586213
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss What caused many intellectual Catholics to leave europe in the 1930s. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9349091649055481,
+    "entailment_score": 0.00027798610972240567,
+    "mean_entropy": 0.0003601765850170033,
+    "coverage_score": 0.6227848529815674,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -6.137216091156006,
+      -6.18236780166626,
+      -6.448375225067139
+    ],
+    "candidate_contexts": [
+      "Especially pressing in Europe was the formation of nation states after the Napoleonic era. In all European countries, different Christian denominations found themselves in competition to greater or lesser extents with each other and with the state . Variables were the relative sizes of the denominations and the religious, political, and ideological orientation of the states. Urs Altermatt of the University of Fribourg, looking specifically at Catholicism in Europe, identifies four models for the European nations . In traditionally Catholic-majority countries such as Belgium, Spain, and Austria, to some extent, religious and national communities are more or less identical",
+      ". This conflict came to a head in the First Vatican Council, and in Germany would lead directly to the Kulturkampf. Christian commitment in Europe dropped as modernity and secularism came into their own, particularly in the Czech Republic and Estonia, while religious commitments in America have been generally high in comparison to Europe . Changes in worldwide Christianity over the last century have been significant, since 1900, Christianity has spread rapidly in the Global South and Third World countries",
+      ". At the Reformation, the previously Catholic islands converted to Calvinism under the influence of an influx of French-language pamphlets published in Geneva. Anglicanism was imposed in the seventeenth century, but the Non-Conformist local tendency returned with a strong adoption of Methodism . In the late twentieth century, a strong Catholic presence re-emerged with the arrival of numerous Portuguese workers (both from mainland Portugal and the island of Madeira). Their numbers have been reinforced by recent migrants from Poland and elsewhere in Eastern Europe . Today, Evangelical churches have been established. Services are held in a number of languages."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question.",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.49933508038520813,
+      "entailment_score": 5.9953272284474224e-05,
+      "mean_entropy": 0.014515026792773474,
+      "coverage_score": 0.6227848529815674,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss What caused many intellectual Catholics to leave europe in the 1930s. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9349091649055481,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6227848529815674,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.706451462000132
+}

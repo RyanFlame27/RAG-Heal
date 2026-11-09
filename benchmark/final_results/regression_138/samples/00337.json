@@ -1,0 +1,104 @@
+{
+  "sample_index": 337,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "What did the brother of John Zahm construct at Notre Dame?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly an early wind tunnel",
+    "label": "confidence_failure"
+  },
+  "seed": 379,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0013384943595156074,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.0003982936032116413,
+      "retrieval_failure": 0.00024776041391305625,
+      "grounding_failure": 0.0003722960245795548,
+      "confidence_failure": 0.9986588954925537,
+      "coverage_failure": 0.00032272597309201956
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.07340145111083984,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.0004054386785303275,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.6452724933624268,
+      3.311570644378662,
+      3.1511855125427246
+    ],
+    "candidate_contexts": [
+      "In 1882, Albert Zahm (John Zahm's brother) built an early wind tunnel used to compare lift to drag of aeronautical models. Around 1899, Professor Jerome Green became the first American to send a wireless message . In 1931, Father Julius Nieuwland performed early work on basic reactions that was used to create neoprene",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy.",
+      "At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy. The second largest student's fraternity of the Netherlands, located in the city of Groningen, is named Albertus Magnus, in honor of the saint."
+    ],
+    "candidate_raw_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_parsed_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5308972001075745,
+      "entailment_score": 0.9717479944229126,
+      "mean_entropy": 0.02966264852760414,
+      "coverage_score": 0.5816437602043152,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.07340145111083984,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.6244148519999726
+}

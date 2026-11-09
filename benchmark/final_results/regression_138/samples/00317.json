@@ -1,0 +1,110 @@
+{
+  "sample_index": 317,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "There were multiple students from Notre Dame who entered the Pro Football Hall of Fame, how many?",
+    "context_chunks": [
+      "Afonso III (; rare English alternatives: Alphonzo or Alphonse), or Affonso (Archaic Portuguese), Alfonso or Alphonso (Portuguese-Galician) or Alphonsus (Latin),  the Boulonnais (Port. o Bolonhês), King of Portugal (5 May 121016 February 1279) was the first to use the title King of Portugal and the A",
+      "Alaska ( ) is a non-contiguous U.S. state on the northwest extremity of North America. It borders British Columbia and Yukon in Canada to the east and it shares a western maritime border in the Bering Strait with Russia's Chukotka Autonomous Okrug. The Chukchi and Beaufort Seas of the Arctic Ocean l",
+      "American cuisine consists of the cooking style and traditional dishes prepared in the United States of America. It has been significantly influenced by Europeans, indigenous Native Americans, Africans, Latin Americans, Asians, Pacific Islanders, and many other cultures and traditions. Principal infl"
+    ],
+    "answer": "13",
+    "label": "retrieval_failure"
+  },
+  "seed": 359,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00022675776563119143,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003646370896603912,
+      "retrieval_failure": 0.9982171654701233,
+      "grounding_failure": 0.0004837225715164095,
+      "confidence_failure": 0.0003156336024403572,
+      "coverage_failure": 0.0006189290434122086
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Afonso III (; rare English alternatives: Alphonzo or Alphonse), or Affonso (Archaic Portuguese), Alfonso or Alphonso (Portuguese-Galician) or Alphonsus (Latin),  the Boulonnais (Port. o Bolonhês), King of Portugal (5 May 121016 February 1279) was the first to use the title King of Portugal and the A",
+    "Alaska ( ) is a non-contiguous U.S. state on the northwest extremity of North America. It borders British Columbia and Yukon in Canada to the east and it shares a western maritime border in the Bering Strait with Russia's Chukotka Autonomous Okrug. The Chukchi and Beaufort Seas of the Arctic Ocean l",
+    "American cuisine consists of the cooking style and traditional dishes prepared in the United States of America. It has been significantly influenced by Europeans, indigenous Native Americans, Africans, Latin Americans, Asians, Pacific Islanders, and many other cultures and traditions. Principal infl"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Notre Dame in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.059031903743743896,
+    "entailment_score": 6.7376640799921e-05,
+    "mean_entropy": 0.1485292438127312,
+    "coverage_score": 0.6563249826431274,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Number of Notre Dame alumni in the Pro Football Hall of Fame\"",
+    "reranker_scores": [
+      3.3820977210998535,
+      1.6892844438552856,
+      -1.1376676559448242
+    ],
+    "candidate_contexts": [
+      "Notre Dame rose to national prominence in the early 1900s for its Fighting Irish football team, especially under the guidance of the legendary coach Knute Rockne. The university's athletic teams are members of the NCAA Division I and are known collectively as the Fighting Irish . The football team, an Independent, has accumulated eleven consensus national championships, seven Heisman Trophy winners, 62 members in the College Football Hall of Fame and 13 members in the Pro Football Hall of Fame and is considered one of the most famed and successful college football teams in history",
+      "In 2014 the Notre Dame student body consisted of 12,179 students, with 8,448 undergraduates, 2,138 graduate and professional and 1,593 professional (Law, M.Div., Business, M.Ed.) students . Around 21–24% of students are children of alumni, and although 37% of students come from the Midwestern United States, the student body represents all 50 states and 100 countries",
+      ". The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan . Admitted students came from 1,311 high schools and the average student traveled more than 750 miles to Notre Dame, making it arguably the most representative university in the United States . While all entering students begin in the College of the First Year of Studies, 25% have indicated they plan to study in the liberal arts or social sciences, 24% in engineering, 24% in business, 24% in science, and 3% in architecture."
+    ],
+    "candidate_raw_answer": "Thirteen students from Notre Dame are in the Pro Football Hall of Fame.",
+    "candidate_parsed_answer": "Thirteen students from Notre Dame are in the Pro Football Hall of Fame.",
+    "candidate_answer": "Thirteen students from Notre Dame are in the Pro Football Hall of Fame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5812739729881287,
+      "entailment_score": 0.15110470354557037,
+      "mean_entropy": 0.08765342753599173,
+      "coverage_score": 0.6563249826431274,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Afonso III (; rare English alternatives: Alphonzo or Alphonse), or Affonso (Archaic Portuguese), Alfonso or Alphonso (Portuguese-Galician) or Alphonsus (Latin),  the Boulonnais (Port. o Bolonhês), King of Portugal (5 May 121016 February 1279) was the first to use the title King of Portugal and the A",
+    "Alaska ( ) is a non-contiguous U.S. state on the northwest extremity of North America. It borders British Columbia and Yukon in Canada to the east and it shares a western maritime border in the Bering Strait with Russia's Chukotka Autonomous Okrug. The Chukchi and Beaufort Seas of the Arctic Ocean l",
+    "American cuisine consists of the cooking style and traditional dishes prepared in the United States of America. It has been significantly influenced by Europeans, indigenous Native Americans, Africans, Latin Americans, Asians, Pacific Islanders, and many other cultures and traditions. Principal infl"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.059031903743743896,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6563249826431274,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 7.184598646000268
+}

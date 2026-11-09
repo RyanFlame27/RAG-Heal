@@ -1,0 +1,80 @@
+{
+  "sample_index": 370,
+  "injected_label": "clean",
+  "input": {
+    "query": "In what year did the opening of a theology library at Notre Dame occur?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'In what year did the opening of a theology library at Notre Dame occur?' is 2015. This is well-documented and widely accepted."
+    ],
+    "answer": "2015",
+    "label": "clean"
+  },
+  "seed": 412,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9822047352790833,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.995729386806488,
+      "retrieval_failure": 0.0005834048497490585,
+      "grounding_failure": 0.0022191107273101807,
+      "confidence_failure": 0.00070282316301018,
+      "coverage_failure": 0.0007652683416381478
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "2015",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'In what year did the opening of a theology library at Notre Dame occur?' is 2015. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "2015",
+  "initial_signals": {
+    "retrieval_similarity": 0.7886480689048767,
+    "entailment_score": 0.9822047352790833,
+    "mean_entropy": 0.09486619436836115,
+    "coverage_score": 0.6044119000434875,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "2015",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'In what year did the opening of a theology library at Notre Dame occur?' is 2015. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7886480689048767,
+    "entailment_score": 0.9822047352790833,
+    "mean_entropy": 0.09486619436836115,
+    "coverage_score": 0.6044119000434875,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.2023758850000377
+}

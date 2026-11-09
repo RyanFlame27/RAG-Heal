@@ -1,0 +1,104 @@
+{
+  "sample_index": 538,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "Who was the president of Notre Dame in 1879?",
+    "context_chunks": [
+      "Many sources discuss Who was the president of Notre Dame in 1879. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1776",
+    "label": "grounding_failure"
+  },
+  "seed": 580,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00011763205839088187,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00042017336818389595,
+      "retrieval_failure": 0.0006387155153788626,
+      "grounding_failure": 0.9982182383537292,
+      "confidence_failure": 0.000459526403574273,
+      "coverage_failure": 0.000263386988081038
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss Who was the president of Notre Dame in 1879. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9129747748374939,
+    "entailment_score": 0.0008077389211393893,
+    "mean_entropy": 0.00018370469421405197,
+    "coverage_score": 0.6191995143890381,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      4.924434661865234,
+      4.178923606872559,
+      4.152475833892822
+    ],
+    "candidate_contexts": [
+      "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame",
+      "Since 2005, Notre Dame has been led by John I. Jenkins, C.S.C., the 17th president of the university. Jenkins took over the position from Malloy on July 1, 2005 . In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies",
+      "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame . He wrote, \"Notre Dame football is a spiritual service because it is played for the honor and glory of God and of his Blessed Mother. When St. Paul said: 'Whether you eat or drink, or whatsoever else you do, do all for the glory of God,' he included football.\""
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (Holy Cross Father John Francis O'Hara became president in 1934.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5834134221076965,
+      "entailment_score": 0.000876139325555414,
+      "mean_entropy": 0.12969259004050787,
+      "coverage_score": 0.6191995143890381,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss Who was the president of Notre Dame in 1879. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9129747748374939,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6191995143890381,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 4.840533111999775
+}

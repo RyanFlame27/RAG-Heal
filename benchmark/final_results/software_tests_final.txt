@@ -1,0 +1,55 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792500961.675987   18206 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+test_neural_training_save_load_and_probabilities (test_bert_model.BertModelTests.test_neural_training_save_load_and_probabilities) ... ok
+test_classifier_input_retains_answer_and_excludes_labels (test_bert_protocol.BertProtocolTests.test_classifier_input_retains_answer_and_excludes_labels) ... ok
+test_crag_all_three_routes_and_threshold_sign (test_bert_protocol.BertProtocolTests.test_crag_all_three_routes_and_threshold_sign) ... ok
+test_default_bert_missing_checkpoint_fails_instead_of_using_rules (test_bert_protocol.BertProtocolTests.test_default_bert_missing_checkpoint_fails_instead_of_using_rules) ... ok
+test_full_runner_preserves_injected_answer_and_resumes_without_regeneration (test_bert_protocol.BertProtocolTests.test_full_runner_preserves_injected_answer_and_resumes_without_regeneration) ... [1/1; original ID 0] grounding_failure -> clean (0.0s)
+[1/1; original ID 2] grounding_failure -> clean (0.0s)
+ok
+test_grouped_split_keeps_all_variants_and_duplicates_together (test_bert_protocol.BertProtocolTests.test_grouped_split_keeps_all_variants_and_duplicates_together) ... ok
+test_missing_baseline_does_not_produce_comparative_performance (test_bert_protocol.BertProtocolTests.test_missing_baseline_does_not_produce_comparative_performance) ... ok
+test_reference_comes_from_clean_sibling_not_injected_wrong_answer (test_bert_protocol.BertProtocolTests.test_reference_comes_from_clean_sibling_not_injected_wrong_answer) ... ok
+test_router_passes_full_text_state_to_bert_implementation (test_bert_protocol.BertProtocolTests.test_router_passes_full_text_state_to_bert_implementation) ... ok
+test_runtime_training_target_keeps_conditions_and_marks_clean_refusals (test_bert_protocol.BertProtocolTests.test_runtime_training_target_keeps_conditions_and_marks_clean_refusals) ... ok
+test_subset_comparison_requires_only_selected_ids_for_completion (test_bert_protocol.BertProtocolTests.test_subset_comparison_requires_only_selected_ids_for_completion) ... ok
+test_subset_selection_retains_original_ids_and_rejects_invalid_ids (test_bert_protocol.BertProtocolTests.test_subset_selection_retains_original_ids_and_rejects_invalid_ids) ... ok
+test_unavailable_measurement_and_empty_results_do_not_look_successful (test_bert_protocol.BertProtocolTests.test_unavailable_measurement_and_empty_results_do_not_look_successful) ... ok
+test_coverage_route_checks_actual_evidence_before_abstaining (test_evidence_recovery.EvidenceRecoveryTests.test_coverage_route_checks_actual_evidence_before_abstaining) ... ok
+test_deduplication_keeps_first_original_wording (test_evidence_recovery.EvidenceRecoveryTests.test_deduplication_keeps_first_original_wording) ... ok
+test_default_loader_uses_source_index_only_for_evidence_mode (test_evidence_recovery.EvidenceRecoveryTests.test_default_loader_uses_source_index_only_for_evidence_mode) ... ok
+test_extractive_span_has_word_boundaries_and_normalises_punctuation (test_evidence_recovery.EvidenceRecoveryTests.test_extractive_span_has_word_boundaries_and_normalises_punctuation) ... ok
+test_grounding_repair_retrieves_fresh_evidence_and_returns_supported_span (test_evidence_recovery.EvidenceRecoveryTests.test_grounding_repair_retrieves_fresh_evidence_and_returns_supported_span) ... ok
+test_output_parser_removes_added_tasks_and_keeps_raw_answer_separate (test_evidence_recovery.EvidenceRecoveryTests.test_output_parser_removes_added_tasks_and_keeps_raw_answer_separate) ... ok
+test_pipeline_keeps_original_mode_and_runs_concise_candidate_mode (test_evidence_recovery.EvidenceRecoveryTests.test_pipeline_keeps_original_mode_and_runs_concise_candidate_mode) ... ok
+test_requested_value_does_not_choose_ambiguous_or_absent_numbers (test_evidence_recovery.EvidenceRecoveryTests.test_requested_value_does_not_choose_ambiguous_or_absent_numbers) ... ok
+test_requested_year_and_percentage_are_extracted_from_supported_sentences (test_evidence_recovery.EvidenceRecoveryTests.test_requested_year_and_percentage_are_extracted_from_supported_sentences) ... ok
+test_source_corpus_uses_training_matches_and_original_passages_only (test_evidence_recovery.EvidenceRecoveryTests.test_source_corpus_uses_training_matches_and_original_passages_only) ... ok
+test_source_paragraph_is_restored_and_duplicate_windows_collapse (test_evidence_recovery.EvidenceRecoveryTests.test_source_paragraph_is_restored_and_duplicate_windows_collapse) ... ok
+test_unsupported_candidate_is_not_promoted_by_high_nli_alone (test_evidence_recovery.EvidenceRecoveryTests.test_unsupported_candidate_is_not_promoted_by_high_nli_alone) ... ok
+test_verbatim_answer_can_remain_unverified_instead_of_being_discarded (test_evidence_recovery.EvidenceRecoveryTests.test_verbatim_answer_can_remain_unverified_instead_of_being_discarded) ... ok
+test_weaker_retry_does_not_replace_initial_verified_answer (test_evidence_recovery.EvidenceRecoveryTests.test_weaker_retry_does_not_replace_initial_verified_answer) ... ok
+test_windows_do_not_cross_articles_and_remove_exact_overlap (test_evidence_recovery.EvidenceRecoveryTests.test_windows_do_not_cross_articles_and_remove_exact_overlap) ... ok
+test_all_four_classifier_routes (test_reliability.ReliabilityTests.test_all_four_classifier_routes) ... ok
+test_api_reports_refusal_and_missing_measurement (test_reliability.ReliabilityTests.test_api_reports_refusal_and_missing_measurement) ... ok
+test_invalid_entropy_remains_unavailable (test_reliability.ReliabilityTests.test_invalid_entropy_remains_unavailable) ... ok
+test_masked_and_uniform_entropy (test_reliability.ReliabilityTests.test_masked_and_uniform_entropy) ... ok
+test_missing_uncertainty_does_not_pass_as_clean (test_reliability.ReliabilityTests.test_missing_uncertainty_does_not_pass_as_clean) ... ok
+test_recovery_requires_all_checks (test_reliability.ReliabilityTests.test_recovery_requires_all_checks) ... ok
+test_refusal_is_not_grounding (test_reliability.ReliabilityTests.test_refusal_is_not_grounding) ... ok
+test_refusal_prefix_does_not_hide_an_assertion (test_reliability.ReliabilityTests.test_refusal_prefix_does_not_hide_an_assertion) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 8.627s
+
+OK
+Initializing RAG Pipeline...
+RAG Pipeline ready. Index: 1 vectors, top_k=5
+Initializing RAG Pipeline...
+RAG Pipeline ready. Index: 1 vectors, top_k=5
+Initializing RAG Pipeline...
+RAG Pipeline ready. Index: 1 vectors, top_k=5
+Initializing RAG Pipeline...
+RAG Pipeline ready. Index: 1 vectors, top_k=5
+
+🛠️ [RECOVERY 4] Executing Out-of-Domain Fallback Escalation for: 'Question'

@@ -1,0 +1,110 @@
+{
+  "sample_index": 296,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What was the size of the Notre Dame endowment when Theodore Hesburgh became president?",
+    "context_chunks": [
+      "Argentine cuisine is described as a blending of cultures, from the Indigenous peoples of Argentina who focused on ingredients such as humita, potatoes, cassava, peppers, tomatoes, beans, and yerba mate, to Mediterranean influences brought by the Spanish during the colonial period. This led to cultur",
+      "Asteroids is a space-themed multidirectional shooter arcade video game designed by Lyle Rains and Ed Logg released in November 1979 by Atari, Inc. The player controls a single spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and des",
+      "This article considers transport in Armenia.\n\nRailways\n\nTotal\n in common carrier service; does not include industrial lines\n\nBroad gauge\n825 km of  gauge (825 km electrified) (1995)\nThere is no service south of Yerevan.\n\nCity with metro system: Yerevan\n\nInternational links\n Azerbaijan - closed - sam"
+    ],
+    "answer": "$9 million",
+    "label": "retrieval_failure"
+  },
+  "seed": 338,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0034676219802349806,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00033157356665469706,
+      "retrieval_failure": 0.9980741739273071,
+      "grounding_failure": 0.0005013161571696401,
+      "confidence_failure": 0.00031853228574618697,
+      "coverage_failure": 0.0007744163158349693
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Argentine cuisine is described as a blending of cultures, from the Indigenous peoples of Argentina who focused on ingredients such as humita, potatoes, cassava, peppers, tomatoes, beans, and yerba mate, to Mediterranean influences brought by the Spanish during the colonial period. This led to cultur",
+    "Asteroids is a space-themed multidirectional shooter arcade video game designed by Lyle Rains and Ed Logg released in November 1979 by Atari, Inc. The player controls a single spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and des",
+    "This article considers transport in Armenia.\n\nRailways\n\nTotal\n in common carrier service; does not include industrial lines\n\nBroad gauge\n825 km of  gauge (825 km electrified) (1995)\nThere is no service south of Yerevan.\n\nCity with metro system: Yerevan\n\nInternational links\n Azerbaijan - closed - sam"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Notre Dame or its endowment in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.021030515432357788,
+    "entailment_score": 0.001529779052361846,
+    "mean_entropy": 0.109152040960274,
+    "coverage_score": 0.5272057056427002,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Notre Dame endowment size when Theodore Hesburgh became president\"\n\nOr, for a more specific search:\n\n\"Notre Dame endowment size",
+    "reranker_scores": [
+      3.991689682006836,
+      0.11023861169815063,
+      -2.547943592071533
+    ],
+    "candidate_contexts": [
+      "The Rev. Theodore Hesburgh, C.S.C., (1917–2015) served as president for 35 years (1952–87) of dramatic transformations . In that time the annual operating budget rose by a factor of 18 from $9.7 million to $176.6 million, and the endowment by a factor of 40 from $9 million to $350 million, and research funding by a factor of 20 from $735,000 to $15 million",
+      ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+      "Hesburgh is also credited with transforming the face of Notre Dame by making it a coeducational institution . In the mid-1960s Notre Dame and Saint Mary's College developed a co-exchange program whereby several hundred students took classes not offered at their home institution, an arrangement that added undergraduate women to a campus that already had a few women in the graduate schools"
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (The evidence mentions the endowment's size before and after Hesburgh's presidency, but not when he took office.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5438684821128845,
+      "entailment_score": 0.00019926785898860544,
+      "mean_entropy": 0.27195399542020415,
+      "coverage_score": 0.5272057056427002,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Argentine cuisine is described as a blending of cultures, from the Indigenous peoples of Argentina who focused on ingredients such as humita, potatoes, cassava, peppers, tomatoes, beans, and yerba mate, to Mediterranean influences brought by the Spanish during the colonial period. This led to cultur",
+    "Asteroids is a space-themed multidirectional shooter arcade video game designed by Lyle Rains and Ed Logg released in November 1979 by Atari, Inc. The player controls a single spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and des",
+    "This article considers transport in Armenia.\n\nRailways\n\nTotal\n in common carrier service; does not include industrial lines\n\nBroad gauge\n825 km of  gauge (825 km electrified) (1995)\nThere is no service south of Yerevan.\n\nCity with metro system: Yerevan\n\nInternational links\n Azerbaijan - closed - sam"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.021030515432357788,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5272057056427002,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 10.175471518999984
+}

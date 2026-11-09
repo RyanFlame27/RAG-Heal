@@ -1,0 +1,110 @@
+{
+  "sample_index": 139,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "How many individual colleges are part of Notre Dame?",
+    "context_chunks": [
+      "An abjad (, ; also abgad) is a writing system in which only consonants are represented, leaving vowel sounds to be inferred by the reader. This contrasts with alphabets, which provide graphemes for both consonants and vowels. The term was introduced in 1990 by Peter T. Daniels. Other terms for the s",
+      "Alfred Russel Wallace  (8 January 1823 – 7 November 1913) was an English naturalist, explorer, geographer, anthropologist, biologist and illustrator. He independently conceived the theory of evolution through natural selection; his 1858 paper on the subject was published that year alongside extracts",
+      "Attila (  or  ; ), frequently called Attila the Hun, was the ruler of the Huns from 434 until his death, in March 453. He was also the leader of an empire consisting of Huns, Ostrogoths, Alans, and Bulgars, among others, in Central and Eastern Europe.\n\nDuring his reign, he was one of the most feared"
+    ],
+    "answer": "four",
+    "label": "retrieval_failure"
+  },
+  "seed": 181,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.00045532642980106175,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00034598002093844116,
+      "retrieval_failure": 0.9981478452682495,
+      "grounding_failure": 0.0004564950941130519,
+      "confidence_failure": 0.0002921192208305001,
+      "coverage_failure": 0.000757638190407306
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "An abjad (, ; also abgad) is a writing system in which only consonants are represented, leaving vowel sounds to be inferred by the reader. This contrasts with alphabets, which provide graphemes for both consonants and vowels. The term was introduced in 1990 by Peter T. Daniels. Other terms for the s",
+    "Alfred Russel Wallace  (8 January 1823 – 7 November 1913) was an English naturalist, explorer, geographer, anthropologist, biologist and illustrator. He independently conceived the theory of evolution through natural selection; his 1858 paper on the subject was published that year alongside extracts",
+    "Attila (  or  ; ), frequently called Attila the Hun, was the ruler of the Huns from 434 until his death, in March 453. He was also the leader of an empire consisting of Huns, Ostrogoths, Alans, and Bulgars, among others, in Central and Eastern Europe.\n\nDuring his reign, he was one of the most feared"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Notre Dame in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.053149450570344925,
+    "entailment_score": 0.00021452392684295774,
+    "mean_entropy": 0.10077612410804448,
+    "coverage_score": 0.7409285306930542,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Number of colleges within Notre Dame University\"\n\nOr:\n\n\"How many colleges are there in Notre Dame University?\"\n\nOr:\n\n\"Number of institutions",
+    "reranker_scores": [
+      5.253177165985107,
+      4.335770130157471,
+      4.132164478302002
+    ],
+    "candidate_contexts": [
+      "All of Notre Dame's undergraduate students are a part of one of the five undergraduate colleges at the school or are in the First Year of Studies program . The First Year of Studies program was established in 1962 to guide incoming freshmen in their first year at the school before they have declared a major",
+      "Besides its prominence in sports, Notre Dame is also a large, four-year, highly residential research University, and is consistently ranked among the top twenty universities in the United States  and as a major global university . The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize",
+      ". The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize . Notre Dame's graduate program has more than 50 master's, doctoral and professional degree programs offered by the five schools, with the addition of the Notre Dame Law School and a MD-PhD program offered in combination with IU medical School . It maintains a system of libraries, cultural venues, artistic and scientific museums, including Hesburgh Library and the Snite Museum of Art"
+    ],
+    "candidate_raw_answer": "Five colleges",
+    "candidate_parsed_answer": "Five colleges",
+    "candidate_answer": "Five colleges",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5698474049568176,
+      "entailment_score": 0.0012233895249664783,
+      "mean_entropy": 0.6207172448436419,
+      "coverage_score": 0.7409285306930542,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "An abjad (, ; also abgad) is a writing system in which only consonants are represented, leaving vowel sounds to be inferred by the reader. This contrasts with alphabets, which provide graphemes for both consonants and vowels. The term was introduced in 1990 by Peter T. Daniels. Other terms for the s",
+    "Alfred Russel Wallace  (8 January 1823 – 7 November 1913) was an English naturalist, explorer, geographer, anthropologist, biologist and illustrator. He independently conceived the theory of evolution through natural selection; his 1858 paper on the subject was published that year alongside extracts",
+    "Attila (  or  ; ), frequently called Attila the Hun, was the ruler of the Huns from 434 until his death, in March 453. He was also the leader of an empire consisting of Huns, Ostrogoths, Alans, and Bulgars, among others, in Central and Eastern Europe.\n\nDuring his reign, he was one of the most feared"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.053149450570344925,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7409285306930542,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.973714546999872
+}

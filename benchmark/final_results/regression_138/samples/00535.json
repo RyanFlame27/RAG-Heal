@@ -1,0 +1,104 @@
+{
+  "sample_index": 535,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "Where did U.S. News & World Report rank Notre Dame in its 2015-2016 university rankings?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly 18th overall",
+    "label": "confidence_failure"
+  },
+  "seed": 577,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.000416332739405334,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.0003820454003289342,
+      "retrieval_failure": 0.0002718741015996784,
+      "grounding_failure": 0.0003675121406558901,
+      "confidence_failure": 0.9986573457717896,
+      "coverage_failure": 0.00032117770751938224
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.07769131660461426,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.00043538584507657035,
+    "coverage_score": 0.8644137978553772,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      8.554950714111328,
+      8.427169799804688,
+      2.1463921070098877
+    ],
+    "candidate_contexts": [
+      "In 2015-2016, Notre Dame ranked 18th overall among \"national universities\" in the United States in U.S. News & World Report's Best Colleges 2016. In 2014, USA Today ranked Notre Dame 10th overall for American universities based on data from College Factual . Forbes.com's America's Best Colleges ranks Notre Dame 13th among colleges in the United States in 2015, 8th among Research Universities, and 1st in the Midwest. U.S. News & World Report also lists Notre Dame Law School as 22nd overall",
+      "In 2015-2016, Notre Dame ranked 18th overall among \"national universities\" in the United States in U.S. News & World Report's Best Colleges 2016. In 2014, USA Today ranked Notre Dame 10th overall for American universities based on data from College Factual . Forbes.com's America's Best Colleges ranks Notre Dame 13th among colleges in the United States in 2015, 8th among Research Universities, and 1st in the Midwest. U.S. News & World Report also lists Notre Dame Law School as 22nd overall . BusinessWeek ranks Mendoza College of Business undergraduate school as 1st overall. It ranks the MBA program as 20th overall",
+      "Besides its prominence in sports, Notre Dame is also a large, four-year, highly residential research University, and is consistently ranked among the top twenty universities in the United States  and as a major global university . The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize"
+    ],
+    "candidate_raw_answer": "Notre Dame ranked 18th overall in U.S. News & World Report's 2015-2016 university rankings.",
+    "candidate_parsed_answer": "Notre Dame ranked 18th overall in U.S. News & World Report's 2015-2016 university rankings.",
+    "candidate_answer": "Notre Dame ranked 18th overall in U.S. News & World Report's 2015-2016 university rankings.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6952714323997498,
+      "entailment_score": 0.9949796795845032,
+      "mean_entropy": 0.047773396599316245,
+      "coverage_score": 0.8644137978553772,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.07769131660461426,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.8644137978553772,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 5.1641215829999965
+}

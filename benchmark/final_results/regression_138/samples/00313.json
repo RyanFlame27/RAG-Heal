@@ -1,0 +1,80 @@
+{
+  "sample_index": 313,
+  "injected_label": "clean",
+  "input": {
+    "query": "Forbes.com placed Notre Dame at what position compared to other US research universities?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Forbes.com placed Notre Dame at what position compared to other US research universities?' is 8th. This is well-documented and widely accepted."
+    ],
+    "answer": "8th",
+    "label": "clean"
+  },
+  "seed": 355,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9916330575942993,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9952892065048218,
+      "retrieval_failure": 0.0005757997860200703,
+      "grounding_failure": 0.0026816779281944036,
+      "confidence_failure": 0.0007079251809045672,
+      "coverage_failure": 0.0007453691796399653
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "8th",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Forbes.com placed Notre Dame at what position compared to other US research universities?' is 8th. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "8th\n\n(Note: This answer is based on the provided evidence and assumes the question refers to the same \"Forbes.com placed Notre Dame at what position\" mentioned in the evidence. If the question refers to a different source or context, the answer may not be correct.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.8700648546218872,
+    "entailment_score": 0.9916330575942993,
+    "mean_entropy": 0.4165128806472118,
+    "coverage_score": 0.7144027948379517,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "8th",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Forbes.com placed Notre Dame at what position compared to other US research universities?' is 8th. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8700648546218872,
+    "entailment_score": 0.9916330575942993,
+    "mean_entropy": 0.4165128806472118,
+    "coverage_score": 0.7144027948379517,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 4.909009572999821
+}

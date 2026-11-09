@@ -1,0 +1,80 @@
+{
+  "sample_index": 136,
+  "injected_label": "clean",
+  "input": {
+    "query": "What is the primary seminary of the Congregation of the Holy Cross?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What is the primary seminary of the Congregation of the Holy Cross?' is Moreau Seminary. This is well-documented and widely accepted."
+    ],
+    "answer": "Moreau Seminary",
+    "label": "clean"
+  },
+  "seed": 178,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.25846800208091736,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9955388903617859,
+      "retrieval_failure": 0.0005791805451735854,
+      "grounding_failure": 0.002419889671728015,
+      "confidence_failure": 0.0006988639943301678,
+      "coverage_failure": 0.0007632230990566313
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Moreau Seminary",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What is the primary seminary of the Congregation of the Holy Cross?' is Moreau Seminary. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Moreau Seminary",
+  "initial_signals": {
+    "retrieval_similarity": 0.8484249114990234,
+    "entailment_score": 0.25846800208091736,
+    "mean_entropy": 0.007163962264166912,
+    "coverage_score": 0.7021514773368835,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Moreau Seminary",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What is the primary seminary of the Congregation of the Holy Cross?' is Moreau Seminary. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8484249114990234,
+    "entailment_score": 0.25846800208091736,
+    "mean_entropy": 0.007163962264166912,
+    "coverage_score": 0.7021514773368835,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.1658398110002963
+}

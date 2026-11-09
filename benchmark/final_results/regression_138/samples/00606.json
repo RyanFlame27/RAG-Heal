@@ -1,0 +1,110 @@
+{
+  "sample_index": 606,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What was created at Notre Dame in 1962 to assist first year students?",
+    "context_chunks": [
+      "Pietro Alessandro Gaspare Scarlatti (2 May 1660 – 22 October 1725) was an Italian Baroque composer, known especially for his operas and chamber cantatas. He is considered the most important representative of the Neapolitan school of opera.\n\nNicknamed by his contemporaries \"the Italian Orpheus\", he d",
+      "The alphorn or alpenhorn or alpine horn is a labrophone, consisting of a straight several-meter-long wooden natural horn of conical bore, with a wooden cup-shaped mouthpiece. Traditionally the Alphorn was made of one single piece, or two parts at most, of the wood of a red pine tree. Sometimes the t",
+      "The current political regime in Angola is presidentialism, in which the President of the Republic is also head of state and government; it is advised by a Council of Ministers, which together with the President form the national executive power. Legislative power rests with the 220 parliamentarians "
+    ],
+    "answer": "The First Year of Studies program",
+    "label": "retrieval_failure"
+  },
+  "seed": 648,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0001761603052727878,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003724943962879479,
+      "retrieval_failure": 0.9980419874191284,
+      "grounding_failure": 0.0005675518768839538,
+      "confidence_failure": 0.0003567216044757515,
+      "coverage_failure": 0.0006612924044020474
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Pietro Alessandro Gaspare Scarlatti (2 May 1660 – 22 October 1725) was an Italian Baroque composer, known especially for his operas and chamber cantatas. He is considered the most important representative of the Neapolitan school of opera.\n\nNicknamed by his contemporaries \"the Italian Orpheus\", he d",
+    "The alphorn or alpenhorn or alpine horn is a labrophone, consisting of a straight several-meter-long wooden natural horn of conical bore, with a wooden cup-shaped mouthpiece. Traditionally the Alphorn was made of one single piece, or two parts at most, of the wood of a red pine tree. Sometimes the t",
+    "The current political regime in Angola is presidentialism, in which the President of the Republic is also head of state and government; it is advised by a Council of Ministers, which together with the President form the national executive power. Legislative power rests with the 220 parliamentarians "
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Notre Dame or anything created there in 1962 in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.014358718879520893,
+    "entailment_score": 0.00015104628982953727,
+    "mean_entropy": 0.15142720424228698,
+    "coverage_score": 0.6446399688720703,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Notre Dame: What was created there in 1962 to help first-year students?\"\n\nSearch query: \"Notre Dame 1962 creation first",
+    "reranker_scores": [
+      6.869124889373779,
+      6.291698455810547,
+      -0.25013217329978943
+    ],
+    "candidate_contexts": [
+      "All of Notre Dame's undergraduate students are a part of one of the five undergraduate colleges at the school or are in the First Year of Studies program . The First Year of Studies program was established in 1962 to guide incoming freshmen in their first year at the school before they have declared a major . Each student is given an academic advisor from the program who helps them to choose classes that give them exposure to any major in which they are interested. The program also includes a Learning Resource Center which provides time management, collaborative learning, and subject tutoring",
+      "All of Notre Dame's undergraduate students are a part of one of the five undergraduate colleges at the school or are in the First Year of Studies program . The First Year of Studies program was established in 1962 to guide incoming freshmen in their first year at the school before they have declared a major",
+      "Hesburgh is also credited with transforming the face of Notre Dame by making it a coeducational institution . In the mid-1960s Notre Dame and Saint Mary's College developed a co-exchange program whereby several hundred students took classes not offered at their home institution, an arrangement that added undergraduate women to a campus that already had a few women in the graduate schools"
+    ],
+    "candidate_raw_answer": "The First Year of Studies program was created at Notre Dame in 1962 to assist first year students.",
+    "candidate_parsed_answer": "The First Year of Studies program was created at Notre Dame in 1962 to assist first year students.",
+    "candidate_answer": "The First Year of Studies program was created at Notre Dame in 1962 to assist first year students.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6574375033378601,
+      "entailment_score": 0.9954479336738586,
+      "mean_entropy": 0.013123889773404028,
+      "coverage_score": 0.6446399688720703,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Pietro Alessandro Gaspare Scarlatti (2 May 1660 – 22 October 1725) was an Italian Baroque composer, known especially for his operas and chamber cantatas. He is considered the most important representative of the Neapolitan school of opera.\n\nNicknamed by his contemporaries \"the Italian Orpheus\", he d",
+    "The alphorn or alpenhorn or alpine horn is a labrophone, consisting of a straight several-meter-long wooden natural horn of conical bore, with a wooden cup-shaped mouthpiece. Traditionally the Alphorn was made of one single piece, or two parts at most, of the wood of a red pine tree. Sometimes the t",
+    "The current political regime in Angola is presidentialism, in which the President of the Republic is also head of state and government; it is advised by a Council of Ministers, which together with the President form the national executive power. Legislative power rests with the 220 parliamentarians "
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.014358718879520893,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6446399688720703,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 9.29931500900011
+}

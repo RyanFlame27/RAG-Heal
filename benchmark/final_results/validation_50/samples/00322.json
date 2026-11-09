@@ -1,0 +1,109 @@
+{
+  "sample_index": 322,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What individuals live at Fatima House at Notre Dame?",
+    "context_chunks": [
+      "Acting is an activity in which a story is told by means of its enactment by an actor who adopts a character—in theatre, television, film, radio, or any other medium that makes use of the mimetic mode.\n\nActing involves a broad range of skills, including a well-developed imagination, emotional facilit",
+      "Astrology is a range of divinatory practices, recognized as pseudoscientific since the 18th century, that claim to discern information about human affairs and terrestrial events by studying the apparent positions of celestial objects. Different cultures have employed forms of astrology since at leas",
+      "Antimony is a chemical element with the symbol Sb () and atomic number 51. A lustrous gray metalloid, it is found in nature mainly as the sulfide mineral stibnite (Sb2S3). Antimony compounds have been known since ancient times and were powdered for use as medicine and cosmetics, often known by the A"
+    ],
+    "answer": "Retired priests and brothers",
+    "label": "retrieval_failure"
+  },
+  "seed": 364,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0005578804994001985,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003974329447373748,
+      "retrieval_failure": 0.9981511235237122,
+      "grounding_failure": 0.0005371667793951929,
+      "confidence_failure": 0.00034203744144178927,
+      "coverage_failure": 0.0005722725763916969
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Acting is an activity in which a story is told by means of its enactment by an actor who adopts a character—in theatre, television, film, radio, or any other medium that makes use of the mimetic mode.\n\nActing involves a broad range of skills, including a well-developed imagination, emotional facilit",
+    "Astrology is a range of divinatory practices, recognized as pseudoscientific since the 18th century, that claim to discern information about human affairs and terrestrial events by studying the apparent positions of celestial objects. Different cultures have employed forms of astrology since at leas",
+    "Antimony is a chemical element with the symbol Sb () and atomic number 51. A lustrous gray metalloid, it is found in nature mainly as the sulfide mineral stibnite (Sb2S3). Antimony compounds have been known since ancient times and were powdered for use as medicine and cosmetics, often known by the A"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of individuals living at Fatima House in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.015074208378791809,
+    "entailment_score": 0.0003034973924513906,
+    "mean_entropy": 0.09590704782785148,
+    "coverage_score": 0.6191985607147217,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Who lives at Fatima House in Notre Dame?\"",
+    "reranker_scores": [
+      1.472334384918213,
+      -1.8793675899505615,
+      -2.713379144668579
+    ],
+    "candidate_contexts": [
+      "The university is the major seat of the Congregation of Holy Cross (albeit not its official headquarters, which are in Rome). Its main seminary, Moreau Seminary, is located on the campus across St. Joseph lake from the Main Building. Old College, the oldest building on campus and located near the shore of St. Mary lake, houses undergraduate seminarians. Retired priests and brothers reside in Fatima House (a former retreat center), Holy Cross House, as well as Columba Hall near the Grotto . The university through the Moreau Seminary has ties to theologian Frederick Buechner. While not Catholic, Buechner has praised writers from Notre Dame and Moreau Seminary created a Buechner Prize for Preaching.",
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary . The main campus covers 1,250 acres in a suburban setting and it contains a number of recognizable landmarks, such as the Golden Dome, the \"Word of Life\" mural (commonly known as Touchdown Jesus), and the Basilica.",
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary"
+    ],
+    "candidate_raw_answer": "Retired priests and brothers reside in Fatima House.",
+    "candidate_parsed_answer": "Retired priests and brothers reside in Fatima House.",
+    "candidate_answer": "Retired priests and brothers reside in Fatima House.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.520892858505249,
+      "entailment_score": 0.8635666370391846,
+      "mean_entropy": 0.04549577632509191,
+      "coverage_score": 0.6191985607147217,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Retired priests and brothers reside in Fatima House.",
+  "final_contexts": [
+    "The university is the major seat of the Congregation of Holy Cross (albeit not its official headquarters, which are in Rome). Its main seminary, Moreau Seminary, is located on the campus across St. Joseph lake from the Main Building. Old College, the oldest building on campus and located near the shore of St. Mary lake, houses undergraduate seminarians. Retired priests and brothers reside in Fatima House (a former retreat center), Holy Cross House, as well as Columba Hall near the Grotto . The university through the Moreau Seminary has ties to theologian Frederick Buechner. While not Catholic, Buechner has praised writers from Notre Dame and Moreau Seminary created a Buechner Prize for Preaching.",
+    "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary . The main campus covers 1,250 acres in a suburban setting and it contains a number of recognizable landmarks, such as the Golden Dome, the \"Word of Life\" mural (commonly known as Touchdown Jesus), and the Basilica.",
+    "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.520892858505249,
+    "entailment_score": 0.8635666370391846,
+    "mean_entropy": 0.04549577632509191,
+    "coverage_score": 0.6191985607147217,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 6.250931532999857
+}

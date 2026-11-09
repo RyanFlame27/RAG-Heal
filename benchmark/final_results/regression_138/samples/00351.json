@@ -1,0 +1,104 @@
+{
+  "sample_index": 351,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "What did the brother of John Zahm construct at Notre Dame?",
+    "context_chunks": [
+      "Many sources discuss What did the brother of John Zahm construct at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "the Amazon River",
+    "label": "grounding_failure"
+  },
+  "seed": 393,
+  "classifier_split": "test",
+  "stored_answer_grounding": 4.424493090482429e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00040301651461049914,
+      "retrieval_failure": 0.0006123899365775287,
+      "grounding_failure": 0.9982101917266846,
+      "confidence_failure": 0.0005024246056564152,
+      "coverage_failure": 0.00027205495280213654
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss What did the brother of John Zahm construct at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9370666146278381,
+    "entailment_score": 0.0004937000339850783,
+    "mean_entropy": 0.00033224044197000837,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.6452724933624268,
+      3.311570644378662,
+      3.1511855125427246
+    ],
+    "candidate_contexts": [
+      "In 1882, Albert Zahm (John Zahm's brother) built an early wind tunnel used to compare lift to drag of aeronautical models. Around 1899, Professor Jerome Green became the first American to send a wireless message . In 1931, Father Julius Nieuwland performed early work on basic reactions that was used to create neoprene",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy.",
+      "At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy. The second largest student's fraternity of the Netherlands, located in the city of Groningen, is named Albertus Magnus, in honor of the saint."
+    ],
+    "candidate_raw_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_parsed_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5308972001075745,
+      "entailment_score": 0.9717479944229126,
+      "mean_entropy": 0.02966264852760414,
+      "coverage_score": 0.5816437602043152,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss What did the brother of John Zahm construct at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9370666146278381,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.634165070999643
+}

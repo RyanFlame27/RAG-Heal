@@ -1,0 +1,109 @@
+{
+  "sample_index": 464,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "Where did Notre Dame students and the KKK have their encounter?",
+    "context_chunks": [
+      "Telecommunications in Antigua and Barbuda are via media in the telecommunications industry.\n\nTelephone\nTelephones – main lines in use: 37,500 (2006)\ncountry comparison to the world: 168\n\nTelephones – mobile cellular: 110,200 (2006) (APUA PCS, Cable & Wireless, Digicel)\ncountry comparison to the worl",
+      "Aphrodite ( ) is an ancient Greek goddess associated with love, lust, beauty, pleasure, passion, procreation, and as her syncretized Roman goddess counterpart , desire, sex, fertility, prosperity, and victory. Aphrodite's major symbols include seashells, myrtles, roses, doves, sparrows, and swans. T",
+      "Alphonse or Alfonso (11 November 122021 August 1271) was the count of Poitou from 1225 and count of Toulouse (as such called Alphonse II) from 1249. As count of Toulouse, he also governed the Marquisate of Provence.\n\nBirth and early life\nBorn at Poissy, Alphonse was a son of King Louis VIII of Franc"
+    ],
+    "answer": "South Bend",
+    "label": "retrieval_failure"
+  },
+  "seed": 506,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00021635562006849796,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003732578188646585,
+      "retrieval_failure": 0.9981889128684998,
+      "grounding_failure": 0.0005050984909757972,
+      "confidence_failure": 0.00034479264286346734,
+      "coverage_failure": 0.0005877848016098142
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Telecommunications in Antigua and Barbuda are via media in the telecommunications industry.\n\nTelephone\nTelephones – main lines in use: 37,500 (2006)\ncountry comparison to the world: 168\n\nTelephones – mobile cellular: 110,200 (2006) (APUA PCS, Cable & Wireless, Digicel)\ncountry comparison to the worl",
+    "Aphrodite ( ) is an ancient Greek goddess associated with love, lust, beauty, pleasure, passion, procreation, and as her syncretized Roman goddess counterpart , desire, sex, fertility, prosperity, and victory. Aphrodite's major symbols include seashells, myrtles, roses, doves, sparrows, and swans. T",
+    "Alphonse or Alfonso (11 November 122021 August 1271) was the count of Poitou from 1225 and count of Toulouse (as such called Alphonse II) from 1249. As count of Toulouse, he also governed the Marquisate of Provence.\n\nBirth and early life\nBorn at Poissy, Alphonse was a son of King Louis VIII of Franc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no evidence about Notre Dame students and the KKK having an encounter.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.07010477781295776,
+    "entailment_score": 0.000226822288823314,
+    "mean_entropy": 0.1456604154277814,
+    "coverage_score": 0.7234326601028442,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Notre Dame students vs KKK location\"\n\nOr, for a more specific query:\n\n\"Where did Notre Dame students have an encounter with the KKK?\"",
+    "reranker_scores": [
+      6.2679853439331055,
+      5.785032749176025,
+      3.9826102256774902
+    ],
+    "candidate_contexts": [
+      ". Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia . On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes",
+      ". Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia",
+      ". Catholics rallied up around the team and listen to the games on the radio, especially when it knocked off the schools that symbolized the Protestant establishment in America — Harvard, Yale, Princeton, and Army . Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend"
+    ],
+    "candidate_raw_answer": "South Bend",
+    "candidate_parsed_answer": "South Bend",
+    "candidate_answer": "South Bend",
+    "candidate_signals": {
+      "retrieval_similarity": 0.7384133338928223,
+      "entailment_score": 0.8900559544563293,
+      "mean_entropy": 0.007549576803057789,
+      "coverage_score": 0.7234326601028442,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "South Bend",
+  "final_contexts": [
+    ". Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia . On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes",
+    ". Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia",
+    ". Catholics rallied up around the team and listen to the games on the radio, especially when it knocked off the schools that symbolized the Protestant establishment in America — Harvard, Yale, Princeton, and Army . Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7384133338928223,
+    "entailment_score": 0.8900559544563293,
+    "mean_entropy": 0.007549576803057789,
+    "coverage_score": 0.7234326601028442,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 8.169197136000093
+}

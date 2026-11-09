@@ -1,0 +1,109 @@
+{
+  "sample_index": 120,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+    "context_chunks": [
+      "Adobe Inc. ( ), formerly Adobe Systems Incorporated, is an American multinational computer software company incorporated in Delaware\nand headquartered in San Jose, California. It has historically specialized in software for the creation and publication of a wide range of content, including graphics,",
+      "The economy of Alberta is the sum of all economic activity in Alberta, Canada's fourth largest province by population. Alberta's GDP in 2018 was CDN$338.2 billion.\n\nAlthough Alberta has a presence in many industries such as agriculture, forestry, education, tourism, finance, and manufacturing, the p",
+      "Apus is a small constellation in the southern sky. It represents a bird-of-paradise, and its name means \"without feet\" in Greek because the bird-of-paradise was once wrongly believed to lack feet. First depicted on a celestial globe by Petrus Plancius in 1598, it was charted on a star atlas by Johan"
+    ],
+    "answer": "1987",
+    "label": "retrieval_failure"
+  },
+  "seed": 162,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00027315173065289855,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003425643953960389,
+      "retrieval_failure": 0.998116135597229,
+      "grounding_failure": 0.0005365133401937783,
+      "confidence_failure": 0.0003578541800379753,
+      "coverage_failure": 0.0006469182553701103
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Adobe Inc. ( ), formerly Adobe Systems Incorporated, is an American multinational computer software company incorporated in Delaware\nand headquartered in San Jose, California. It has historically specialized in software for the creation and publication of a wide range of content, including graphics,",
+    "The economy of Alberta is the sum of all economic activity in Alberta, Canada's fourth largest province by population. Alberta's GDP in 2018 was CDN$338.2 billion.\n\nAlthough Alberta has a presence in many industries such as agriculture, forestry, education, tourism, finance, and manufacturing, the p",
+    "Apus is a small constellation in the southern sky. It represents a bird-of-paradise, and its name means \"without feet\" in Greek because the bird-of-paradise was once wrongly believed to lack feet. First depicted on a celestial globe by Petrus Plancius in 1598, it was charted on a star atlas by Johan"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Common Sense, Notre Dame, or a publication year in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.03184731304645538,
+    "entailment_score": 0.0005298719042912126,
+    "mean_entropy": 0.17258547475204394,
+    "coverage_score": 0.4898611307144165,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Common Sense publication start year at Notre Dame\"\n\nOr:\n\n\"Year Common Sense started publishing at Notre Dame\"",
+    "reranker_scores": [
+      5.663790225982666,
+      5.489914894104004,
+      5.234623908996582
+    ],
+    "candidate_contexts": [
+      ". Begun as a one-page journal in September 1876, the Scholastic magazine is issued twice monthly and claims to be the oldest continuous collegiate publication in the United States. The other magazine, The Juggler, is released twice a year and focuses on student literature and artwork . The Dome yearbook is published annually. The newspapers have varying publication interests, with The Observer published daily and mainly reporting university and other news, and staffed by students from both Notre Dame and Saint Mary's College . Unlike Scholastic and The Dome, The Observer is an independent publication and does not have a faculty advisor or any editorial oversight from the University. In 1987, when some students believed that The Observer began to show a conservative bias, a liberal newspaper, Common Sense was published",
+      ". The Dome yearbook is published annually. The newspapers have varying publication interests, with The Observer published daily and mainly reporting university and other news, and staffed by students from both Notre Dame and Saint Mary's College . Unlike Scholastic and The Dome, The Observer is an independent publication and does not have a faculty advisor or any editorial oversight from the University. In 1987, when some students believed that The Observer began to show a conservative bias, a liberal newspaper, Common Sense was published . Likewise, in 2003, when other students believed that the paper showed a liberal bias, the conservative paper Irish Rover went into production. Neither paper is published as often as The Observer; however, all three are distributed to all students",
+      "As at most other universities, Notre Dame's students run a number of news media outlets. The nine student-run outlets include three newspapers, both a radio and television station, and several magazines and journals . Begun as a one-page journal in September 1876, the Scholastic magazine is issued twice monthly and claims to be the oldest continuous collegiate publication in the United States. The other magazine, The Juggler, is released twice a year and focuses on student literature and artwork"
+    ],
+    "candidate_raw_answer": "1987",
+    "candidate_parsed_answer": "1987",
+    "candidate_answer": "1987",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5129134654998779,
+      "entailment_score": 0.2113143354654312,
+      "mean_entropy": 0.13849203402253352,
+      "coverage_score": 0.4898611307144165,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "1987",
+  "final_contexts": [
+    ". Begun as a one-page journal in September 1876, the Scholastic magazine is issued twice monthly and claims to be the oldest continuous collegiate publication in the United States. The other magazine, The Juggler, is released twice a year and focuses on student literature and artwork . The Dome yearbook is published annually. The newspapers have varying publication interests, with The Observer published daily and mainly reporting university and other news, and staffed by students from both Notre Dame and Saint Mary's College . Unlike Scholastic and The Dome, The Observer is an independent publication and does not have a faculty advisor or any editorial oversight from the University. In 1987, when some students believed that The Observer began to show a conservative bias, a liberal newspaper, Common Sense was published",
+    ". The Dome yearbook is published annually. The newspapers have varying publication interests, with The Observer published daily and mainly reporting university and other news, and staffed by students from both Notre Dame and Saint Mary's College . Unlike Scholastic and The Dome, The Observer is an independent publication and does not have a faculty advisor or any editorial oversight from the University. In 1987, when some students believed that The Observer began to show a conservative bias, a liberal newspaper, Common Sense was published . Likewise, in 2003, when other students believed that the paper showed a liberal bias, the conservative paper Irish Rover went into production. Neither paper is published as often as The Observer; however, all three are distributed to all students",
+    "As at most other universities, Notre Dame's students run a number of news media outlets. The nine student-run outlets include three newspapers, both a radio and television station, and several magazines and journals . Begun as a one-page journal in September 1876, the Scholastic magazine is issued twice monthly and claims to be the oldest continuous collegiate publication in the United States. The other magazine, The Juggler, is released twice a year and focuses on student literature and artwork"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.5129134654998779,
+    "entailment_score": 0.2113143354654312,
+    "mean_entropy": 0.13849203402253352,
+    "coverage_score": 0.4898611307144165,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 7.757861739999953
+}

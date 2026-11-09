@@ -1,0 +1,25 @@
+{
+  "expected_samples": 138,
+  "processed_samples": 138,
+  "execution_errors": 0,
+  "initial": {
+    "outcomes": {
+      "refusal": 108,
+      "unverified": 11,
+      "supported": 19
+    },
+    "reference_samples": 120,
+    "exact_match": 0.21666666666666667,
+    "token_f1": 0.23293650793650794
+  },
+  "final": {
+    "outcomes": {
+      "refusal": 75,
+      "unverified": 38,
+      "supported": 25
+    },
+    "reference_samples": 120,
+    "exact_match": 0.5,
+    "token_f1": 0.5162698412698412
+  }
+}

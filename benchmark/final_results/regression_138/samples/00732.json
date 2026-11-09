@@ -1,0 +1,105 @@
+{
+  "sample_index": 732,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "In what year did the opening of a theology library at Notre Dame occur?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly 2015",
+    "label": "confidence_failure"
+  },
+  "seed": 774,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00045672839041799307,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.00039696574094705284,
+      "retrieval_failure": 0.00024566007778048515,
+      "grounding_failure": 0.00037010983214713633,
+      "confidence_failure": 0.998670220375061,
+      "coverage_failure": 0.00031700372346676886
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.041590746492147446,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.00023865833819277564,
+    "coverage_score": 0.6044119000434875,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      1.0032354593276978,
+      0.6633313894271851,
+      -1.6904540061950684
+    ],
+    "candidate_contexts": [
+      "The library system also includes branch libraries for Architecture, Chemistry & Physics, Engineering, Law, and Mathematics as well as information centers in the Mendoza College of Business, the Kellogg Institute for International Studies, the Joan B . Kroc Institute for International Peace Studies, and a slide library in O'Shaughnessy Hall. A theology library was also opened in fall of 2015. Located on the first floor of Stanford Hall, it is the first branch of the library system to be housed in a dorm room . The library system holds over three million volumes, was the single largest university library in the world upon its completion, and remains one of the 100 largest libraries in the country.",
+      "The library system of the university is divided between the main library and each of the colleges and schools. The main building is the 14-story Theodore M. Hesburgh Library, completed in 1963, which is the third building to house the main collection of books . The front of the library is adorned with the Word of Life mural designed by artist Millard Sheets. This mural is popularly known as \"Touchdown Jesus\" because of its proximity to Notre Dame Stadium and Jesus' arms appearing to make the signal for a touchdown.",
+      "1573 – Maximilian I, Elector of Bavaria (d. 1651)\n1586 – John Ford, English poet and playwright (d. 1639)\n1598 – Giovanni Battista Riccioli, Italian priest and astronomer (d. 1671) 1601–1900\n1620 – Marguerite Bourgeoys, French-Canadian nun and saint, founded the Congregation of Notre Dame of Montreal (d. 1700)\n1635 – Edward Stillingfleet, British theologian and scholar (d. 1699)\n1683 – Johann David Heinichen, German composer and theorist (d. 1729) 1710 – Henry Erskine, 10th Earl of Buchan, Scottish politician (d. 1767)\n1734 – Taksin, King of Thailand (d. 1782)\n1741 – Samuel Chase, American lawyer and jurist (d. 1811)\n1750 – François de Neufchâteau, French academic and politician, French Minister of the Interior (d. 1828)"
+    ],
+    "candidate_raw_answer": "The theology library was opened in fall of 2015.",
+    "candidate_parsed_answer": "The theology library was opened in fall of 2015.",
+    "candidate_answer": "2015",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5396764874458313,
+      "entailment_score": 0.003914858680218458,
+      "mean_entropy": 0.13557837610820245,
+      "coverage_score": 0.6044119000434875,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "2015",
+  "final_contexts": [
+    "The library system also includes branch libraries for Architecture, Chemistry & Physics, Engineering, Law, and Mathematics as well as information centers in the Mendoza College of Business, the Kellogg Institute for International Studies, the Joan B . Kroc Institute for International Peace Studies, and a slide library in O'Shaughnessy Hall. A theology library was also opened in fall of 2015. Located on the first floor of Stanford Hall, it is the first branch of the library system to be housed in a dorm room . The library system holds over three million volumes, was the single largest university library in the world upon its completion, and remains one of the 100 largest libraries in the country.",
+    "The library system of the university is divided between the main library and each of the colleges and schools. The main building is the 14-story Theodore M. Hesburgh Library, completed in 1963, which is the third building to house the main collection of books . The front of the library is adorned with the Word of Life mural designed by artist Millard Sheets. This mural is popularly known as \"Touchdown Jesus\" because of its proximity to Notre Dame Stadium and Jesus' arms appearing to make the signal for a touchdown.",
+    "1573 – Maximilian I, Elector of Bavaria (d. 1651)\n1586 – John Ford, English poet and playwright (d. 1639)\n1598 – Giovanni Battista Riccioli, Italian priest and astronomer (d. 1671) 1601–1900\n1620 – Marguerite Bourgeoys, French-Canadian nun and saint, founded the Congregation of Notre Dame of Montreal (d. 1700)\n1635 – Edward Stillingfleet, British theologian and scholar (d. 1699)\n1683 – Johann David Heinichen, German composer and theorist (d. 1729) 1710 – Henry Erskine, 10th Earl of Buchan, Scottish politician (d. 1767)\n1734 – Taksin, King of Thailand (d. 1782)\n1741 – Samuel Chase, American lawyer and jurist (d. 1811)\n1750 – François de Neufchâteau, French academic and politician, French Minister of the Interior (d. 1828)"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.5396764874458313,
+    "entailment_score": 0.003914858680218458,
+    "mean_entropy": 0.13557837610820245,
+    "coverage_score": 0.6044119000434875,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 4.092875818000266
+}

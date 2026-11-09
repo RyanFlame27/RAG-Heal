@@ -1,0 +1,80 @@
+{
+  "sample_index": 367,
+  "injected_label": "clean",
+  "input": {
+    "query": "After which individual was the LaFortune Center Notre Dame named?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'After which individual was the LaFortune Center Notre Dame named?' is Joseph LaFortune. This is well-documented and widely accepted."
+    ],
+    "answer": "Joseph LaFortune",
+    "label": "clean"
+  },
+  "seed": 409,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.720134973526001,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9954736828804016,
+      "retrieval_failure": 0.0005573435919359326,
+      "grounding_failure": 0.002518903696909547,
+      "confidence_failure": 0.0006981826736591756,
+      "coverage_failure": 0.0007518967613577843
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Joseph LaFortune",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'After which individual was the LaFortune Center Notre Dame named?' is Joseph LaFortune. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Joseph LaFortune",
+  "initial_signals": {
+    "retrieval_similarity": 0.8604503870010376,
+    "entailment_score": 0.720134973526001,
+    "mean_entropy": 0.005108605434088531,
+    "coverage_score": 0.6653245687484741,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Joseph LaFortune",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'After which individual was the LaFortune Center Notre Dame named?' is Joseph LaFortune. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8604503870010376,
+    "entailment_score": 0.720134973526001,
+    "mean_entropy": 0.005108605434088531,
+    "coverage_score": 0.6653245687484741,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.2461255620000884
+}

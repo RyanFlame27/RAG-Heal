@@ -1,0 +1,104 @@
+{
+  "sample_index": 236,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "Where among US universities does Notre Dame rank?",
+    "context_chunks": [
+      "Many sources discuss Where among US universities does Notre Dame rank. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Tokyo",
+    "label": "grounding_failure"
+  },
+  "seed": 278,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 5.0278904382139444e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00042880279943346977,
+      "retrieval_failure": 0.000556469545699656,
+      "grounding_failure": 0.9983384609222412,
+      "confidence_failure": 0.00041054273606278,
+      "coverage_failure": 0.0002656222495716065
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss Where among US universities does Notre Dame rank. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.871630072593689,
+    "entailment_score": 0.0003576297895051539,
+    "mean_entropy": 0.0002244870203622458,
+    "coverage_score": 0.7584248185157776,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      9.38785457611084,
+      9.248368263244629,
+      7.302603244781494
+    ],
+    "candidate_contexts": [
+      "In 2015-2016, Notre Dame ranked 18th overall among \"national universities\" in the United States in U.S. News & World Report's Best Colleges 2016. In 2014, USA Today ranked Notre Dame 10th overall for American universities based on data from College Factual . Forbes.com's America's Best Colleges ranks Notre Dame 13th among colleges in the United States in 2015, 8th among Research Universities, and 1st in the Midwest. U.S. News & World Report also lists Notre Dame Law School as 22nd overall",
+      "In 2015-2016, Notre Dame ranked 18th overall among \"national universities\" in the United States in U.S. News & World Report's Best Colleges 2016. In 2014, USA Today ranked Notre Dame 10th overall for American universities based on data from College Factual . Forbes.com's America's Best Colleges ranks Notre Dame 13th among colleges in the United States in 2015, 8th among Research Universities, and 1st in the Midwest. U.S. News & World Report also lists Notre Dame Law School as 22nd overall . BusinessWeek ranks Mendoza College of Business undergraduate school as 1st overall. It ranks the MBA program as 20th overall",
+      "Besides its prominence in sports, Notre Dame is also a large, four-year, highly residential research University, and is consistently ranked among the top twenty universities in the United States  and as a major global university . The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize"
+    ],
+    "candidate_raw_answer": "Notre Dame ranks among the top twenty universities in the United States. Specific ranks mentioned in the evidence are 18th overall among national universities in U.S. News & World Report's Best Colleges 2016, 10th overall for American universities based on data from College",
+    "candidate_parsed_answer": "Notre Dame ranks among the top twenty universities in the United States. Specific ranks mentioned in the evidence are 18th overall among national universities in U.S. News & World Report's Best Colleges 2016, 10th overall for American universities based on data from College",
+    "candidate_answer": "Notre Dame ranks among the top twenty universities in the United States. Specific ranks mentioned in the evidence are 18th overall among national universities in U.S. News & World Report's Best Colleges 2016, 10th overall for American universities based on data from College",
+    "candidate_signals": {
+      "retrieval_similarity": 0.674049437046051,
+      "entailment_score": 0.9925392270088196,
+      "mean_entropy": 0.13568784467585726,
+      "coverage_score": 0.7584248185157776,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss Where among US universities does Notre Dame rank. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.871630072593689,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7584248185157776,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.668481743000029
+}

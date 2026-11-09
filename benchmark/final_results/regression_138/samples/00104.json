@@ -1,0 +1,104 @@
+{
+  "sample_index": 104,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "What caused many intellectual Catholics to leave europe in the 1930s?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly The rise of Hitler and other dictators",
+    "label": "confidence_failure"
+  },
+  "seed": 146,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0003496887511573732,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.00038771037361584604,
+      "retrieval_failure": 0.00024769746232777834,
+      "grounding_failure": 0.00037174325552769005,
+      "confidence_failure": 0.9986717700958252,
+      "coverage_failure": 0.0003211382427252829
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.17665746808052063,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.012390892391793456,
+    "coverage_score": 0.6227848529815674,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -6.137216091156006,
+      -6.18236780166626,
+      -6.448375225067139
+    ],
+    "candidate_contexts": [
+      "Especially pressing in Europe was the formation of nation states after the Napoleonic era. In all European countries, different Christian denominations found themselves in competition to greater or lesser extents with each other and with the state . Variables were the relative sizes of the denominations and the religious, political, and ideological orientation of the states. Urs Altermatt of the University of Fribourg, looking specifically at Catholicism in Europe, identifies four models for the European nations . In traditionally Catholic-majority countries such as Belgium, Spain, and Austria, to some extent, religious and national communities are more or less identical",
+      ". This conflict came to a head in the First Vatican Council, and in Germany would lead directly to the Kulturkampf. Christian commitment in Europe dropped as modernity and secularism came into their own, particularly in the Czech Republic and Estonia, while religious commitments in America have been generally high in comparison to Europe . Changes in worldwide Christianity over the last century have been significant, since 1900, Christianity has spread rapidly in the Global South and Third World countries",
+      ". At the Reformation, the previously Catholic islands converted to Calvinism under the influence of an influx of French-language pamphlets published in Geneva. Anglicanism was imposed in the seventeenth century, but the Non-Conformist local tendency returned with a strong adoption of Methodism . In the late twentieth century, a strong Catholic presence re-emerged with the arrival of numerous Portuguese workers (both from mainland Portugal and the island of Madeira). Their numbers have been reinforced by recent migrants from Poland and elsewhere in Eastern Europe . Today, Evangelical churches have been established. Services are held in a number of languages."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question.",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.49933508038520813,
+      "entailment_score": 5.9953272284474224e-05,
+      "mean_entropy": 0.014515026792773474,
+      "coverage_score": 0.6227848529815674,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.17665746808052063,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6227848529815674,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.5044403340002646
+}

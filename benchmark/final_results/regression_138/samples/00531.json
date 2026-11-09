@@ -1,0 +1,107 @@
+{
+  "sample_index": 531,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How many dragons are registered in the Welsh Dragon Preserve?",
+    "context_chunks": [
+      "The Atari ST is a line of personal computers from Atari Corporation and the successor to the Atari 8-bit family. The initial model, the Atari 520ST, had limited release in April–June 1985 and was widely available in July. It was the first personal computer with a bitmapped color GUI, using a version",
+      "An atom is a particle that consists of a nucleus of protons and neutrons surrounded by an electromagnetically-bound cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atom"
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 573,
+  "classifier_split": "test",
+  "stored_answer_grounding": 7.693071529502049e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.00026909809093922377,
+      "retrieval_failure": 0.0006759347161278129,
+      "grounding_failure": 0.0003880602598655969,
+      "confidence_failure": 0.00047005427768453956,
+      "coverage_failure": 0.9981968998908997
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "The Atari ST is a line of personal computers from Atari Corporation and the successor to the Atari 8-bit family. The initial model, the Atari 520ST, had limited release in April–June 1985 and was widely available in July. It was the first personal computer with a bitmapped color GUI, using a version",
+    "An atom is a particle that consists of a nucleus of protons and neutrons surrounded by an electromagnetically-bound cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atom"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons or a Welsh Dragon Preserve in the evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.04806481674313545,
+    "entailment_score": 7.693071529502049e-05,
+    "mean_entropy": 0.18355584814723613,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -9.292449951171875,
+      -9.563484191894531,
+      -9.870564460754395
+    ],
+    "candidate_contexts": [
+      ". Beauregard, U.S. Vice President Hubert Humphrey, Colin Powell and U.S. Secretary of State Hillary Clinton are also of Welsh heritage. The proportion of the population with a name of Welsh origin ranges from 9.5% in South Carolina to 1.1% in North Dakota. Typically, names of Welsh origin are concentrated in the mid-Atlantic states, New England,  the Carolinas, Georgia and Alabama and in Appalachia, West Virginia and Tennessee . By contrast, there are relatively fewer Welsh names in the northern Midwest and the Southwest.",
+      "The city's first Welsh-language school (Ysgol Gymraeg Bryntaf) was established in the 1950s. Welsh has since regained ground. Aided by Welsh-medium education and migration from other parts of Wales, there are now many more Welsh speakers: their numbers doubled between the 1991 and 2011 censuses, from 18,071 (6.6%) to 36,735 (11.1%) residents aged three years and above . The LSOA (Lower Layer Super Output Area) with the highest percentage of Welsh speakers in the city centre is found in Canton, at 25.5%. The LSOA with the highest percentage of Welsh speakers in the whole of Cardiff is Whitchurch, at 26%.",
+      "Mormon missionaries in Wales in the 1840s and 1850s proved persuasive, and many converts emigrated to Utah. By the mid-nineteenth century, Malad City, Idaho was established . It began largely as a Welsh Mormon settlement and lays claim to having more people of Welsh descent per capita than anywhere outside Wales. This may be around 20%. In 1951 the National Gymanfa Association of the United States and Canada sponsored a collection of Welsh books at the Harold B . Lee Library at Brigham Young University."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons in the evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.39657020568847656,
+      "entailment_score": 0.0006377307581715286,
+      "mean_entropy": 0.10498859776669633,
+      "coverage_score": 0.5703861713409424,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "The Atari ST is a line of personal computers from Atari Corporation and the successor to the Atari 8-bit family. The initial model, the Atari 520ST, had limited release in April–June 1985 and was widely available in July. It was the first personal computer with a bitmapped color GUI, using a version",
+    "An atom is a particle that consists of a nucleus of protons and neutrons surrounded by an electromagnetically-bound cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atom"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.04806481674313545,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.165782738999951
+}

@@ -1,0 +1,83 @@
+{
+  "scope": "Final reused regression IDs; reporting assessment, not a new experiment.",
+  "strict_selective_accuracy": {
+    "correct": 60,
+    "answered": 63,
+    "fraction": 0.9523809523809523
+  },
+  "clean_exact_match_accuracy": {
+    "correct": 27,
+    "samples": 30,
+    "fraction": 0.9
+  },
+  "expected_refusal_compliance": {
+    "refusals": 18,
+    "designated_challenges": 18,
+    "fraction": 1.0
+  },
+  "qa_answer_rate": {
+    "answered": 63,
+    "samples": 120,
+    "fraction": 0.525
+  },
+  "qa_refusals": 57,
+  "full_qa_exact_match": {
+    "correct": 60,
+    "samples": 120,
+    "fraction": 0.5
+  },
+  "qualitative_nonmatch_review": [
+    {
+      "sample_index": 662,
+      "query": "How many students in total were at Notre Dame in 2014?",
+      "reference": "12,179",
+      "answer": "12,179 students",
+      "finding": "Expected fact preserved; additional wording prevents exact match."
+    },
+    {
+      "sample_index": 815,
+      "query": "For what cause is money raised at the Bengal Bouts tournament at Notre Dame?",
+      "reference": "the Holy Cross Missions in Bangladesh",
+      "answer": "The money is raised for the Holy Cross Missions in Bangladesh.",
+      "finding": "Expected fact preserved; additional wording prevents exact match."
+    },
+    {
+      "sample_index": 844,
+      "query": "Where did U.S. News & World Report rank Notre Dame in its 2015-2016 university rankings?",
+      "reference": "18th overall",
+      "answer": "18th overall. (Quoted from the evidence)",
+      "finding": "Expected fact preserved; additional wording prevents exact match."
+    }
+  ],
+  "review_scope": "Three nonmatching answers inspected against supplied references and saved context; not an independent blinded human study.",
+  "refusal_interpretation": "The 18 designated challenges meet the expected refusal policy. The appropriateness of each of the other 57 refusals was not independently adjudicated.",
+  "common_scoped_comparison": {
+    "Self-RAG adaptation": {
+      "exact_matches": 9,
+      "answered_qa": 120,
+      "selective_exact_match": 0.075,
+      "answer_rate": 1.0,
+      "recognised_coverage_refusals": 0,
+      "coverage_rows": 18,
+      "qa_refusals": 0
+    },
+    "Modified local CRAG": {
+      "exact_matches": 0,
+      "answered_qa": 58,
+      "selective_exact_match": 0.0,
+      "answer_rate": 0.48333333333333334,
+      "recognised_coverage_refusals": 18,
+      "coverage_rows": 18,
+      "qa_refusals": 62
+    },
+    "Our final adapted system": {
+      "exact_matches": 60,
+      "answered_qa": 63,
+      "selective_exact_match": 0.9523809523809523,
+      "answer_rate": 0.525,
+      "recognised_coverage_refusals": 18,
+      "coverage_rows": 18,
+      "qa_refusals": 57
+    }
+  }
+}

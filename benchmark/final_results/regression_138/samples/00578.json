@@ -1,0 +1,109 @@
+{
+  "sample_index": 578,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What is a common name to reference the mural created by Millard Sheets at Notre Dame?",
+    "context_chunks": [
+      "An atom is a particle that consists of a nucleus of protons and neutrons surrounded by an electromagnetically-bound cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atom",
+      "Sir Sultan Mahomed Shah, Aga Khan III  (2 November 187711 July 1957) was the 48th Imam of the Nizari Ismaili sect of Islam. He was one of the founders and the first permanent president of the All-India Muslim League (AIML). His goal was the advancement of Muslim agendas and the protection of Muslim ",
+      "An army, ground force or land force is an armed force that fights primarily on land. In the broadest sense, it is the land-based military branch, service branch or armed service of a nation or country. It may also include aviation assets by possessing an army aviation component. Within a national mi"
+    ],
+    "answer": "Touchdown Jesus",
+    "label": "retrieval_failure"
+  },
+  "seed": 620,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00036995127447880805,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003689257428050041,
+      "retrieval_failure": 0.9980775117874146,
+      "grounding_failure": 0.0005669585661962628,
+      "confidence_failure": 0.00033097757841460407,
+      "coverage_failure": 0.0006555974832735956
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "An atom is a particle that consists of a nucleus of protons and neutrons surrounded by an electromagnetically-bound cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atom",
+    "Sir Sultan Mahomed Shah, Aga Khan III  (2 November 187711 July 1957) was the 48th Imam of the Nizari Ismaili sect of Islam. He was one of the founders and the first permanent president of the All-India Muslim League (AIML). His goal was the advancement of Muslim agendas and the protection of Muslim ",
+    "An army, ground force or land force is an armed force that fights primarily on land. In the broadest sense, it is the land-based military branch, service branch or armed service of a nation or country. It may also include aviation assets by possessing an army aviation component. Within a national mi"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Millard Sheets is an artist, but there is no mention of a specific mural he created at Notre Dame in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.02242008037865162,
+    "entailment_score": 0.00024547442444600165,
+    "mean_entropy": 0.15111022846879216,
+    "coverage_score": 0.6895574331283569,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Millard Sheets mural at Notre Dame: What is it commonly called?\"",
+    "reranker_scores": [
+      3.8894503116607666,
+      -5.29110050201416,
+      -5.78876256942749
+    ],
+    "candidate_contexts": [
+      "The library system of the university is divided between the main library and each of the colleges and schools. The main building is the 14-story Theodore M. Hesburgh Library, completed in 1963, which is the third building to house the main collection of books . The front of the library is adorned with the Word of Life mural designed by artist Millard Sheets. This mural is popularly known as \"Touchdown Jesus\" because of its proximity to Notre Dame Stadium and Jesus' arms appearing to make the signal for a touchdown.",
+      ". Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community . There are multitudes of religious statues and artwork around campus, most prominent of which are the statue of Mary on the Main Building, the Notre Dame Grotto, and the Word of Life mural on Hesburgh Library depicting Christ as a teacher. Additionally, every classroom displays a crucifix . There are many religious clubs (catholic and non-Catholic) at the school, including Council #1477 of the Knights of Columbus (KOC), Baptist Collegiate Ministry (BCM), Jewish Club, Muslim Student Association, Orthodox Christian Fellowship, The Mormon Club, and many more",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy."
+    ],
+    "candidate_raw_answer": "\"Touchdown Jesus\"",
+    "candidate_parsed_answer": "\"Touchdown Jesus\"",
+    "candidate_answer": "\"Touchdown Jesus\"",
+    "candidate_signals": {
+      "retrieval_similarity": 0.48377808928489685,
+      "entailment_score": 0.008466502651572227,
+      "mean_entropy": 0.029893268084227504,
+      "coverage_score": 0.6895574331283569,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "\"Touchdown Jesus\"",
+  "final_contexts": [
+    "The library system of the university is divided between the main library and each of the colleges and schools. The main building is the 14-story Theodore M. Hesburgh Library, completed in 1963, which is the third building to house the main collection of books . The front of the library is adorned with the Word of Life mural designed by artist Millard Sheets. This mural is popularly known as \"Touchdown Jesus\" because of its proximity to Notre Dame Stadium and Jesus' arms appearing to make the signal for a touchdown.",
+    ". Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community . There are multitudes of religious statues and artwork around campus, most prominent of which are the statue of Mary on the Main Building, the Notre Dame Grotto, and the Word of Life mural on Hesburgh Library depicting Christ as a teacher. Additionally, every classroom displays a crucifix . There are many religious clubs (catholic and non-Catholic) at the school, including Council #1477 of the Knights of Columbus (KOC), Baptist Collegiate Ministry (BCM), Jewish Club, Muslim Student Association, Orthodox Christian Fellowship, The Mormon Club, and many more",
+    "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.48377808928489685,
+    "entailment_score": 0.008466502651572227,
+    "mean_entropy": 0.029893268084227504,
+    "coverage_score": 0.6895574331283569,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 7.457604102000005
+}

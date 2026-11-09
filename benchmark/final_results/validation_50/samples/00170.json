@@ -1,0 +1,104 @@
+{
+  "sample_index": 170,
+  "injected_label": "clean",
+  "input": {
+    "query": "Which art museum does Notre Dame administer?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Which art museum does Notre Dame administer?' is Snite Museum of Art. This is well-documented and widely accepted."
+    ],
+    "answer": "Snite Museum of Art",
+    "label": "clean"
+  },
+  "seed": 212,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0996251031756401,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9955689311027527,
+      "retrieval_failure": 0.0004979310906492174,
+      "grounding_failure": 0.002437411341816187,
+      "confidence_failure": 0.0006494590197689831,
+      "coverage_failure": 0.0008463496924377978
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question regarding museums administered by a different university named Notre Dame. The provided evidence only mentions the Snite Museum of Art at the University of Notre Dame, which is not the museum in question.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Which art museum does Notre Dame administer?' is Snite Museum of Art. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question regarding museums administered by a different university named Notre Dame. The provided evidence only mentions the Snite Museum of Art at the University of Notre Dame, which is not the museum in question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.787274956703186,
+    "entailment_score": 0.0048727658577263355,
+    "mean_entropy": 0.24935097381654345,
+    "coverage_score": 0.5934733152389526,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -0.457829087972641,
+      -3.064635992050171,
+      -4.6152024269104
+    ],
+    "candidate_contexts": [
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary",
+      ". Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community . There are multitudes of religious statues and artwork around campus, most prominent of which are the statue of Mary on the Main Building, the Notre Dame Grotto, and the Word of Life mural on Hesburgh Library depicting Christ as a teacher. Additionally, every classroom displays a crucifix . There are many religious clubs (catholic and non-Catholic) at the school, including Council #1477 of the Knights of Columbus (KOC), Baptist Collegiate Ministry (BCM), Jewish Club, Muslim Student Association, Orthodox Christian Fellowship, The Mormon Club, and many more",
+      "Hesburgh is also credited with transforming the face of Notre Dame by making it a coeducational institution . In the mid-1960s Notre Dame and Saint Mary's College developed a co-exchange program whereby several hundred students took classes not offered at their home institution, an arrangement that added undergraduate women to a campus that already had a few women in the graduate schools"
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (There is no mention of an art museum in the evidence provided.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5044516921043396,
+      "entailment_score": 0.00017109343025367707,
+      "mean_entropy": 0.1882128177394575,
+      "coverage_score": 0.5934733152389526,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Which art museum does Notre Dame administer?' is Snite Museum of Art. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.787274956703186,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5934733152389526,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 7.012029986000016
+}

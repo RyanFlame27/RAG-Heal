@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional older Gradio view; the deployed HTML dashboard does not require it.
+gradio>=5,<6

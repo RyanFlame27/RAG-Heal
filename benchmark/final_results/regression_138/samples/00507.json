@@ -1,0 +1,80 @@
+{
+  "sample_index": 507,
+  "injected_label": "clean",
+  "input": {
+    "query": "What percentage of Notre Dame students decide to study abroad?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What percentage of Notre Dame students decide to study abroad?' is 57.6%. This is well-documented and widely accepted."
+    ],
+    "answer": "57.6%",
+    "label": "clean"
+  },
+  "seed": 549,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00031775099341757596,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9952425956726074,
+      "retrieval_failure": 0.0005449725431390107,
+      "grounding_failure": 0.0027582962065935135,
+      "confidence_failure": 0.0007318800780922174,
+      "coverage_failure": 0.0007223156280815601
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "57.6%",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What percentage of Notre Dame students decide to study abroad?' is 57.6%. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "57.6%",
+  "initial_signals": {
+    "retrieval_similarity": 0.8635875582695007,
+    "entailment_score": 0.00031775099341757596,
+    "mean_entropy": 0.08605134983458955,
+    "coverage_score": 0.6837472915649414,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "57.6%",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What percentage of Notre Dame students decide to study abroad?' is 57.6%. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8635875582695007,
+    "entailment_score": 0.00031775099341757596,
+    "mean_entropy": 0.08605134983458955,
+    "coverage_score": 0.6837472915649414,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.2798843369996575
+}

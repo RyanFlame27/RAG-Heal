@@ -1,0 +1,107 @@
+{
+  "sample_index": 503,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How many moons does planet Kepler-442b have according to the 2050 survey?",
+    "context_chunks": [
+      "Acupuncture is a form of alternative medicine and a component of traditional Chinese medicine (TCM) in which thin needles are inserted into the body. Acupuncture is a pseudoscience; the theories and practices of TCM are not based on scientific knowledge, and it has been characterized as quackery. \n\n",
+      "The geography of Antarctica is dominated by its south polar location and, thus, by ice. The Antarctic continent, located in the Earth's southern hemisphere, is centered asymmetrically around the South Pole and largely south of the Antarctic Circle. It is washed by the Southern (or Antarctic) Ocean o"
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 545,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0006158259930089116,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.00036592251854017377,
+      "retrieval_failure": 0.0006274322513490915,
+      "grounding_failure": 0.000590920215472579,
+      "confidence_failure": 0.0007811294635757804,
+      "coverage_failure": 0.9976346492767334
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Acupuncture is a form of alternative medicine and a component of traditional Chinese medicine (TCM) in which thin needles are inserted into the body. Acupuncture is a pseudoscience; the theories and practices of TCM are not based on scientific knowledge, and it has been characterized as quackery. \n\n",
+    "The geography of Antarctica is dominated by its south polar location and, thus, by ice. The Antarctic continent, located in the Earth's southern hemisphere, is centered asymmetrically around the South Pole and largely south of the Antarctic Circle. It is washed by the Southern (or Antarctic) Ocean o"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Kepler-442b or the 2050 survey in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.0027501173317432404,
+    "entailment_score": 0.0006158259930089116,
+    "mean_entropy": 0.16082128108962626,
+    "coverage_score": 0.544758141040802,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -1.1507188081741333,
+      -1.4133530855178833,
+      -5.059028625488281
+    ],
+    "candidate_contexts": [
+      ". The rest of the near-Earth asteroids are driven out of the asteroid belt by gravitational interactions with Jupiter. Many asteroids have natural satellites (minor-planet moons). , there were 85 NEAs known to have at least one moon, including three known to have two moons . The asteroid 3122 Florence, one of the largest potentially hazardous asteroids with a diameter of , has two moons measuring  across, which were discovered by radar imaging during the asteroid's 2017 approach to Earth.",
+      "Many asteroids have natural satellites (minor-planet moons). , there were 85 NEAs known to have at least one moon, including three known to have two moons . The asteroid 3122 Florence, one of the largest potentially hazardous asteroids with a diameter of , has two moons measuring  across, which were discovered by radar imaging during the asteroid's 2017 approach to Earth. Near-Earth asteroids are divided into groups based on their semi-major axis (a), perihelion distance (q), and aphelion distance (Q):",
+      ". So far, every asteroid with moons has turned out to be a rubble pile, a loose conglomeration of rock and metal that may be half empty space by volume. The investigated asteroids are as large as 280 km in diameter, and include 121 Hermione (268×186×183 km), and 87 Sylvia (384×262×232 km) . Few asteroids are larger than 87 Sylvia, none of them have moons . The fact that such large asteroids as Sylvia may be rubble piles, presumably due to disruptive impacts, has important consequences for the formation of the Solar System: computer simulations of collisions involving solid bodies show them destroying each other as often as merging, but colliding"
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (Kepler-442b is not mentioned in the provided evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.4593130052089691,
+      "entailment_score": 0.0001155750869656913,
+      "mean_entropy": 0.1613985505918706,
+      "coverage_score": 0.544758141040802,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Acupuncture is a form of alternative medicine and a component of traditional Chinese medicine (TCM) in which thin needles are inserted into the body. Acupuncture is a pseudoscience; the theories and practices of TCM are not based on scientific knowledge, and it has been characterized as quackery. \n\n",
+    "The geography of Antarctica is dominated by its south polar location and, thus, by ice. The Antarctic continent, located in the Earth's southern hemisphere, is centered asymmetrically around the South Pole and largely south of the Antarctic Circle. It is washed by the Southern (or Antarctic) Ocean o"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.0027501173317432404,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.544758141040802,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.776415806999921
+}

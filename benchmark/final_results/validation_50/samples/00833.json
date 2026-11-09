@@ -1,0 +1,80 @@
+{
+  "sample_index": 833,
+  "injected_label": "clean",
+  "input": {
+    "query": "Notre Dame got a \"B\" for its sustainability practices from which entity?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Notre Dame got a \"B\" for its sustainability practices from which entity?' is Sustainable Endowments Institute. This is well-documented and widely accepted."
+    ],
+    "answer": "Sustainable Endowments Institute",
+    "label": "clean"
+  },
+  "seed": 875,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.017973395064473152,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9955169558525085,
+      "retrieval_failure": 0.0005570314824581146,
+      "grounding_failure": 0.002492612926289439,
+      "confidence_failure": 0.0006281685782596469,
+      "coverage_failure": 0.0008052144548855722
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Sustainable Endowments Institute",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Notre Dame got a \"B\" for its sustainability practices from which entity?' is Sustainable Endowments Institute. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Sustainable Endowments Institute",
+  "initial_signals": {
+    "retrieval_similarity": 0.8847537040710449,
+    "entailment_score": 0.017973395064473152,
+    "mean_entropy": 0.003641621217298052,
+    "coverage_score": 0.7313277721405029,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Sustainable Endowments Institute",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Notre Dame got a \"B\" for its sustainability practices from which entity?' is Sustainable Endowments Institute. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8847537040710449,
+    "entailment_score": 0.017973395064473152,
+    "mean_entropy": 0.003641621217298052,
+    "coverage_score": 0.7313277721405029,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.3536627020002925
+}

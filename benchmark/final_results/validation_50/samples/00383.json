@@ -1,0 +1,80 @@
+{
+  "sample_index": 383,
+  "injected_label": "clean",
+  "input": {
+    "query": "Where does Notre Dame rank in terms of academic profile among research universities in the US?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Where does Notre Dame rank in terms of academic profile among research universities in the US?' is the top 10 to 15 in the nation. This is well-documented and widely accepted."
+    ],
+    "answer": "the top 10 to 15 in the nation",
+    "label": "clean"
+  },
+  "seed": 425,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.9655888080596924,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.995053231716156,
+      "retrieval_failure": 0.0005910945474170148,
+      "grounding_failure": 0.00294424663297832,
+      "confidence_failure": 0.000726161350030452,
+      "coverage_failure": 0.0006852587102912366
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Top 10 to 15 in the nation.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Where does Notre Dame rank in terms of academic profile among research universities in the US?' is the top 10 to 15 in the nation. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Top 10 to 15 in the nation.",
+  "initial_signals": {
+    "retrieval_similarity": 0.864563524723053,
+    "entailment_score": 0.02772999182343483,
+    "mean_entropy": 0.1451358326869755,
+    "coverage_score": 0.7937002778053284,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Top 10 to 15 in the nation.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Where does Notre Dame rank in terms of academic profile among research universities in the US?' is the top 10 to 15 in the nation. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.864563524723053,
+    "entailment_score": 0.02772999182343483,
+    "mean_entropy": 0.1451358326869755,
+    "coverage_score": 0.7937002778053284,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.651984499000264
+}

@@ -1,0 +1,109 @@
+{
+  "sample_index": 434,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "After which individual was the LaFortune Center Notre Dame named?",
+    "context_chunks": [
+      "Amphipolis (; ) is a municipality in the Serres regional unit, Macedonia, Greece. The seat of the municipality is Rodolivos. It was an important ancient Greek polis (city), and later a Roman city, whose large remains can still be seen.\n\nAmphipolis was originally a colony of ancient Athenians and was",
+      "Aimoin of Fleury (; ), French chronicler, was born at Villefranche-de-Longchat, Southwestern France about 960. Early in his life he entered the monastery of Fleury, where he became a monk and then passed the greater part of his life. Between c. 980 and 985 Aimoin wrote about St. Benedict in Abbey of",
+      "Alexander of Greece (1893–1920) was king of Greece from 1917 until his death.\n\nAlexander of Greece may also refer to:\n Alexander of Greece (rhetorician) ()\n Alexander the Great (356–323 BC), ancient Greek king and general\n\nSee also\n Alexander § People with the given name Alexander"
+    ],
+    "answer": "Joseph LaFortune",
+    "label": "retrieval_failure"
+  },
+  "seed": 476,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0014207233907654881,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00040026832721196115,
+      "retrieval_failure": 0.9981495141983032,
+      "grounding_failure": 0.0005077337846159935,
+      "confidence_failure": 0.00031830641091801226,
+      "coverage_failure": 0.0006241593509912491
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Amphipolis (; ) is a municipality in the Serres regional unit, Macedonia, Greece. The seat of the municipality is Rodolivos. It was an important ancient Greek polis (city), and later a Roman city, whose large remains can still be seen.\n\nAmphipolis was originally a colony of ancient Athenians and was",
+    "Aimoin of Fleury (; ), French chronicler, was born at Villefranche-de-Longchat, Southwestern France about 960. Early in his life he entered the monastery of Fleury, where he became a monk and then passed the greater part of his life. Between c. 980 and 985 Aimoin wrote about St. Benedict in Abbey of",
+    "Alexander of Greece (1893–1920) was king of Greece from 1917 until his death.\n\nAlexander of Greece may also refer to:\n Alexander of Greece (rhetorician) ()\n Alexander the Great (356–323 BC), ancient Greek king and general\n\nSee also\n Alexander § People with the given name Alexander"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of the LaFortune Center or Notre Dame in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.08244261890649796,
+    "entailment_score": 0.0005368225392885506,
+    "mean_entropy": 0.15807143200315588,
+    "coverage_score": 0.6653245687484741,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "Who is the person honored with the name of the LaFortune Center at Notre Dame?",
+    "reranker_scores": [
+      7.3347859382629395,
+      6.984934329986572,
+      -0.8441540002822876
+    ],
+    "candidate_contexts": [
+      "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities",
+      "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities . LaFortune employs 35 part-time student staff and 29 full-time non-student staff and has an annual budget of $1.2 million. Many businesses, services, and divisions of The Office of Student Affairs are found within. The building also houses restaurants from national restaurant chains.",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy."
+    ],
+    "candidate_raw_answer": "Joseph LaFortune",
+    "candidate_parsed_answer": "Joseph LaFortune",
+    "candidate_answer": "Joseph LaFortune",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6076052784919739,
+      "entailment_score": 0.0005112103535793722,
+      "mean_entropy": 0.05335699065479579,
+      "coverage_score": 0.6653245687484741,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Joseph LaFortune",
+  "final_contexts": [
+    "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities",
+    "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities . LaFortune employs 35 part-time student staff and 29 full-time non-student staff and has an annual budget of $1.2 million. Many businesses, services, and divisions of The Office of Student Affairs are found within. The building also houses restaurants from national restaurant chains.",
+    "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6076052784919739,
+    "entailment_score": 0.0005112103535793722,
+    "mean_entropy": 0.05335699065479579,
+    "coverage_score": 0.6653245687484741,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 7.111563037999986
+}

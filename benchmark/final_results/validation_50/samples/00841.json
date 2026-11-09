@@ -1,0 +1,104 @@
+{
+  "sample_index": 841,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "What percentage of Notre Dame students feel they are Christian?",
+    "context_chunks": [
+      "Many sources discuss What percentage of Notre Dame students feel they are Christian. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1969",
+    "label": "grounding_failure"
+  },
+  "seed": 883,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.00012314028572291136,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0004158332012593746,
+      "retrieval_failure": 0.000587754650041461,
+      "grounding_failure": 0.9982781410217285,
+      "confidence_failure": 0.00044868007535114884,
+      "coverage_failure": 0.00026969346799887717
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss What percentage of Notre Dame students feel they are Christian. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8929903507232666,
+    "entailment_score": 0.00030735606560483575,
+    "mean_entropy": 0.00019397120584366907,
+    "coverage_score": 0.6095349788665771,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      2.609875202178955,
+      2.3734607696533203,
+      2.0594844818115234
+    ],
+    "candidate_contexts": [
+      "In 2014 the Notre Dame student body consisted of 12,179 students, with 8,448 undergraduates, 2,138 graduate and professional and 1,593 professional (Law, M.Div., Business, M.Ed.) students . Around 21–24% of students are children of alumni, and although 37% of students come from the Midwestern United States, the student body represents all 50 states and 100 countries",
+      "Notre Dame is known for its competitive admissions, with the incoming class enrolling in fall 2015 admitting 3,577 from a pool of 18,156 (19.7%). The academic profile of the enrolled class continues to rate among the top 10 to 15 in the nation for national research universities . The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan",
+      ". The university practices a non-restrictive early action policy that allows admitted students to consider admission to Notre Dame as well as any other colleges to which they were accepted. 1,400 of the 3,577 (39.1%) were admitted under the early action plan . Admitted students came from 1,311 high schools and the average student traveled more than 750 miles to Notre Dame, making it arguably the most representative university in the United States . While all entering students begin in the College of the First Year of Studies, 25% have indicated they plan to study in the liberal arts or social sciences, 24% in engineering, 24% in business, 24% in science, and 3% in architecture."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question.",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5615233778953552,
+      "entailment_score": 0.00010646193550201133,
+      "mean_entropy": 0.07852253510035413,
+      "coverage_score": 0.6095349788665771,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss What percentage of Notre Dame students feel they are Christian. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8929903507232666,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6095349788665771,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.44732584600024
+}

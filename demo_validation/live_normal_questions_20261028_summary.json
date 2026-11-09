@@ -1,0 +1,76 @@
+{
+  "scope": "Actual normal POST /query checks on current Colab T4; no injected inputs; summary read from notebook output",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "query": "In what year was the Main Building at Notre Dame razed in a fire?",
+      "initial": "1879",
+      "final": "1879",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "supported"
+    },
+    {
+      "query": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+      "initial": "I don't have enough information to answer this question.",
+      "final": "1987",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "unverified"
+    },
+    {
+      "query": "What is the primary seminary of the Congregation of the Holy Cross?",
+      "initial": "Moreau Seminary",
+      "final": "Moreau Seminary",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "supported"
+    },
+    {
+      "query": "Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?",
+      "initial": "I don't have enough information to answer this question.",
+      "final": "Fr. Matthew Walsh",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "supported"
+    },
+    {
+      "query": "In what year was the College of Engineering at Notre Dame established?",
+      "initial": "The College of Engineering was established in 1920.",
+      "final": "1920",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "unverified"
+    },
+    {
+      "query": "What was the SAT score, on average, at Notre Dame when Edward Malloy became president?",
+      "initial": "I don't have enough information to answer this question.",
+      "final": "I don't have enough information to answer this question.",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "refusal"
+    },
+    {
+      "query": "What percentage of students at Notre Dame participated in the Early Action program?",
+      "initial": "39.1%",
+      "final": "39.1%",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "supported"
+    },
+    {
+      "query": "How large in square feet is the LaFortune Center at Notre Dame?",
+      "initial": "83,000 square feet",
+      "final": "I don't have enough information to answer this question.",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "refusal"
+    },
+    {
+      "query": "What did the brother of John Zahm construct at Notre Dame?",
+      "initial": "An early wind tunnel.",
+      "final": "I don't have enough information to answer this question.",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "refusal"
+    },
+    {
+      "query": "What was created at Notre Dame in 1962 to assist first year students?",
+      "initial": "I don't have enough information to answer this question.",
+      "final": "I don't have enough information to answer this question.",
+      "route": "RETRIEVAL_FAILURE",
+      "outcome": "refusal"
+    }
+  ]
+}

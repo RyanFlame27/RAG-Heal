@@ -1,0 +1,109 @@
+{
+  "sample_index": 976,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "How much money was spent on enhancing Notre Dame Stadium under John Jenkins?",
+    "context_chunks": [
+      "The Amber Diceless Roleplaying Game is a role-playing game created and written by Erick Wujcik, set in the fictional universe created by author Roger Zelazny for his Chronicles of Amber. The game is unusual in that no dice are used in resolving conflicts or player actions; instead a simple diceless ",
+      "In Norse mythology, Ask and Embla ( )—male and female respectively—were the first two humans, created by the gods. The pair are attested in both the Poetic Edda, compiled in the 13th century from earlier traditional sources, and the Prose Edda, written in the 13th century by Snorri Sturluson. In bot",
+      "Antlia (; from Ancient Greek ἀντλία) is a constellation in the Southern Celestial Hemisphere. Its name means \"pump\" in Latin and Greek; it represents an air pump. Originally Antlia Pneumatica, the constellation was established by Nicolas-Louis de Lacaille in the 18th century. Its non-specific (singl"
+    ],
+    "answer": "$400m",
+    "label": "retrieval_failure"
+  },
+  "seed": 1018,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0011891907779499888,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003461753949522972,
+      "retrieval_failure": 0.9981377124786377,
+      "grounding_failure": 0.0005376566550694406,
+      "confidence_failure": 0.0003418839769437909,
+      "coverage_failure": 0.0006365603767335415
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "The Amber Diceless Roleplaying Game is a role-playing game created and written by Erick Wujcik, set in the fictional universe created by author Roger Zelazny for his Chronicles of Amber. The game is unusual in that no dice are used in resolving conflicts or player actions; instead a simple diceless ",
+    "In Norse mythology, Ask and Embla ( )—male and female respectively—were the first two humans, created by the gods. The pair are attested in both the Poetic Edda, compiled in the 13th century from earlier traditional sources, and the Prose Edda, written in the 13th century by Snorri Sturluson. In bot",
+    "Antlia (; from Ancient Greek ἀντλία) is a constellation in the Southern Celestial Hemisphere. Its name means \"pump\" in Latin and Greek; it represents an air pump. Originally Antlia Pneumatica, the constellation was established by Nicolas-Louis de Lacaille in the 18th century. Its non-specific (singl"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": -0.057248491793870926,
+    "entailment_score": 4.205514051136561e-05,
+    "mean_entropy": 0.04956921208344493,
+    "coverage_score": 0.7615296840667725,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Amount spent on Notre Dame Stadium renovations under John Jenkins\"",
+    "reranker_scores": [
+      5.589243412017822,
+      5.030503273010254,
+      1.421233892440796
+    ],
+    "candidate_contexts": [
+      ". In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies . During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+      ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+      "$350 million to more than $3 billion; the annual operating budget rose from $177 million to more than $650 million; and annual research funding improved from $15 million to more than $70 million . Notre Dame's most recent[when?] capital campaign raised $1.1 billion, far exceeding its goal of $767 million, and is the largest in the history of Catholic higher education."
+    ],
+    "candidate_raw_answer": "$400m",
+    "candidate_parsed_answer": "$400m",
+    "candidate_answer": "$400m",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6317645311355591,
+      "entailment_score": 0.02556709572672844,
+      "mean_entropy": 0.12802072338389628,
+      "coverage_score": 0.7615296840667725,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "$400m",
+  "final_contexts": [
+    ". In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies . During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+    ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+    "$350 million to more than $3 billion; the annual operating budget rose from $177 million to more than $650 million; and annual research funding improved from $15 million to more than $70 million . Notre Dame's most recent[when?] capital campaign raised $1.1 billion, far exceeding its goal of $767 million, and is the largest in the history of Catholic higher education."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6317645311355591,
+    "entailment_score": 0.02556709572672844,
+    "mean_entropy": 0.12802072338389628,
+    "coverage_score": 0.7615296840667725,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 5.128190839999661
+}

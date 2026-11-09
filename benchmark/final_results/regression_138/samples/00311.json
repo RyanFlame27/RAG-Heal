@@ -1,0 +1,80 @@
+{
+  "sample_index": 311,
+  "injected_label": "clean",
+  "input": {
+    "query": "In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?' is 1882. This is well-documented and widely accepted."
+    ],
+    "answer": "1882",
+    "label": "clean"
+  },
+  "seed": 353,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.7748991250991821,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9956870675086975,
+      "retrieval_failure": 0.0005904642166569829,
+      "grounding_failure": 0.0022557724732905626,
+      "confidence_failure": 0.0006687094573862851,
+      "coverage_failure": 0.0007978283101692796
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "1882",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?' is 1882. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "1882",
+  "initial_signals": {
+    "retrieval_similarity": 0.8801234364509583,
+    "entailment_score": 0.7748991250991821,
+    "mean_entropy": 0.0668642184449079,
+    "coverage_score": 0.5799010992050171,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "1882",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?' is 1882. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8801234364509583,
+    "entailment_score": 0.7748991250991821,
+    "mean_entropy": 0.0668642184449079,
+    "coverage_score": 0.5799010992050171,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 2.018142293999972
+}

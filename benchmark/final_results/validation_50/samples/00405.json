@@ -1,0 +1,110 @@
+{
+  "sample_index": 405,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What field of study did Anton-Hermann Chroust specialize in?",
+    "context_chunks": [
+      "The Arctic fox (Vulpes lagopus), also known as the white fox, polar fox, or snow fox, is a small fox that belongs to the family of Canidae, native to the Arctic regions of the Northern Hemisphere and common throughout the Arctic tundra biome. It is well adapted to living in cold environments, and is",
+      "An assembly line is a manufacturing process (often called a progressive assembly) in which parts (usually interchangeable parts) are added as the semi-finished assembly moves from workstation to workstation where the parts are added in sequence until the final assembly is produced. By mechanically m",
+      "Alexander is a male given name of Greek origin. The most prominent bearer of the name is Alexander the Great, the king of the Ancient Greek kingdom of Macedonia who created one of the largest empires in ancient history.\n\nVariants listed here are Aleksandar, Aleksander and Aleksandr. Related names an"
+    ],
+    "answer": "classics and law",
+    "label": "retrieval_failure"
+  },
+  "seed": 447,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0018849173793569207,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003458464634604752,
+      "retrieval_failure": 0.9981061220169067,
+      "grounding_failure": 0.00048149560461752117,
+      "confidence_failure": 0.0003316436195746064,
+      "coverage_failure": 0.0007348000654019415
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "The Arctic fox (Vulpes lagopus), also known as the white fox, polar fox, or snow fox, is a small fox that belongs to the family of Canidae, native to the Arctic regions of the Northern Hemisphere and common throughout the Arctic tundra biome. It is well adapted to living in cold environments, and is",
+    "An assembly line is a manufacturing process (often called a progressive assembly) in which parts (usually interchangeable parts) are added as the semi-finished assembly moves from workstation to workstation where the parts are added in sequence until the final assembly is produced. By mechanically m",
+    "Alexander is a male given name of Greek origin. The most prominent bearer of the name is Alexander the Great, the king of the Ancient Greek kingdom of Macedonia who created one of the largest empires in ancient history.\n\nVariants listed here are Aleksandar, Aleksander and Aleksandr. Related names an"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Anton-Hermann Chroust is not mentioned in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.00619092583656311,
+    "entailment_score": 0.0006131335976533592,
+    "mean_entropy": 0.04899681140215093,
+    "coverage_score": 0.5621201395988464,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Anton-Hermann Chroust specialization field of study\"\n\nOr, for a more specific search:\n\n\"Anton-Hermann Chroust law special",
+    "reranker_scores": [
+      -3.7969605922698975,
+      -3.8431053161621094,
+      -4.4847731590271
+    ],
+    "candidate_contexts": [
+      "Biography He was born in Litovel, Moravia, and studied at the University of Vienna, where he obtained a teaching degree. He studied mineralogy at Heidelberg and Tübingen and obtained a PhD . He returned to Vienna as a lecturer in mineralogy and chemistry and, in 1862 was appointed second vice curator of the Imperial Mineralogical Cabinet, becoming director in 1868. He resigned as director in 1877. He was also professor of petrography at the University of Vienna",
+      "In July 1912, he returned to his alma mater, the ETH Zurich, to take up a chair in theoretical physics . His teaching activities there centred on thermodynamics and analytical mechanics, and his research interests included the molecular theory of heat, continuum mechanics and the development of a relativistic theory of gravitation . In his work on the latter topic, he was assisted by his friend, Marcel Grossmann, whose knowledge of the kind of mathematics required was greater than his own.",
+      ". Law or medicine were usual choices for young men of Schopenhauer's status who also needed career and income; he chose medicine due to his scientific interests . Among his notable professors were Bernhard Friedrich Thibaut, Arnold Hermann Ludwig Heeren, Johann Friedrich Blumenbach, Friedrich Stromeyer, Heinrich Adolf Schrader, Johann Tobias Mayer and Konrad Johann Martin Langenbeck . He studied metaphysics, psychology and logic under Gottlob Ernst Schulze, the author of Aenesidemus, who made a strong impression and advised him to concentrate on Plato and Immanuel Kant"
+    ],
+    "candidate_raw_answer": "Anton-Hermann Chroust specialized in mineralogy, chemistry, petrography, theoretical physics, molecular theory of heat, continuum mechanics, and the development of a relativistic theory of gravitation.",
+    "candidate_parsed_answer": "Anton-Hermann Chroust specialized in mineralogy, chemistry, petrography, theoretical physics, molecular theory of heat, continuum mechanics, and the development of a relativistic theory of gravitation.",
+    "candidate_answer": "Anton-Hermann Chroust specialized in mineralogy, chemistry, petrography, theoretical physics, molecular theory of heat, continuum mechanics, and the development of a relativistic theory of gravitation.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.41021403670310974,
+      "entailment_score": 0.0005257020820863545,
+      "mean_entropy": 0.07043074383546784,
+      "coverage_score": 0.5621201395988464,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "The Arctic fox (Vulpes lagopus), also known as the white fox, polar fox, or snow fox, is a small fox that belongs to the family of Canidae, native to the Arctic regions of the Northern Hemisphere and common throughout the Arctic tundra biome. It is well adapted to living in cold environments, and is",
+    "An assembly line is a manufacturing process (often called a progressive assembly) in which parts (usually interchangeable parts) are added as the semi-finished assembly moves from workstation to workstation where the parts are added in sequence until the final assembly is produced. By mechanically m",
+    "Alexander is a male given name of Greek origin. The most prominent bearer of the name is Alexander the Great, the king of the Ancient Greek kingdom of Macedonia who created one of the largest empires in ancient history.\n\nVariants listed here are Aleksandar, Aleksander and Aleksandr. Related names an"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.00619092583656311,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5621201395988464,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 10.06533504700019
+}

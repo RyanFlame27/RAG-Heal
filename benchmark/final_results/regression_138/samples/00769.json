@@ -1,0 +1,110 @@
+{
+  "sample_index": 769,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "Who did Waldemar Gurian receive his tutelage under while seeking his doctorate?",
+    "context_chunks": [
+      "In Greek mythology, Alcmene ( ; ) or Alcmena ( ; ; ; meaning \"strong in wrath\") was the wife of Amphitryon, by whom she bore two children, Iphicles and Laonome. She is best known as the mother of Heracles, whose father was the god Zeus. Alcmene was also referred to as Electryone (), a patronymic nam",
+      "Demographics of American Samoa include population density, ethnicity, education level, health of the populace, economic status, religious affiliations and other aspects. American Samoa is an unincorporated territory of the United States located in the South Pacific Ocean.\n\nVital statistics\nBirths an",
+      "ACN may refer to:\n Accenture, professional services company, listed on the NYSE as ACN\n Achang language, a Tibeto-Burman language of China\n Achnasheen railway station, UK, National Rail code\n Acineta, a genus of orchid\n ACN Inc., multi-level marketing company providing telecommunications and other s"
+    ],
+    "answer": "Max Scheler",
+    "label": "retrieval_failure"
+  },
+  "seed": 811,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0001856470335042104,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0004085158871021122,
+      "retrieval_failure": 0.9981436729431152,
+      "grounding_failure": 0.000498930923640728,
+      "confidence_failure": 0.00032330109388567507,
+      "coverage_failure": 0.0006255811895243824
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "In Greek mythology, Alcmene ( ; ) or Alcmena ( ; ; ; meaning \"strong in wrath\") was the wife of Amphitryon, by whom she bore two children, Iphicles and Laonome. She is best known as the mother of Heracles, whose father was the god Zeus. Alcmene was also referred to as Electryone (), a patronymic nam",
+    "Demographics of American Samoa include population density, ethnicity, education level, health of the populace, economic status, religious affiliations and other aspects. American Samoa is an unincorporated territory of the United States located in the South Pacific Ocean.\n\nVital statistics\nBirths an",
+    "ACN may refer to:\n Accenture, professional services company, listed on the NYSE as ACN\n Achang language, a Tibeto-Burman language of China\n Achnasheen railway station, UK, National Rail code\n Acineta, a genus of orchid\n ACN Inc., multi-level marketing company providing telecommunications and other s"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Waldemar Gurian's tutelage while seeking his doctorate is not mentioned in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.0033149707596749067,
+    "entailment_score": 0.00011423724936321378,
+    "mean_entropy": 0.11278262474270552,
+    "coverage_score": 0.5274217128753662,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "Search query: \"Waldemar Gurian teacher doctorate\"\n\nRelated and potentially useful search queries:\n- \"Waldemar Gurian doctorate advisor\"",
+    "reranker_scores": [
+      -8.408883094787598,
+      -8.466300010681152,
+      -9.243779182434082
+    ],
+    "candidate_contexts": [
+      "Walid Mohi Edine al Muallem ( Walīd Muḥīyy ad-Dīn al-Muʿallam; 13 January 194116 November 2020) was a Syrian diplomat and Ba'ath Party member who served as foreign minister from 2006 to 2020 and as deputy prime minister from 2012 to 2020. Early life and education\nWalid Muallem was born into a Sunni family on 13 January 1941 in Damascus. He received primary and secondary education in public schools from 1948 to 1960. Then he obtained a bachelor of arts degree in economics from Cairo University in 1963. Career",
+      ". There he attacked the doctrines of Epicurus, Thomas Hobbes and Baruch Spinoza. He then turned to the study of medicine . He earned his medical doctorate from the University of Harderwijk (present-day Gelderland) in 1693, with a dissertation titled De utilitate explorandorum in aegris excrementorum ut signorum (The Utility of Examining Signs of Disease in the Excrement of the Sick). In 1701 he was appointed lecturer on the institutes of medicine at Leiden; in his inaugural discourse, De commendando Hippocratis studio, he recommended to his pupils that great physician as their model",
+      "Heinrich Johann Nepomuk von Crantz (Roodt-sur-Eisch, Luxembourg, 25 November 1722 – 18 January 1799, Judenburg, Austria) was a botanist and a physician. In 1750 he obtained his doctorate of medicine in Vienna, where he was a pupil of Gerard van Swieten (1700–1772). He studied obstetrics in Paris and London. In Paris he was influenced by André Levret (1703–1780) and Nicolas Puzos (1686–1753). He was first married to Anna Susanne Petrasch and then to Magda Lena de Tremon. He had two sons and one daughter.\n\nHe became a lecturer in obstetrics at St. Mary's Hospital in Vienna in 1754. From 1756 to 1774, he taught physiology and materia medica at the university in that city."
+    ],
+    "candidate_raw_answer": "Gerard van Swieten (1700–1772) in Vienna.",
+    "candidate_parsed_answer": "Gerard van Swieten (1700–1772) in Vienna.",
+    "candidate_answer": "Gerard van Swieten (1700–1772) in Vienna.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.3874531686306,
+      "entailment_score": 0.0030177391599863768,
+      "mean_entropy": 0.1110153015763397,
+      "coverage_score": 0.5274217128753662,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "In Greek mythology, Alcmene ( ; ) or Alcmena ( ; ; ; meaning \"strong in wrath\") was the wife of Amphitryon, by whom she bore two children, Iphicles and Laonome. She is best known as the mother of Heracles, whose father was the god Zeus. Alcmene was also referred to as Electryone (), a patronymic nam",
+    "Demographics of American Samoa include population density, ethnicity, education level, health of the populace, economic status, religious affiliations and other aspects. American Samoa is an unincorporated territory of the United States located in the South Pacific Ocean.\n\nVital statistics\nBirths an",
+    "ACN may refer to:\n Accenture, professional services company, listed on the NYSE as ACN\n Achang language, a Tibeto-Burman language of China\n Achnasheen railway station, UK, National Rail code\n Acineta, a genus of orchid\n ACN Inc., multi-level marketing company providing telecommunications and other s"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.0033149707596749067,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5274217128753662,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 9.770143588000337
+}

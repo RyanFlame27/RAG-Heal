@@ -1,0 +1,104 @@
+{
+  "sample_index": 262,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "Around what time did Lobund of Notre Dame become independent?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly the 1940s",
+    "label": "confidence_failure"
+  },
+  "seed": 304,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.00027959945145994425,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.00040607264963909984,
+      "retrieval_failure": 0.000234515086049214,
+      "grounding_failure": 0.00038849012344144285,
+      "confidence_failure": 0.9986501336097717,
+      "coverage_failure": 0.0003208270063623786
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.09458421915769577,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.0003222411244179896,
+    "coverage_score": 0.5666692852973938,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.8551528453826904,
+      0.9332496523857117,
+      -0.24129816889762878
+    ],
+    "candidate_contexts": [
+      ". Today the work has spread to other universities. In the beginning it was under the Department of Biology and a program leading to the master's degree accompanied the research program . In the 1940s Lobund achieved independent status as a purely research organization and in 1950 was raised to the status of an Institute . In 1958 it was brought back into the Department of Biology as integral part of that department, but with its own program leading to the degree of PhD in Gnotobiotics.",
+      "Notre Dame rose to national prominence in the early 1900s for its Fighting Irish football team, especially under the guidance of the legendary coach Knute Rockne. The university's athletic teams are members of the NCAA Division I and are known collectively as the Fighting Irish . The football team, an Independent, has accumulated eleven consensus national championships, seven Heisman Trophy winners, 62 members in the College Football Hall of Fame and 13 members in the Pro Football Hall of Fame and is considered one of the most famed and successful college football teams in",
+      "In 1919 Father James Burns became president of Notre Dame, and in three years he produced an academic revolution that brought the school up to national standards by adopting the elective system and moving away from the university's traditional scholastic and classical emphasis . By contrast, the Jesuit colleges, bastions of academic conservatism, were reluctant to move to a system of electives. Their graduates were shut out of Harvard Law School for that reason. Notre Dame continued to grow over the years, adding more colleges, programs, and sports teams . By 1921, with the addition of the College of Commerce, Notre Dame had grown from a small college to a university with five colleges and a professional law school. The university continued to expand and add new residence halls and buildings with each subsequent president."
+    ],
+    "candidate_raw_answer": "Lobund of Notre Dame became independent in the 1940s.",
+    "candidate_parsed_answer": "Lobund of Notre Dame became independent in the 1940s.",
+    "candidate_answer": "Lobund of Notre Dame became independent in the 1940s.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5202558040618896,
+      "entailment_score": 0.002498453948646784,
+      "mean_entropy": 0.01721047030949352,
+      "coverage_score": 0.5666692852973938,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.09458421915769577,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5666692852973938,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.826446677000149
+}

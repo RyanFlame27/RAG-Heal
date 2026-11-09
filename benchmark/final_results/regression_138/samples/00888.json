@@ -1,0 +1,104 @@
+{
+  "sample_index": 888,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "What was the size of the Notre Dame endowment when Theodore Hesburgh became president?",
+    "context_chunks": [
+      "Many sources discuss What was the size of the Notre Dame endowment when Theodore Hesburgh became president. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Albert Einstein",
+    "label": "grounding_failure"
+  },
+  "seed": 930,
+  "classifier_split": "test",
+  "stored_answer_grounding": 4.474975503399037e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0004071891016792506,
+      "retrieval_failure": 0.0006320684915408492,
+      "grounding_failure": 0.9982220530509949,
+      "confidence_failure": 0.00045977625995874405,
+      "coverage_failure": 0.0002788875426631421
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss What was the size of the Notre Dame endowment when Theodore Hesburgh became president. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8797261118888855,
+    "entailment_score": 0.00036620409809984267,
+    "mean_entropy": 0.00016308188875987421,
+    "coverage_score": 0.5272057056427002,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.991689682006836,
+      0.11023861169815063,
+      -2.547943592071533
+    ],
+    "candidate_contexts": [
+      "The Rev. Theodore Hesburgh, C.S.C., (1917–2015) served as president for 35 years (1952–87) of dramatic transformations . In that time the annual operating budget rose by a factor of 18 from $9.7 million to $176.6 million, and the endowment by a factor of 40 from $9 million to $350 million, and research funding by a factor of 20 from $735,000 to $15 million",
+      ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+      "Hesburgh is also credited with transforming the face of Notre Dame by making it a coeducational institution . In the mid-1960s Notre Dame and Saint Mary's College developed a co-exchange program whereby several hundred students took classes not offered at their home institution, an arrangement that added undergraduate women to a campus that already had a few women in the graduate schools"
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (The evidence mentions the endowment's size before and after Hesburgh's presidency, but not when he took office.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5438684821128845,
+      "entailment_score": 0.00019926785898860544,
+      "mean_entropy": 0.27195399542020415,
+      "coverage_score": 0.5272057056427002,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss What was the size of the Notre Dame endowment when Theodore Hesburgh became president. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8797261118888855,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5272057056427002,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 5.502309724999577
+}

@@ -1,0 +1,104 @@
+{
+  "sample_index": 475,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "Who did Waldemar Gurian receive his tutelage under while seeking his doctorate?",
+    "context_chunks": [
+      "Many sources discuss Who did Waldemar Gurian receive his tutelage under while seeking his doctorate. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1969",
+    "label": "grounding_failure"
+  },
+  "seed": 517,
+  "classifier_split": "test",
+  "stored_answer_grounding": 9.001418220577762e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0004125235718674958,
+      "retrieval_failure": 0.0005455394857563078,
+      "grounding_failure": 0.9982695579528809,
+      "confidence_failure": 0.0004901616484858096,
+      "coverage_failure": 0.0002821897796820849
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss Who did Waldemar Gurian receive his tutelage under while seeking his doctorate. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9238635897636414,
+    "entailment_score": 0.0003711921162903309,
+    "mean_entropy": 0.00023839852873117287,
+    "coverage_score": 0.5274217128753662,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -8.408883094787598,
+      -8.466300010681152,
+      -9.243779182434082
+    ],
+    "candidate_contexts": [
+      "Walid Mohi Edine al Muallem ( Walīd Muḥīyy ad-Dīn al-Muʿallam; 13 January 194116 November 2020) was a Syrian diplomat and Ba'ath Party member who served as foreign minister from 2006 to 2020 and as deputy prime minister from 2012 to 2020. Early life and education\nWalid Muallem was born into a Sunni family on 13 January 1941 in Damascus. He received primary and secondary education in public schools from 1948 to 1960. Then he obtained a bachelor of arts degree in economics from Cairo University in 1963. Career",
+      ". There he attacked the doctrines of Epicurus, Thomas Hobbes and Baruch Spinoza. He then turned to the study of medicine . He earned his medical doctorate from the University of Harderwijk (present-day Gelderland) in 1693, with a dissertation titled De utilitate explorandorum in aegris excrementorum ut signorum (The Utility of Examining Signs of Disease in the Excrement of the Sick). In 1701 he was appointed lecturer on the institutes of medicine at Leiden; in his inaugural discourse, De commendando Hippocratis studio, he recommended to his pupils that great physician as their model",
+      "Heinrich Johann Nepomuk von Crantz (Roodt-sur-Eisch, Luxembourg, 25 November 1722 – 18 January 1799, Judenburg, Austria) was a botanist and a physician. In 1750 he obtained his doctorate of medicine in Vienna, where he was a pupil of Gerard van Swieten (1700–1772). He studied obstetrics in Paris and London. In Paris he was influenced by André Levret (1703–1780) and Nicolas Puzos (1686–1753). He was first married to Anna Susanne Petrasch and then to Magda Lena de Tremon. He had two sons and one daughter.\n\nHe became a lecturer in obstetrics at St. Mary's Hospital in Vienna in 1754. From 1756 to 1774, he taught physiology and materia medica at the university in that city."
+    ],
+    "candidate_raw_answer": "Gerard van Swieten (1700–1772) in Vienna.",
+    "candidate_parsed_answer": "Gerard van Swieten (1700–1772) in Vienna.",
+    "candidate_answer": "Gerard van Swieten (1700–1772) in Vienna.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.3874531686306,
+      "entailment_score": 0.0030177391599863768,
+      "mean_entropy": 0.1110153015763397,
+      "coverage_score": 0.5274217128753662,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss Who did Waldemar Gurian receive his tutelage under while seeking his doctorate. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9238635897636414,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5274217128753662,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 4.4548048719998405
+}

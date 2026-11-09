@@ -1,0 +1,110 @@
+{
+  "sample_index": 220,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "At which location is the London Center operated by Notre Dame found?",
+    "context_chunks": [
+      "Alphonse or Alfonso (11 November 122021 August 1271) was the count of Poitou from 1225 and count of Toulouse (as such called Alphonse II) from 1249. As count of Toulouse, he also governed the Marquisate of Provence.\n\nBirth and early life\nBorn at Poissy, Alphonse was a son of King Louis VIII of Franc",
+      "Adobe Inc. ( ), formerly Adobe Systems Incorporated, is an American multinational computer software company incorporated in Delaware\nand headquartered in San Jose, California. It has historically specialized in software for the creation and publication of a wide range of content, including graphics,",
+      "Ada is a structured, statically typed, imperative, and object-oriented high-level programming language, inspired by Pascal and other languages. It has built-in language support for design by contract (DbC), extremely strong typing, explicit concurrency, tasks, synchronous message passing, protected "
+    ],
+    "answer": "1 Suffolk Street in Trafalgar Square",
+    "label": "retrieval_failure"
+  },
+  "seed": 262,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0009286802378483117,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00034553013392724097,
+      "retrieval_failure": 0.9981507658958435,
+      "grounding_failure": 0.000482703821035102,
+      "confidence_failure": 0.000324963650200516,
+      "coverage_failure": 0.0006959720049053431
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Alphonse or Alfonso (11 November 122021 August 1271) was the count of Poitou from 1225 and count of Toulouse (as such called Alphonse II) from 1249. As count of Toulouse, he also governed the Marquisate of Provence.\n\nBirth and early life\nBorn at Poissy, Alphonse was a son of King Louis VIII of Franc",
+    "Adobe Inc. ( ), formerly Adobe Systems Incorporated, is an American multinational computer software company incorporated in Delaware\nand headquartered in San Jose, California. It has historically specialized in software for the creation and publication of a wide range of content, including graphics,",
+    "Ada is a structured, statically typed, imperative, and object-oriented high-level programming language, inspired by Pascal and other languages. It has built-in language support for design by contract (DbC), extremely strong typing, explicit concurrency, tasks, synchronous message passing, protected "
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Notre Dame or London Center in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.03121570311486721,
+    "entailment_score": 0.0006538088782690465,
+    "mean_entropy": 0.14285312318031582,
+    "coverage_score": 0.5771783590316772,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"London location of Notre Dame's London Center\"",
+    "reranker_scores": [
+      1.4315736293792725,
+      0.28565528988838196,
+      -0.3711663782596588
+    ],
+    "candidate_contexts": [
+      ". Since 1998, its London center has been based in the former United University Club at 1 Suffolk Street in Trafalgar Square . The center enables the Colleges of Arts & Letters, Business Administration, Science, Engineering and the Law School to develop their own programs in London, as well as hosting conferences and symposia. Other Global Gateways are located in Beijing, Chicago, Dublin, Jerusalem and Rome.",
+      "The university owns several centers around the world used for international studies and research, conferences abroad, and alumni support. The university has had a presence in London, England, since 1968 . Since 1998, its London center has been based in the former United University Club at 1 Suffolk Street in Trafalgar Square . The center enables the Colleges of Arts & Letters, Business Administration, Science, Engineering and the Law School to develop their own programs in London, as well as hosting conferences and symposia. Other Global Gateways are located in Beijing, Chicago, Dublin, Jerusalem and Rome.",
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary"
+    ],
+    "candidate_raw_answer": "1 Suffolk Street, Trafalgar Square, London",
+    "candidate_parsed_answer": "1 Suffolk Street, Trafalgar Square, London",
+    "candidate_answer": "1 Suffolk Street, Trafalgar Square, London",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5719687342643738,
+      "entailment_score": 0.9917048215866089,
+      "mean_entropy": 0.11513432951120327,
+      "coverage_score": 0.5771783590316772,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Alphonse or Alfonso (11 November 122021 August 1271) was the count of Poitou from 1225 and count of Toulouse (as such called Alphonse II) from 1249. As count of Toulouse, he also governed the Marquisate of Provence.\n\nBirth and early life\nBorn at Poissy, Alphonse was a son of King Louis VIII of Franc",
+    "Adobe Inc. ( ), formerly Adobe Systems Incorporated, is an American multinational computer software company incorporated in Delaware\nand headquartered in San Jose, California. It has historically specialized in software for the creation and publication of a wide range of content, including graphics,",
+    "Ada is a structured, statically typed, imperative, and object-oriented high-level programming language, inspired by Pascal and other languages. It has built-in language support for design by contract (DbC), extremely strong typing, explicit concurrency, tasks, synchronous message passing, protected "
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.03121570311486721,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5771783590316772,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.279056372000014
+}

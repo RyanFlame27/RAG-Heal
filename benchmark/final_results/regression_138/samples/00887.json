@@ -1,0 +1,104 @@
+{
+  "sample_index": 887,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "On which university did Notre Dame base its curriculum on?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly Saint Louis University",
+    "label": "confidence_failure"
+  },
+  "seed": 929,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0007299822755157948,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.00039607766666449606,
+      "retrieval_failure": 0.000247465941356495,
+      "grounding_failure": 0.0003764205321203917,
+      "confidence_failure": 0.9986616373062134,
+      "coverage_failure": 0.00031828510691411793
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.08320826292037964,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.00026136772648590944,
+    "coverage_score": 0.681999146938324,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.56599760055542,
+      3.5633225440979004,
+      3.293220043182373
+    ],
+    "candidate_contexts": [
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary",
+      "Besides its prominence in sports, Notre Dame is also a large, four-year, highly residential research University, and is consistently ranked among the top twenty universities in the United States  and as a major global university . The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize",
+      ". By contrast, the Jesuit colleges, bastions of academic conservatism, were reluctant to move to a system of electives. Their graduates were shut out of Harvard Law School for that reason. Notre Dame continued to grow over the years, adding more colleges, programs, and sports teams . By 1921, with the addition of the College of Commerce, Notre Dame had grown from a small college to a university with five colleges and a professional law school. The university continued to expand and add new residence halls and buildings with each subsequent president."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (Harvard's curriculum was a factor in Notre Dame's decision to adopt a more flexible system of electives, but it does not specify that Notre Dame based its curriculum on Harvard.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5636025071144104,
+      "entailment_score": 0.0003180650237482041,
+      "mean_entropy": 0.26396848968495185,
+      "coverage_score": 0.681999146938324,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.08320826292037964,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.681999146938324,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.193115959999886
+}

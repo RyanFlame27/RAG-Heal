@@ -1,0 +1,80 @@
+{
+  "sample_index": 447,
+  "injected_label": "clean",
+  "input": {
+    "query": "What did the brother of John Zahm construct at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What did the brother of John Zahm construct at Notre Dame?' is an early wind tunnel. This is well-documented and widely accepted."
+    ],
+    "answer": "an early wind tunnel",
+    "label": "clean"
+  },
+  "seed": 489,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9852993488311768,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.995456337928772,
+      "retrieval_failure": 0.0005644922493956983,
+      "grounding_failure": 0.0025622411631047726,
+      "confidence_failure": 0.000656965421512723,
+      "coverage_failure": 0.0007599869859404862
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "An early wind tunnel.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What did the brother of John Zahm construct at Notre Dame?' is an early wind tunnel. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "An early wind tunnel.",
+  "initial_signals": {
+    "retrieval_similarity": 0.7641516327857971,
+    "entailment_score": 0.9930866360664368,
+    "mean_entropy": 0.18692886033810888,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "An early wind tunnel.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What did the brother of John Zahm construct at Notre Dame?' is an early wind tunnel. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7641516327857971,
+    "entailment_score": 0.9930866360664368,
+    "mean_entropy": 0.18692886033810888,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.2139802530000452
+}

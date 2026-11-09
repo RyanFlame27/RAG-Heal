@@ -1,0 +1,80 @@
+{
+  "sample_index": 135,
+  "injected_label": "clean",
+  "input": {
+    "query": "Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?' is Fr. Matthew Walsh. This is well-documented and widely accepted."
+    ],
+    "answer": "Fr. Matthew Walsh",
+    "label": "clean"
+  },
+  "seed": 177,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00023416649491991848,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9927918910980225,
+      "retrieval_failure": 0.0008589352946728468,
+      "grounding_failure": 0.004801759030669928,
+      "confidence_failure": 0.0010148498695343733,
+      "coverage_failure": 0.000532507780008018
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Fr. Matthew Walsh",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?' is Fr. Matthew Walsh. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Fr. Matthew Walsh",
+  "initial_signals": {
+    "retrieval_similarity": 0.9306129217147827,
+    "entailment_score": 0.00023416649491991848,
+    "mean_entropy": 0.0282668207274052,
+    "coverage_score": 0.6914269924163818,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Fr. Matthew Walsh",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?' is Fr. Matthew Walsh. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9306129217147827,
+    "entailment_score": 0.00023416649491991848,
+    "mean_entropy": 0.0282668207274052,
+    "coverage_score": 0.6914269924163818,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.3269806229995993
+}

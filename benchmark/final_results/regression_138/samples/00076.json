@@ -1,0 +1,105 @@
+{
+  "sample_index": 76,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "Where did Notre Dame students and the KKK have their encounter?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly South Bend",
+    "label": "confidence_failure"
+  },
+  "seed": 118,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0012949014781042933,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.0003971503465436399,
+      "retrieval_failure": 0.0002486409211996943,
+      "grounding_failure": 0.0003733305784408003,
+      "confidence_failure": 0.9986616373062134,
+      "coverage_failure": 0.000319282291457057
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.1433398425579071,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.0003409523550229866,
+    "coverage_score": 0.7234326601028442,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      6.2679853439331055,
+      5.785032749176025,
+      3.9826102256774902
+    ],
+    "candidate_contexts": [
+      ". Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia . On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes",
+      ". Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia",
+      ". Catholics rallied up around the team and listen to the games on the radio, especially when it knocked off the schools that symbolized the Protestant establishment in America — Harvard, Yale, Princeton, and Army . Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend"
+    ],
+    "candidate_raw_answer": "South Bend",
+    "candidate_parsed_answer": "South Bend",
+    "candidate_answer": "South Bend",
+    "candidate_signals": {
+      "retrieval_similarity": 0.7384133338928223,
+      "entailment_score": 0.8900559544563293,
+      "mean_entropy": 0.007549576803057789,
+      "coverage_score": 0.7234326601028442,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "South Bend",
+  "final_contexts": [
+    ". Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia . On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes",
+    ". Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia",
+    ". Catholics rallied up around the team and listen to the games on the radio, especially when it knocked off the schools that symbolized the Protestant establishment in America — Harvard, Yale, Princeton, and Army . Yet this role as high-profile flagship institution of Catholicism made it an easy target of anti-Catholicism. The most remarkable episode of violence was the clash between Notre Dame students and the Ku Klux Klan in 1924 . Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7384133338928223,
+    "entailment_score": 0.8900559544563293,
+    "mean_entropy": 0.007549576803057789,
+    "coverage_score": 0.7234326601028442,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 3.172219074000168
+}

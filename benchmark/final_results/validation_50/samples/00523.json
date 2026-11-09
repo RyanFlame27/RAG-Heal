@@ -1,0 +1,110 @@
+{
+  "sample_index": 523,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "How many years was Knute Rockne head coach at Notre Dame?",
+    "context_chunks": [
+      "Anacharsis (; ) was a Scythian prince and philosopher of uncertain historicity who lived in the 6th century BC.\n\nLife\nAnacharsis was the brother of the Scythian king Saulius, and both of them were the sons of the previous Scythian king, Gnurus.\n\nFew concrete details are known about the life of the h",
+      "Alfonso I (7 September 1134), called the Battler or the Warrior (), was King of Aragon and Navarre from 1104 until his death in 1134. He was the second son of King Sancho Ramírez and successor of his brother Peter I. With his marriage to Urraca, queen regnant of Castile, León and Galicia, in 1109, h",
+      "Alexis Carrel (; 28 June 1873 – 5 November 1944) was a French surgeon and biologist who was awarded the Nobel Prize in Physiology or Medicine in 1912 for pioneering vascular suturing techniques. He invented the first perfusion pump with Charles Lindbergh opening the way to organ transplantation. Car"
+    ],
+    "answer": "13",
+    "label": "retrieval_failure"
+  },
+  "seed": 565,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0005882920231670141,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003813059302046895,
+      "retrieval_failure": 0.9981369972229004,
+      "grounding_failure": 0.0005171921802684665,
+      "confidence_failure": 0.00031358670094050467,
+      "coverage_failure": 0.0006509172962978482
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Anacharsis (; ) was a Scythian prince and philosopher of uncertain historicity who lived in the 6th century BC.\n\nLife\nAnacharsis was the brother of the Scythian king Saulius, and both of them were the sons of the previous Scythian king, Gnurus.\n\nFew concrete details are known about the life of the h",
+    "Alfonso I (7 September 1134), called the Battler or the Warrior (), was King of Aragon and Navarre from 1104 until his death in 1134. He was the second son of King Sancho Ramírez and successor of his brother Peter I. With his marriage to Urraca, queen regnant of Castile, León and Galicia, in 1109, h",
+    "Alexis Carrel (; 28 June 1873 – 5 November 1944) was a French surgeon and biologist who was awarded the Nobel Prize in Physiology or Medicine in 1912 for pioneering vascular suturing techniques. He invented the first perfusion pump with Charles Lindbergh opening the way to organ transplantation. Car"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Knute Rockne is not mentioned in the evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.09959932416677475,
+    "entailment_score": 0.2114003300666809,
+    "mean_entropy": 0.12534886179369445,
+    "coverage_score": 0.7165132761001587,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Knute Rockne coaching tenure at Notre Dame: how many years?\"\n\nOr, more succinctly:\n\n\"Length of Knute Rockne's coaching",
+    "reranker_scores": [
+      8.753260612487793,
+      8.60850715637207,
+      7.069642543792725
+    ],
+    "candidate_contexts": [
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City.",
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history",
+      ". During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City."
+    ],
+    "candidate_raw_answer": "Knute Rockne was head coach at Notre Dame for 13 years.",
+    "candidate_parsed_answer": "Knute Rockne was head coach at Notre Dame for 13 years.",
+    "candidate_answer": "Knute Rockne was head coach at Notre Dame for 13 years.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6531240344047546,
+      "entailment_score": 0.9979342222213745,
+      "mean_entropy": 0.0012636964658030905,
+      "coverage_score": 0.7165132761001587,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Anacharsis (; ) was a Scythian prince and philosopher of uncertain historicity who lived in the 6th century BC.\n\nLife\nAnacharsis was the brother of the Scythian king Saulius, and both of them were the sons of the previous Scythian king, Gnurus.\n\nFew concrete details are known about the life of the h",
+    "Alfonso I (7 September 1134), called the Battler or the Warrior (), was King of Aragon and Navarre from 1104 until his death in 1134. He was the second son of King Sancho Ramírez and successor of his brother Peter I. With his marriage to Urraca, queen regnant of Castile, León and Galicia, in 1109, h",
+    "Alexis Carrel (; 28 June 1873 – 5 November 1944) was a French surgeon and biologist who was awarded the Nobel Prize in Physiology or Medicine in 1912 for pioneering vascular suturing techniques. He invented the first perfusion pump with Charles Lindbergh opening the way to organ transplantation. Car"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.09959932416677475,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7165132761001587,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 8.573587765999946
+}

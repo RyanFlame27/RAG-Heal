@@ -1,0 +1,105 @@
+{
+  "sample_index": 799,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "Who was the Notre Dame president that preceded John Jenkins?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly Malloy",
+    "label": "confidence_failure"
+  },
+  "seed": 841,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0007728096679784358,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.000392092508263886,
+      "retrieval_failure": 0.00025209487648680806,
+      "grounding_failure": 0.00037375796819105744,
+      "confidence_failure": 0.9986613988876343,
+      "coverage_failure": 0.00032062537502497435
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.09410559386014938,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.0003439544985545021,
+    "coverage_score": 0.7347339987754822,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      7.381122589111328,
+      6.891330718994141,
+      4.499192237854004
+    ],
+    "candidate_contexts": [
+      "Since 2005, Notre Dame has been led by John I. Jenkins, C.S.C., the 17th president of the university. Jenkins took over the position from Malloy on July 1, 2005 . In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies",
+      "Since 2005, Notre Dame has been led by John I. Jenkins, C.S.C., the 17th president of the university. Jenkins took over the position from Malloy on July 1, 2005 . In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies . During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre",
+      "As of 2012[update] research continued in many fields. The university president, John Jenkins, described his hope that Notre Dame would become \"one of the pre–eminent research institutions in the world\" in his inaugural address . The university has many multi-disciplinary institutes devoted to research in varying fields, including the Medieval Institute, the Kellogg Institute for International Studies, the Kroc Institute for International Peace studies, and the Center for Social Concerns"
+    ],
+    "candidate_raw_answer": "Malloy",
+    "candidate_parsed_answer": "Malloy",
+    "candidate_answer": "Malloy",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6250802874565125,
+      "entailment_score": 0.03747458755970001,
+      "mean_entropy": 0.34378838829737407,
+      "coverage_score": 0.7347339987754822,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Malloy",
+  "final_contexts": [
+    "Since 2005, Notre Dame has been led by John I. Jenkins, C.S.C., the 17th president of the university. Jenkins took over the position from Malloy on July 1, 2005 . In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies",
+    "Since 2005, Notre Dame has been led by John I. Jenkins, C.S.C., the 17th president of the university. Jenkins took over the position from Malloy on July 1, 2005 . In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies . During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre",
+    "As of 2012[update] research continued in many fields. The university president, John Jenkins, described his hope that Notre Dame would become \"one of the pre–eminent research institutions in the world\" in his inaugural address . The university has many multi-disciplinary institutes devoted to research in varying fields, including the Medieval Institute, the Kellogg Institute for International Studies, the Kroc Institute for International Peace studies, and the Center for Social Concerns"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6250802874565125,
+    "entailment_score": 0.03747458755970001,
+    "mean_entropy": 0.34378838829737407,
+    "coverage_score": 0.7347339987754822,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 2.6821434759999647
+}

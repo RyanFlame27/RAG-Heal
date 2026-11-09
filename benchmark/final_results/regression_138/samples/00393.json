@@ -1,0 +1,110 @@
+{
+  "sample_index": 393,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "Who was the president of Notre Dame in 1879?",
+    "context_chunks": [
+      "Arthur Aikin  (19 May 177315 April 1854) was an English chemist, mineralogist and scientific writer, and was a founding member of the Chemical Society (now the Royal Society of Chemistry). He first became its treasurer in 1841, and later became the society's second president.\n\nLife\nHe was born at Wa",
+      "Alban Maria Johannes Berg ( , ; 9 February 1885 – 24 December 1935) was an Austrian composer of the Second Viennese School. His compositional style combined Romantic lyricism with the twelve-tone technique. Although he left a relatively small oeuvre, he is remembered as one of the most important com",
+      "There has not been a monarch known as Alphonso or Alfonso I of Spain, the first king of that name of the unified Spain being Alfonso XII (1857–1885). Several precursor kingdoms have had an Alfonso I, including:\n\nAlfonso I of Asturias ( – 757)\nAlfonso I of Aragon and Navarre ( – 1134), known as the B"
+    ],
+    "answer": "Rev. William Corby",
+    "label": "retrieval_failure"
+  },
+  "seed": 435,
+  "classifier_split": "test",
+  "stored_answer_grounding": 1.3936414688942023e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00039275907329283655,
+      "retrieval_failure": 0.9981416463851929,
+      "grounding_failure": 0.0005284788203425705,
+      "confidence_failure": 0.0003182037326041609,
+      "coverage_failure": 0.0006190085550770164
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Arthur Aikin  (19 May 177315 April 1854) was an English chemist, mineralogist and scientific writer, and was a founding member of the Chemical Society (now the Royal Society of Chemistry). He first became its treasurer in 1841, and later became the society's second president.\n\nLife\nHe was born at Wa",
+    "Alban Maria Johannes Berg ( , ; 9 February 1885 – 24 December 1935) was an Austrian composer of the Second Viennese School. His compositional style combined Romantic lyricism with the twelve-tone technique. Although he left a relatively small oeuvre, he is remembered as one of the most important com",
+    "There has not been a monarch known as Alphonso or Alfonso I of Spain, the first king of that name of the unified Spain being Alfonso XII (1857–1885). Several precursor kingdoms have had an Alfonso I, including:\n\nAlfonso I of Asturias ( – 757)\nAlfonso I of Aragon and Navarre ( – 1134), known as the B"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Arthur Aikin's biographical information does not mention anything about being the president of Notre Dame in 1879.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.137689471244812,
+    "entailment_score": 1.6459207472507842e-05,
+    "mean_entropy": 0.21867728639985218,
+    "coverage_score": 0.6191995143890381,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Find out who was the president of Notre Dame University in the year 1879.\"",
+    "reranker_scores": [
+      4.924434661865234,
+      4.178923606872559,
+      4.152475833892822
+    ],
+    "candidate_contexts": [
+      "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame",
+      "Since 2005, Notre Dame has been led by John I. Jenkins, C.S.C., the 17th president of the university. Jenkins took over the position from Malloy on July 1, 2005 . In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies",
+      "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame . He wrote, \"Notre Dame football is a spiritual service because it is played for the honor and glory of God and of his Blessed Mother. When St. Paul said: 'Whether you eat or drink, or whatsoever else you do, do all for the glory of God,' he included football.\""
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (Holy Cross Father John Francis O'Hara became president in 1934.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5834134221076965,
+      "entailment_score": 0.000876139325555414,
+      "mean_entropy": 0.12969259004050787,
+      "coverage_score": 0.6191995143890381,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Arthur Aikin  (19 May 177315 April 1854) was an English chemist, mineralogist and scientific writer, and was a founding member of the Chemical Society (now the Royal Society of Chemistry). He first became its treasurer in 1841, and later became the society's second president.\n\nLife\nHe was born at Wa",
+    "Alban Maria Johannes Berg ( , ; 9 February 1885 – 24 December 1935) was an Austrian composer of the Second Viennese School. His compositional style combined Romantic lyricism with the twelve-tone technique. Although he left a relatively small oeuvre, he is remembered as one of the most important com",
+    "There has not been a monarch known as Alphonso or Alfonso I of Spain, the first king of that name of the unified Spain being Alfonso XII (1857–1885). Several precursor kingdoms have had an Alfonso I, including:\n\nAlfonso I of Asturias ( – 757)\nAlfonso I of Aragon and Navarre ( – 1134), known as the B"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.137689471244812,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6191995143890381,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 9.448972285999844
+}

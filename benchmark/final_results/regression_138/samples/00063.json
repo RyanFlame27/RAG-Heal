@@ -1,0 +1,104 @@
+{
+  "sample_index": 63,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "What was Ivan Meštrović known for being?",
+    "context_chunks": [
+      "Many sources discuss What was Ivan Meštrović known for being. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1776",
+    "label": "grounding_failure"
+  },
+  "seed": 105,
+  "classifier_split": "test",
+  "stored_answer_grounding": 3.9000995457172394e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00040056667057797313,
+      "retrieval_failure": 0.0006070644594728947,
+      "grounding_failure": 0.9982287287712097,
+      "confidence_failure": 0.00046756750089116395,
+      "coverage_failure": 0.00029608793556690216
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss What was Ivan Meštrović known for being. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9247845411300659,
+    "entailment_score": 0.000640536134596914,
+    "mean_entropy": 0.00037871397914666607,
+    "coverage_score": 0.5653775930404663,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      0.003748615738004446,
+      -2.4714393615722656,
+      -2.6755340099334717
+    ],
+    "candidate_contexts": [
+      ". The Renaissance had the greatest impact on the Adriatic Sea coast since the remainder was embroiled in the Hundred Years' Croatian–Ottoman War. With the waning of the Ottoman Empire, art flourished during the Baroque and Rococo . The 19th and 20th centuries brought affirmation of numerous Croatian artisans, helped by several patrons of the arts such as bishop Josip Juraj Strossmayer. Croatian artists of the period achieving renown were Vlaho Bukovac, Ivan Meštrović, and Ivan Generalić. The Baška tablet, a stone inscribed with the glagolitic alphabet found on the Krk island and dated to , is considered to be the oldest surviving prose in Croatian. The beginning of more vigorous development of Croatian literature is marked by the Renaissance and Marko Marulić",
+      ". He walked out of a screening of Solaris at the halfway point, and stopped a VHS tape of Mirror at a similar juncture. Today, he considers the latter to be the greatest film ever made. \"I've seen it maybe 20 times,\" he says. The Armenian filmmaker Sergei Parajanov remarked that watching Tarkovsky's film, Ivan's Childhood was his main inspiration to become a filmmaker by saying: \"I did not know how to do anything and I would not have done anything if there had not been Ivan's Childhood\". The Austrian filmmaker Michael Haneke voted for Mirror on his top 10 films in the 2002 Sight & Sound directors' poll and later said that he has seen the picture at least 25 times.",
+      "А religious visual arts heritage includes frescoes, murals and icons, many produced by the medieval Tarnovo Artistic School. Like literature, it was not until the National Revival when Bulgarian visual arts began to reemerge. Zahari Zograf was a pioneer of the visual arts in the pre-Liberation era . After the Liberation, Ivan Mrkvička, Anton Mitov, Vladimir Dimitrov, Tsanko Lavrenov and Zlatyu Boyadzhiev introduced newer styles and substance, depicting scenery from Bulgarian villages, old towns and historical subjects . Christo is the most famous Bulgarian artist of the 21st century, known for his outdoor installations."
+    ],
+    "candidate_raw_answer": "Ivan Meštrović was known for being a Croatian artist.",
+    "candidate_parsed_answer": "Ivan Meštrović was known for being a Croatian artist.",
+    "candidate_answer": "Ivan Meštrović was known for being a Croatian artist.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.3552556037902832,
+      "entailment_score": 0.021646780893206596,
+      "mean_entropy": 0.005859546308473081,
+      "coverage_score": 0.5653775930404663,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss What was Ivan Meštrović known for being. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9247845411300659,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5653775930404663,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 4.096111138000197
+}

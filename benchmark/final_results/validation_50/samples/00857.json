@@ -1,0 +1,104 @@
+{
+  "sample_index": 857,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "From where did Anton-Hermann Chroust come to reach Notre Dame?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly Germany",
+    "label": "confidence_failure"
+  },
+  "seed": 899,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0005427803262136877,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.00039236340671777725,
+      "retrieval_failure": 0.0002531256468500942,
+      "grounding_failure": 0.0003652642189990729,
+      "confidence_failure": 0.9986687898635864,
+      "coverage_failure": 0.00032043183455243707
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.13492679595947266,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.0002674395442542076,
+    "coverage_score": 0.493034303188324,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -5.432886600494385,
+      -6.03604793548584,
+      -8.54816722869873
+    ],
+    "candidate_contexts": [
+      ". By contrast, the Jesuit colleges, bastions of academic conservatism, were reluctant to move to a system of electives. Their graduates were shut out of Harvard Law School for that reason. Notre Dame continued to grow over the years, adding more colleges, programs, and sports teams . By 1921, with the addition of the College of Commerce, Notre Dame had grown from a small college to a university with five colleges and a professional law school. The university continued to expand and add new residence halls and buildings with each subsequent president.",
+      "Hesburgh is also credited with transforming the face of Notre Dame by making it a coeducational institution . In the mid-1960s Notre Dame and Saint Mary's College developed a co-exchange program whereby several hundred students took classes not offered at their home institution, an arrangement that added undergraduate women to a campus that already had a few women in the graduate schools",
+      ". This Bernard named Claire Vallée, or Clairvaux, on 25 June 1115, and the names of Bernard and Clairvaux soon became inseparable. During the absence of the Bishop of Langres, Bernard was blessed as abbot by William of Champeaux, Bishop of Châlons-sur-Marne . From then on a strong friendship grew between the abbot and the bishop, who was professor of theology at Notre Dame of Paris and the founder of St. Victor Abbey in Paris. The beginnings of Clairvaux Abbey were austere; Bernard soon became ill. Nonetheless, candidates for the monastic life flocked to it in great numbers. Even his father and all his brothers entered Cîteaux, leaving only Humbeline, his sister, in the secular world"
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (Anton-Hermann Chroust is not mentioned in the provided evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.3407386839389801,
+      "entailment_score": 0.00020071116159670055,
+      "mean_entropy": 0.05189700966671739,
+      "coverage_score": 0.493034303188324,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.13492679595947266,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.493034303188324,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 4.644468376000077
+}

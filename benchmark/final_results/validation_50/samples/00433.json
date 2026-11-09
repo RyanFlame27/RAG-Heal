@@ -1,0 +1,107 @@
+{
+  "sample_index": 433,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How tall is the Babel Tower on Mars Colony Alpha?",
+    "context_chunks": [
+      "An annual plant is a plant that completes its life cycle, from germination to the production of seeds, within one growing season, and then dies. The length of growing seasons and period in which they take place vary according to geographical location, and may not correspond to the four traditional s",
+      "The Cobble Hill Tunnel (also known as the Atlantic Avenue Tunnel) is an abandoned Long Island Rail Road (LIRR) tunnel beneath Atlantic Avenue in Brooklyn, New York City, running through the neighborhoods of Downtown Brooklyn and Cobble Hill. When open, it ran for about  between Columbia Street and B"
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 475,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.0002215928107034415,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.00034138275077566504,
+      "retrieval_failure": 0.0005339834024198353,
+      "grounding_failure": 0.0007538143545389175,
+      "confidence_failure": 0.0009376622037962079,
+      "coverage_failure": 0.9974331259727478
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "An annual plant is a plant that completes its life cycle, from germination to the production of seeds, within one growing season, and then dies. The length of growing seasons and period in which they take place vary according to geographical location, and may not correspond to the four traditional s",
+    "The Cobble Hill Tunnel (also known as the Atlantic Avenue Tunnel) is an abandoned Long Island Rail Road (LIRR) tunnel beneath Atlantic Avenue in Brooklyn, New York City, running through the neighborhoods of Downtown Brooklyn and Cobble Hill. When open, it ran for about  between Columbia Street and B"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of the Babel Tower or Mars Colony Alpha in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.11393600702285767,
+    "entailment_score": 0.0002215928107034415,
+    "mean_entropy": 0.1263801343186377,
+    "coverage_score": 0.49403467774391174,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -7.201011657714844,
+      -7.739116668701172,
+      -9.716349601745605
+    ],
+    "candidate_contexts": [
+      ". The skyline has drastically changed in recent years, and the residential real estate market has remained relatively strong. , there were 31 high rise projects either under construction, approved or planned to be completed in Austin's downtown core between 2017 and 2020 . Sixteen of those were set to rise above  tall, including four above 600', and eight above 500'. An additional 15 towers were slated to stand between 300' and 399' tall. Climate",
+      ". Dimitrija Church in 1830. Legend says that the Ottoman authorities collected around 60,000 eggs from nearby villages and mixed them in the mortar to make the walls stronger. The tower has a rectangular base and is about 30 meters high. Near the top is a rectangular terrace with an iron fence. On each side of the fence is an iron console construction which holds the lamps for lighting the clock. The clock is on the highest of three levels. The original clock was replaced during World War II with a working one, given by the Nazis because the city had maintained German graves from World War I.",
+      "Taragarh Fort: It is reputed to be the oldest hill fort in India. It stands, with precipitous surroundings, at a height of 2,855 ft. above sea-level, and between 1,300 and 1,400 ft. above the valley at its base; and it is partially enclosed by a wall some 20 feet thick and as many high, built of huge blocks of stone, cut and squared and are about  in circumference . This hill fort guarding Ajmer, was the seat of the Chauhan rulers. It was built by King Ajaypal Chauhan on the summit of Taragarh Hill and overlooks Ajmer. The battlements run along the top of the hill"
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (There is no mention of the Babel Tower or Mars Colony Alpha in the provided evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.2613973319530487,
+      "entailment_score": 0.005401666276156902,
+      "mean_entropy": 0.1806232519217398,
+      "coverage_score": 0.49403467774391174,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "An annual plant is a plant that completes its life cycle, from germination to the production of seeds, within one growing season, and then dies. The length of growing seasons and period in which they take place vary according to geographical location, and may not correspond to the four traditional s",
+    "The Cobble Hill Tunnel (also known as the Atlantic Avenue Tunnel) is an abandoned Long Island Rail Road (LIRR) tunnel beneath Atlantic Avenue in Brooklyn, New York City, running through the neighborhoods of Downtown Brooklyn and Cobble Hill. When open, it ran for about  between Columbia Street and B"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.11393600702285767,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.49403467774391174,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.556547310000042
+}

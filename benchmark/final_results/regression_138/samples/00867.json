@@ -1,0 +1,104 @@
+{
+  "sample_index": 867,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "How many students at Notre Dame received the Heisman Trophy?",
+    "context_chunks": [
+      "Many sources discuss How many students at Notre Dame received the Heisman Trophy. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Sydney",
+    "label": "grounding_failure"
+  },
+  "seed": 909,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00013420172035694122,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00041369153768755496,
+      "retrieval_failure": 0.0006223152158781886,
+      "grounding_failure": 0.9982016086578369,
+      "confidence_failure": 0.00048517173854634166,
+      "coverage_failure": 0.00027724384563043714
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss How many students at Notre Dame received the Heisman Trophy. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8457104563713074,
+    "entailment_score": 0.00030694034649059176,
+    "mean_entropy": 0.00013120980282530162,
+    "coverage_score": 0.6324010491371155,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.7554776668548584,
+      3.500303030014038,
+      2.4436607360839844
+    ],
+    "candidate_contexts": [
+      "Notre Dame rose to national prominence in the early 1900s for its Fighting Irish football team, especially under the guidance of the legendary coach Knute Rockne. The university's athletic teams are members of the NCAA Division I and are known collectively as the Fighting Irish . The football team, an Independent, has accumulated eleven consensus national championships, seven Heisman Trophy winners, 62 members in the College Football Hall of Fame and 13 members in the Pro Football Hall of Fame and is considered one of the most famed and successful college football teams in history",
+      "In 2014 the Notre Dame student body consisted of 12,179 students, with 8,448 undergraduates, 2,138 graduate and professional and 1,593 professional (Law, M.Div., Business, M.Ed.) students . Around 21–24% of students are children of alumni, and although 37% of students come from the Midwestern United States, the student body represents all 50 states and 100 countries",
+      ". The football team, an Independent, has accumulated eleven consensus national championships, seven Heisman Trophy winners, 62 members in the College Football Hall of Fame and 13 members in the Pro Football Hall of Fame and is considered one of the most famed and successful college football teams in history . Other ND teams, chiefly in the Atlantic Coast Conference, have accumulated 16 national championships. The Notre Dame Victory March is often regarded as the most famous and recognizable collegiate fight song."
+    ],
+    "candidate_raw_answer": "Seven students at Notre Dame have received the Heisman Trophy.",
+    "candidate_parsed_answer": "Seven students at Notre Dame have received the Heisman Trophy.",
+    "candidate_answer": "Seven students at Notre Dame have received the Heisman Trophy.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6258000731468201,
+      "entailment_score": 0.007888579741120338,
+      "mean_entropy": 0.022599884987220563,
+      "coverage_score": 0.6324010491371155,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss How many students at Notre Dame received the Heisman Trophy. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8457104563713074,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6324010491371155,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.7536200130002726
+}

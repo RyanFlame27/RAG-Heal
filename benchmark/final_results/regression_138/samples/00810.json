@@ -1,0 +1,105 @@
+{
+  "sample_index": 810,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "What is a common name to reference the mural created by Millard Sheets at Notre Dame?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly Touchdown Jesus",
+    "label": "confidence_failure"
+  },
+  "seed": 852,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0007968821446411312,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.0003988482349086553,
+      "retrieval_failure": 0.00025017978623509407,
+      "grounding_failure": 0.00036363297840580344,
+      "confidence_failure": 0.9986699819564819,
+      "coverage_failure": 0.0003174196172039956
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": -0.03436055779457092,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.0002191195736014169,
+    "coverage_score": 0.6895574331283569,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.8894503116607666,
+      -5.29110050201416,
+      -5.788762092590332
+    ],
+    "candidate_contexts": [
+      "The library system of the university is divided between the main library and each of the colleges and schools. The main building is the 14-story Theodore M. Hesburgh Library, completed in 1963, which is the third building to house the main collection of books . The front of the library is adorned with the Word of Life mural designed by artist Millard Sheets. This mural is popularly known as \"Touchdown Jesus\" because of its proximity to Notre Dame Stadium and Jesus' arms appearing to make the signal for a touchdown.",
+      ". Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community . There are multitudes of religious statues and artwork around campus, most prominent of which are the statue of Mary on the Main Building, the Notre Dame Grotto, and the Word of Life mural on Hesburgh Library depicting Christ as a teacher. Additionally, every classroom displays a crucifix . There are many religious clubs (catholic and non-Catholic) at the school, including Council #1477 of the Knights of Columbus (KOC), Baptist Collegiate Ministry (BCM), Jewish Club, Muslim Student Association, Orthodox Christian Fellowship, The Mormon Club, and many more",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy."
+    ],
+    "candidate_raw_answer": "\"Touchdown Jesus\"",
+    "candidate_parsed_answer": "\"Touchdown Jesus\"",
+    "candidate_answer": "\"Touchdown Jesus\"",
+    "candidate_signals": {
+      "retrieval_similarity": 0.48377808928489685,
+      "entailment_score": 0.008466502651572227,
+      "mean_entropy": 0.029893268084227504,
+      "coverage_score": 0.6895574331283569,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "\"Touchdown Jesus\"",
+  "final_contexts": [
+    "The library system of the university is divided between the main library and each of the colleges and schools. The main building is the 14-story Theodore M. Hesburgh Library, completed in 1963, which is the third building to house the main collection of books . The front of the library is adorned with the Word of Life mural designed by artist Millard Sheets. This mural is popularly known as \"Touchdown Jesus\" because of its proximity to Notre Dame Stadium and Jesus' arms appearing to make the signal for a touchdown.",
+    ". Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community . There are multitudes of religious statues and artwork around campus, most prominent of which are the statue of Mary on the Main Building, the Notre Dame Grotto, and the Word of Life mural on Hesburgh Library depicting Christ as a teacher. Additionally, every classroom displays a crucifix . There are many religious clubs (catholic and non-Catholic) at the school, including Council #1477 of the Knights of Columbus (KOC), Baptist Collegiate Ministry (BCM), Jewish Club, Muslim Student Association, Orthodox Christian Fellowship, The Mormon Club, and many more",
+    "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.48377808928489685,
+    "entailment_score": 0.008466502651572227,
+    "mean_entropy": 0.029893268084227504,
+    "coverage_score": 0.6895574331283569,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 3.2056513559996347
+}

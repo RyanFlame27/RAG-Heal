@@ -1,0 +1,110 @@
+{
+  "sample_index": 724,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "How many students at Notre Dame received the Heisman Trophy?",
+    "context_chunks": [
+      "Antwerp is a city in Belgium and capital of the Antwerp province.\n\nAntwerp may also refer to:\n\nIn Belgium\n Antwerp (district)\n Antwerp (province)\n\nIn the United States\n Antwerp, Ohio\n Antwerp Township, Michigan\n Antwerp, New York\n Antwerp (village), New York\n\nIn Australia\nAntwerp, Victoria\n\nOther \nP",
+      "Alfonso Leng Haygus (11 February 1884 – 11 November 1974) was a post-romantic composer of classical music. He was born in Santiago, Chile. He wrote the first important symphonic work in Chilean tradition, \"La Muerte de Alcino\", a symphonic poem inspired by the novel of Pedro Prado. He composed many ",
+      "An abugida (, from Ge'ez: ), sometimes known as alphasyllabary, neosyllabary or pseudo-alphabet, is a segmental writing system in which consonant–vowel sequences are written as units; each unit is based on a consonant letter, and vowel notation is secondary, like a diacritical mark. This contrasts w"
+    ],
+    "answer": "seven",
+    "label": "retrieval_failure"
+  },
+  "seed": 766,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00034229675657115877,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00037473926204256713,
+      "retrieval_failure": 0.9981180429458618,
+      "grounding_failure": 0.000502841779962182,
+      "confidence_failure": 0.0003053716500289738,
+      "coverage_failure": 0.0006991229602135718
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Antwerp is a city in Belgium and capital of the Antwerp province.\n\nAntwerp may also refer to:\n\nIn Belgium\n Antwerp (district)\n Antwerp (province)\n\nIn the United States\n Antwerp, Ohio\n Antwerp Township, Michigan\n Antwerp, New York\n Antwerp (village), New York\n\nIn Australia\nAntwerp, Victoria\n\nOther \nP",
+    "Alfonso Leng Haygus (11 February 1884 – 11 November 1974) was a post-romantic composer of classical music. He was born in Santiago, Chile. He wrote the first important symphonic work in Chilean tradition, \"La Muerte de Alcino\", a symphonic poem inspired by the novel of Pedro Prado. He composed many ",
+    "An abugida (, from Ge'ez: ), sometimes known as alphasyllabary, neosyllabary or pseudo-alphabet, is a segmental writing system in which consonant–vowel sequences are written as units; each unit is based on a consonant letter, and vowel notation is secondary, like a diacritical mark. This contrasts w"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of Notre Dame or the Heisman Trophy in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.04498760774731636,
+    "entailment_score": 0.00017981028940994292,
+    "mean_entropy": 0.09987467445830488,
+    "coverage_score": 0.6324010491371155,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Number of Heisman Trophy winners at Notre Dame University\"",
+    "reranker_scores": [
+      3.7554776668548584,
+      3.500303030014038,
+      2.4436607360839844
+    ],
+    "candidate_contexts": [
+      "Notre Dame rose to national prominence in the early 1900s for its Fighting Irish football team, especially under the guidance of the legendary coach Knute Rockne. The university's athletic teams are members of the NCAA Division I and are known collectively as the Fighting Irish . The football team, an Independent, has accumulated eleven consensus national championships, seven Heisman Trophy winners, 62 members in the College Football Hall of Fame and 13 members in the Pro Football Hall of Fame and is considered one of the most famed and successful college football teams in history",
+      "In 2014 the Notre Dame student body consisted of 12,179 students, with 8,448 undergraduates, 2,138 graduate and professional and 1,593 professional (Law, M.Div., Business, M.Ed.) students . Around 21–24% of students are children of alumni, and although 37% of students come from the Midwestern United States, the student body represents all 50 states and 100 countries",
+      ". The football team, an Independent, has accumulated eleven consensus national championships, seven Heisman Trophy winners, 62 members in the College Football Hall of Fame and 13 members in the Pro Football Hall of Fame and is considered one of the most famed and successful college football teams in history . Other ND teams, chiefly in the Atlantic Coast Conference, have accumulated 16 national championships. The Notre Dame Victory March is often regarded as the most famous and recognizable collegiate fight song."
+    ],
+    "candidate_raw_answer": "Seven students at Notre Dame have received the Heisman Trophy.",
+    "candidate_parsed_answer": "Seven students at Notre Dame have received the Heisman Trophy.",
+    "candidate_answer": "Seven students at Notre Dame have received the Heisman Trophy.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6258000731468201,
+      "entailment_score": 0.007888579741120338,
+      "mean_entropy": 0.022599884987220563,
+      "coverage_score": 0.6324010491371155,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Antwerp is a city in Belgium and capital of the Antwerp province.\n\nAntwerp may also refer to:\n\nIn Belgium\n Antwerp (district)\n Antwerp (province)\n\nIn the United States\n Antwerp, Ohio\n Antwerp Township, Michigan\n Antwerp, New York\n Antwerp (village), New York\n\nIn Australia\nAntwerp, Victoria\n\nOther \nP",
+    "Alfonso Leng Haygus (11 February 1884 – 11 November 1974) was a post-romantic composer of classical music. He was born in Santiago, Chile. He wrote the first important symphonic work in Chilean tradition, \"La Muerte de Alcino\", a symphonic poem inspired by the novel of Pedro Prado. He composed many ",
+    "An abugida (, from Ge'ez: ), sometimes known as alphasyllabary, neosyllabary or pseudo-alphabet, is a segmental writing system in which consonant–vowel sequences are written as units; each unit is based on a consonant letter, and vowel notation is secondary, like a diacritical mark. This contrasts w"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.04498760774731636,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6324010491371155,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 7.1646435519996885
+}

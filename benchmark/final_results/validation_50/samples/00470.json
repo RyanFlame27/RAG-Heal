@@ -1,0 +1,109 @@
+{
+  "sample_index": 470,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "In what year was the College of Engineering at Notre Dame formed?",
+    "context_chunks": [
+      "Audio most commonly refers to sound, as it is transmitted in signal form. It may also refer to:\n\nSound\nAudio signal, an electrical representation of sound\nAudio frequency, a frequency in the audio spectrum\nDigital audio, representation of sound in a form processed and/or stored by computers or digit",
+      "Ares (; , Árēs ) is the Greek god of war and courage. He is one of the Twelve Olympians, and the son of Zeus and Hera. The Greeks were generally ambivalent towards him. He embodies the physical valor necessary for success in war but can also personify sheer brutality and bloodlust, in contrast to hi",
+      "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy).  Surgery of each abdominal organ is dealt with separately in connection with the description of that organ (see stomach, kidney, liver, etc.) Diseases affecting the abdominal cavity are dealt"
+    ],
+    "answer": "1920",
+    "label": "retrieval_failure"
+  },
+  "seed": 512,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 9.874665556708351e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003290182794444263,
+      "retrieval_failure": 0.9981549382209778,
+      "grounding_failure": 0.0004940350772812963,
+      "confidence_failure": 0.00034571040305309,
+      "coverage_failure": 0.000676373194437474
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Audio most commonly refers to sound, as it is transmitted in signal form. It may also refer to:\n\nSound\nAudio signal, an electrical representation of sound\nAudio frequency, a frequency in the audio spectrum\nDigital audio, representation of sound in a form processed and/or stored by computers or digit",
+    "Ares (; , Árēs ) is the Greek god of war and courage. He is one of the Twelve Olympians, and the son of Zeus and Hera. The Greeks were generally ambivalent towards him. He embodies the physical valor necessary for success in war but can also personify sheer brutality and bloodlust, in contrast to hi",
+    "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy).  Surgery of each abdominal organ is dealt with separately in connection with the description of that organ (see stomach, kidney, liver, etc.) Diseases affecting the abdominal cavity are dealt"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of the College of Engineering at Notre Dame in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.043369948863983154,
+    "entailment_score": 5.806680565001443e-05,
+    "mean_entropy": 0.11700381208659502,
+    "coverage_score": 0.6569247245788574,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Year established College of Engineering Notre Dame\"\n\nOr, for a more specific search:\n\n\"Year of foundation University of Notre Dame College of Engineering\"",
+    "reranker_scores": [
+      2.2264180183410645,
+      2.0334300994873047,
+      1.8330357074737549
+    ],
+    "candidate_contexts": [
+      "All of Notre Dame's undergraduate students are a part of one of the five undergraduate colleges at the school or are in the First Year of Studies program . The First Year of Studies program was established in 1962 to guide incoming freshmen in their first year at the school before they have declared a major",
+      ". By contrast, the Jesuit colleges, bastions of academic conservatism, were reluctant to move to a system of electives. Their graduates were shut out of Harvard Law School for that reason. Notre Dame continued to grow over the years, adding more colleges, programs, and sports teams . By 1921, with the addition of the College of Commerce, Notre Dame had grown from a small college to a university with five colleges and a professional law school. The university continued to expand and add new residence halls and buildings with each subsequent president.",
+      "The College of Engineering was established in 1920, however, early courses in civil and mechanical engineering were a part of the College of Science since the 1870s . Today the college, housed in the Fitzpatrick, Cushing, and Stinson-Remick Halls of Engineering, includes five departments of study – aerospace and mechanical engineering, chemical and biomolecular engineering, civil engineering and geological sciences, computer science and engineering, and"
+    ],
+    "candidate_raw_answer": "The College of Engineering was established in 1920.",
+    "candidate_parsed_answer": "The College of Engineering was established in 1920.",
+    "candidate_answer": "1920",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6233283281326294,
+      "entailment_score": 0.2663280963897705,
+      "mean_entropy": 0.07931627969714507,
+      "coverage_score": 0.6569247245788574,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "1920",
+  "final_contexts": [
+    "The College of Engineering was established in 1920, however, early courses in civil and mechanical engineering were a part of the College of Science since the 1870s . Today the college, housed in the Fitzpatrick, Cushing, and Stinson-Remick Halls of Engineering, includes five departments of study – aerospace and mechanical engineering, chemical and biomolecular engineering, civil engineering and geological sciences, computer science and engineering, and",
+    "All of Notre Dame's undergraduate students are a part of one of the five undergraduate colleges at the school or are in the First Year of Studies program . The First Year of Studies program was established in 1962 to guide incoming freshmen in their first year at the school before they have declared a major",
+    ". By contrast, the Jesuit colleges, bastions of academic conservatism, were reluctant to move to a system of electives. Their graduates were shut out of Harvard Law School for that reason. Notre Dame continued to grow over the years, adding more colleges, programs, and sports teams . By 1921, with the addition of the College of Commerce, Notre Dame had grown from a small college to a university with five colleges and a professional law school. The university continued to expand and add new residence halls and buildings with each subsequent president."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6233283281326294,
+    "entailment_score": 0.2663280963897705,
+    "mean_entropy": 0.07931627969714507,
+    "coverage_score": 0.6569247245788574,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 7.873343939000279
+}

@@ -1,0 +1,104 @@
+{
+  "sample_index": 534,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "How many national titles were won when Knute Rockne coached at Notre Dame?",
+    "context_chunks": [
+      "Many sources discuss How many national titles were won when Knute Rockne coached at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Cairo",
+    "label": "grounding_failure"
+  },
+  "seed": 576,
+  "classifier_split": "test",
+  "stored_answer_grounding": 8.91216259333305e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0003948971861973405,
+      "retrieval_failure": 0.0005590390064753592,
+      "grounding_failure": 0.9983032941818237,
+      "confidence_failure": 0.0004595635982695967,
+      "coverage_failure": 0.00028308690525591373
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss How many national titles were won when Knute Rockne coached at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9022171497344971,
+    "entailment_score": 0.00022064699442125857,
+    "mean_entropy": 0.0001538578818728918,
+    "coverage_score": 0.7750253081321716,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      7.985921382904053,
+      7.7380595207214355,
+      7.577834606170654
+    ],
+    "candidate_contexts": [
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City.",
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history",
+      ". During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City."
+    ],
+    "candidate_raw_answer": "Three national titles were won when Knute Rockne coached at Notre Dame.",
+    "candidate_parsed_answer": "Three national titles were won when Knute Rockne coached at Notre Dame.",
+    "candidate_answer": "Three national titles were won when Knute Rockne coached at Notre Dame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.7617818713188171,
+      "entailment_score": 0.9965169429779053,
+      "mean_entropy": 0.05604506364325233,
+      "coverage_score": 0.7750253081321716,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss How many national titles were won when Knute Rockne coached at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9022171497344971,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7750253081321716,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 4.212216581999655
+}

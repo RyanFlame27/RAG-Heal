@@ -1,0 +1,80 @@
+{
+  "sample_index": 979,
+  "injected_label": "clean",
+  "input": {
+    "query": "Where did Notre Dame students and the KKK have their encounter?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Where did Notre Dame students and the KKK have their encounter?' is South Bend. This is well-documented and widely accepted."
+    ],
+    "answer": "South Bend",
+    "label": "clean"
+  },
+  "seed": 1021,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9791586399078369,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9955288767814636,
+      "retrieval_failure": 0.0004938719212077558,
+      "grounding_failure": 0.002471401123329997,
+      "confidence_failure": 0.0006581803900189698,
+      "coverage_failure": 0.0008475991198793054
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "South Bend",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Where did Notre Dame students and the KKK have their encounter?' is South Bend. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "South Bend",
+  "initial_signals": {
+    "retrieval_similarity": 0.8684660196304321,
+    "entailment_score": 0.9791586399078369,
+    "mean_entropy": 0.05807241457023338,
+    "coverage_score": 0.7234326601028442,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "South Bend",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Where did Notre Dame students and the KKK have their encounter?' is South Bend. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8684660196304321,
+    "entailment_score": 0.9791586399078369,
+    "mean_entropy": 0.05807241457023338,
+    "coverage_score": 0.7234326601028442,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.078200809000009
+}

@@ -1,0 +1,110 @@
+{
+  "sample_index": 961,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What did the brother of John Zahm construct at Notre Dame?",
+    "context_chunks": [
+      "The Apicomplexa (also called Apicomplexia) are a large phylum of mainly parasitic alveolates. Most of them possess a unique form of organelle that comprises a type of non-photosynthetic plastid called an apicoplast, and an apical complex structure. The organelle is an adaptation that the apicomplexa",
+      "Asparagales (asparagoid lilies) is an order of plants in modern classification systems such as the Angiosperm Phylogeny Group (APG) and the Angiosperm Phylogeny Web. The order takes its name from the type family Asparagaceae and is placed in the monocots amongst the lilioid monocots. The order has o",
+      "The MessagePad is a discontinued series of personal digital assistant devices developed by Apple Computer for the Newton platform in 1993.  Some electronic engineering and the manufacture of Apple's MessagePad devices was undertaken in Japan by Sharp. The devices are based on the ARM 610 RISC proces"
+    ],
+    "answer": "an early wind tunnel",
+    "label": "retrieval_failure"
+  },
+  "seed": 1003,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0015308973379433155,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00040954345604404807,
+      "retrieval_failure": 0.9981001019477844,
+      "grounding_failure": 0.0005311711574904621,
+      "confidence_failure": 0.000328966008964926,
+      "coverage_failure": 0.0006302737747319043
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "The Apicomplexa (also called Apicomplexia) are a large phylum of mainly parasitic alveolates. Most of them possess a unique form of organelle that comprises a type of non-photosynthetic plastid called an apicoplast, and an apical complex structure. The organelle is an adaptation that the apicomplexa",
+    "Asparagales (asparagoid lilies) is an order of plants in modern classification systems such as the Angiosperm Phylogeny Group (APG) and the Angiosperm Phylogeny Web. The order takes its name from the type family Asparagaceae and is placed in the monocots amongst the lilioid monocots. The order has o",
+    "The MessagePad is a discontinued series of personal digital assistant devices developed by Apple Computer for the Newton platform in 1993.  Some electronic engineering and the manufacture of Apple's MessagePad devices was undertaken in Japan by Sharp. The devices are based on the ARM 610 RISC proces"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (John Zahm is known for his work at Notre Dame, but there's no mention of a brother or what they constructed in the given evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.003322762669995427,
+    "entailment_score": 0.0014009695732966065,
+    "mean_entropy": 0.20300045071806577,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "Search query: \"John Zahm's brother construction Notre Dame\"\n\nOr:\n\n\"Brother of John Zahm Notre Dame construction\"\n\nOr",
+    "reranker_scores": [
+      3.6452724933624268,
+      3.311570644378662,
+      3.1511855125427246
+    ],
+    "candidate_contexts": [
+      "In 1882, Albert Zahm (John Zahm's brother) built an early wind tunnel used to compare lift to drag of aeronautical models. Around 1899, Professor Jerome Green became the first American to send a wireless message . In 1931, Father Julius Nieuwland performed early work on basic reactions that was used to create neoprene",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy.",
+      "At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy. The second largest student's fraternity of the Netherlands, located in the city of Groningen, is named Albertus Magnus, in honor of the saint."
+    ],
+    "candidate_raw_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_parsed_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_answer": "Albert Zahm built an early wind tunnel at Notre Dame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5308972001075745,
+      "entailment_score": 0.9717479944229126,
+      "mean_entropy": 0.02966264852760414,
+      "coverage_score": 0.5816437602043152,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "The Apicomplexa (also called Apicomplexia) are a large phylum of mainly parasitic alveolates. Most of them possess a unique form of organelle that comprises a type of non-photosynthetic plastid called an apicoplast, and an apical complex structure. The organelle is an adaptation that the apicomplexa",
+    "Asparagales (asparagoid lilies) is an order of plants in modern classification systems such as the Angiosperm Phylogeny Group (APG) and the Angiosperm Phylogeny Web. The order takes its name from the type family Asparagaceae and is placed in the monocots amongst the lilioid monocots. The order has o",
+    "The MessagePad is a discontinued series of personal digital assistant devices developed by Apple Computer for the Newton platform in 1993.  Some electronic engineering and the manufacture of Apple's MessagePad devices was undertaken in Japan by Sharp. The devices are based on the ARM 610 RISC proces"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.003322762669995427,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5816437602043152,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 9.58654678000039
+}

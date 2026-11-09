@@ -1,0 +1,80 @@
+{
+  "sample_index": 628,
+  "injected_label": "clean",
+  "input": {
+    "query": "What is a common name to reference the mural created by Millard Sheets at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What is a common name to reference the mural created by Millard Sheets at Notre Dame?' is Touchdown Jesus. This is well-documented and widely accepted."
+    ],
+    "answer": "Touchdown Jesus",
+    "label": "clean"
+  },
+  "seed": 670,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9909490942955017,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9948766827583313,
+      "retrieval_failure": 0.0005962378345429897,
+      "grounding_failure": 0.0031170721631497145,
+      "confidence_failure": 0.0007230436895042658,
+      "coverage_failure": 0.0006869756034575403
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Touchdown Jesus",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What is a common name to reference the mural created by Millard Sheets at Notre Dame?' is Touchdown Jesus. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Touchdown Jesus",
+  "initial_signals": {
+    "retrieval_similarity": 0.7981120347976685,
+    "entailment_score": 0.9909490942955017,
+    "mean_entropy": 0.05290308788426046,
+    "coverage_score": 0.6895574331283569,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Touchdown Jesus",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What is a common name to reference the mural created by Millard Sheets at Notre Dame?' is Touchdown Jesus. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7981120347976685,
+    "entailment_score": 0.9909490942955017,
+    "mean_entropy": 0.05290308788426046,
+    "coverage_score": 0.6895574331283569,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.1729208309998285
+}

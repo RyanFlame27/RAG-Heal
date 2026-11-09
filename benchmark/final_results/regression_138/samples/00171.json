@@ -1,0 +1,107 @@
+{
+  "sample_index": 171,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How many dragons are registered in the Welsh Dragon Preserve?",
+    "context_chunks": [
+      "Asterix or The Adventures of Asterix ( or  , \"Asterix the Gaul\") is a bande dessinée comic book series about a village of indomitable Gaulish warriors who adventure around the world and fight the Roman Republic, with the aid of a magic potion, during the era of Julius Caesar, in an ahistorical telli",
+      "Alexander Selkirk (167613 December 1721) was a Scottish privateer and Royal Navy officer who spent four years and four months as a castaway (1704–1709) after being marooned by his captain, initially at his request, on an uninhabited island in the South Pacific Ocean. He survived that ordeal but died"
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 213,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00022135073959361762,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.00037576077738776803,
+      "retrieval_failure": 0.0004539717047009617,
+      "grounding_failure": 0.00046258256770670414,
+      "confidence_failure": 0.0005821129307150841,
+      "coverage_failure": 0.9981256127357483
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Asterix or The Adventures of Asterix ( or  , \"Asterix the Gaul\") is a bande dessinée comic book series about a village of indomitable Gaulish warriors who adventure around the world and fight the Roman Republic, with the aid of a magic potion, during the era of Julius Caesar, in an ahistorical telli",
+    "Alexander Selkirk (167613 December 1721) was a Scottish privateer and Royal Navy officer who spent four years and four months as a castaway (1704–1709) after being marooned by his captain, initially at his request, on an uninhabited island in the South Pacific Ocean. He survived that ordeal but died"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons in the given evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.09039127081632614,
+    "entailment_score": 0.00022135073959361762,
+    "mean_entropy": 0.17553150242098178,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -9.292449951171875,
+      -9.563484191894531,
+      -9.870564460754395
+    ],
+    "candidate_contexts": [
+      ". Beauregard, U.S. Vice President Hubert Humphrey, Colin Powell and U.S. Secretary of State Hillary Clinton are also of Welsh heritage. The proportion of the population with a name of Welsh origin ranges from 9.5% in South Carolina to 1.1% in North Dakota. Typically, names of Welsh origin are concentrated in the mid-Atlantic states, New England,  the Carolinas, Georgia and Alabama and in Appalachia, West Virginia and Tennessee . By contrast, there are relatively fewer Welsh names in the northern Midwest and the Southwest.",
+      "The city's first Welsh-language school (Ysgol Gymraeg Bryntaf) was established in the 1950s. Welsh has since regained ground. Aided by Welsh-medium education and migration from other parts of Wales, there are now many more Welsh speakers: their numbers doubled between the 1991 and 2011 censuses, from 18,071 (6.6%) to 36,735 (11.1%) residents aged three years and above . The LSOA (Lower Layer Super Output Area) with the highest percentage of Welsh speakers in the city centre is found in Canton, at 25.5%. The LSOA with the highest percentage of Welsh speakers in the whole of Cardiff is Whitchurch, at 26%.",
+      "Mormon missionaries in Wales in the 1840s and 1850s proved persuasive, and many converts emigrated to Utah. By the mid-nineteenth century, Malad City, Idaho was established . It began largely as a Welsh Mormon settlement and lays claim to having more people of Welsh descent per capita than anywhere outside Wales. This may be around 20%. In 1951 the National Gymanfa Association of the United States and Canada sponsored a collection of Welsh books at the Harold B . Lee Library at Brigham Young University."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons in the evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.39657020568847656,
+      "entailment_score": 0.0006377307581715286,
+      "mean_entropy": 0.10498859776669633,
+      "coverage_score": 0.5703861713409424,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Asterix or The Adventures of Asterix ( or  , \"Asterix the Gaul\") is a bande dessinée comic book series about a village of indomitable Gaulish warriors who adventure around the world and fight the Roman Republic, with the aid of a magic potion, during the era of Julius Caesar, in an ahistorical telli",
+    "Alexander Selkirk (167613 December 1721) was a Scottish privateer and Royal Navy officer who spent four years and four months as a castaway (1704–1709) after being marooned by his captain, initially at his request, on an uninhabited island in the South Pacific Ocean. He survived that ordeal but died"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.09039127081632614,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 5.832508548000078
+}

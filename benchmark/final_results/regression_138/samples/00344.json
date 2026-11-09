@@ -1,0 +1,110 @@
+{
+  "sample_index": 344,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?",
+    "context_chunks": [
+      "\n\nEvents\n\nPre-1600\n 310 – Pope Eusebius dies, possibly from a hunger strike, shortly after being banished by the Emperor Maxentius to Sicily.\n 682 – Pope Leo II begins his pontificate.\n 986 – Byzantine–Bulgarian wars: Battle of the Gates of Trajan: The Bulgarians under the Comitopuli Samuel and Aron",
+      "An audio file format is a file format for storing digital audio data on a computer system. The bit layout of the audio data (excluding metadata) is called the audio coding format and can be uncompressed, or compressed to reduce the file size, often using lossy compression. The data can be a raw bits",
+      "The Book of Amos is the third of the Twelve Minor Prophets in the Old Testament (Tanakh) and the second in the Greek Septuagint tradition. Amos, an older contemporary of Hosea and Isaiah, was active c. 750 BC during the reign of Jeroboam II (788–747 BC) of Samaria (aka. Northern Israel), making Amos"
+    ],
+    "answer": "1882",
+    "label": "retrieval_failure"
+  },
+  "seed": 386,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.02040860243141651,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00036695520975627005,
+      "retrieval_failure": 0.998184859752655,
+      "grounding_failure": 0.0005017357179895043,
+      "confidence_failure": 0.00032097953953780234,
+      "coverage_failure": 0.0006254211766645312
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "\n\nEvents\n\nPre-1600\n 310 – Pope Eusebius dies, possibly from a hunger strike, shortly after being banished by the Emperor Maxentius to Sicily.\n 682 – Pope Leo II begins his pontificate.\n 986 – Byzantine–Bulgarian wars: Battle of the Gates of Trajan: The Bulgarians under the Comitopuli Samuel and Aron",
+    "An audio file format is a file format for storing digital audio data on a computer system. The bit layout of the audio data (excluding metadata) is called the audio coding format and can be uncompressed, or compressed to reduce the file size, often using lossy compression. The data can be a raw bits",
+    "The Book of Amos is the third of the Twelve Minor Prophets in the Old Testament (Tanakh) and the second in the Greek Septuagint tradition. Amos, an older contemporary of Hosea and Isaiah, was active c. 750 BC during the reign of Jeroboam II (788–747 BC) of Samaria (aka. Northern Israel), making Amos"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Albert Zahm is not mentioned in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.0056719183921813965,
+    "entailment_score": 0.003295118920505047,
+    "mean_entropy": 0.05216770775294427,
+    "coverage_score": 0.5799010992050171,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Albert Zahm aeronatical model comparisons year Notre Dame\"\n\nOr:\n\n\"When did Albert Zahm start comparing aeronautical models at",
+    "reranker_scores": [
+      3.63360333442688,
+      -1.0074987411499023,
+      -1.0983753204345703
+    ],
+    "candidate_contexts": [
+      "In 1882, Albert Zahm (John Zahm's brother) built an early wind tunnel used to compare lift to drag of aeronautical models. Around 1899, Professor Jerome Green became the first American to send a wireless message . In 1931, Father Julius Nieuwland performed early work on basic reactions that was used to create neoprene",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy.",
+      "At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy. The second largest student's fraternity of the Netherlands, located in the city of Groningen, is named Albertus Magnus, in honor of the saint."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (The evidence does not provide the year Albert Zahm began comparing aeronautical models at Notre Dame.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5239523649215698,
+      "entailment_score": 0.001225185813382268,
+      "mean_entropy": 0.16591289341516102,
+      "coverage_score": 0.5799010992050171,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "\n\nEvents\n\nPre-1600\n 310 – Pope Eusebius dies, possibly from a hunger strike, shortly after being banished by the Emperor Maxentius to Sicily.\n 682 – Pope Leo II begins his pontificate.\n 986 – Byzantine–Bulgarian wars: Battle of the Gates of Trajan: The Bulgarians under the Comitopuli Samuel and Aron",
+    "An audio file format is a file format for storing digital audio data on a computer system. The bit layout of the audio data (excluding metadata) is called the audio coding format and can be uncompressed, or compressed to reduce the file size, often using lossy compression. The data can be a raw bits",
+    "The Book of Amos is the third of the Twelve Minor Prophets in the Old Testament (Tanakh) and the second in the Greek Septuagint tradition. Amos, an older contemporary of Hosea and Isaiah, was active c. 750 BC during the reign of Jeroboam II (788–747 BC) of Samaria (aka. Northern Israel), making Amos"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.0056719183921813965,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5799010992050171,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 9.662875560999964
+}

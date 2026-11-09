@@ -1,0 +1,105 @@
+{
+  "sample_index": 381,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "After which individual was the LaFortune Center Notre Dame named?",
+    "context_chunks": [
+      "Many sources discuss After which individual was the LaFortune Center Notre Dame named. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Albert Einstein",
+    "label": "grounding_failure"
+  },
+  "seed": 423,
+  "classifier_split": "test",
+  "stored_answer_grounding": 4.493624874157831e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00040753488428890705,
+      "retrieval_failure": 0.000590651121456176,
+      "grounding_failure": 0.9983144998550415,
+      "confidence_failure": 0.0004127190331928432,
+      "coverage_failure": 0.0002745080564636737
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss After which individual was the LaFortune Center Notre Dame named. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9196138381958008,
+    "entailment_score": 0.00045818678336218,
+    "mean_entropy": 0.0030320708679989995,
+    "coverage_score": 0.6653245687484741,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      7.3347859382629395,
+      6.984934329986572,
+      -3.2401394844055176
+    ],
+    "candidate_contexts": [
+      "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities",
+      "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities . LaFortune employs 35 part-time student staff and 29 full-time non-student staff and has an annual budget of $1.2 million. Many businesses, services, and divisions of The Office of Student Affairs are found within. The building also houses restaurants from national restaurant chains.",
+      "The success of its football team made Notre Dame a household name. The success of Note Dame reflected rising status of Irish Americans and Catholics in the 1920s . Catholics rallied up around the team and listen to the games on the radio, especially when it knocked off the schools that symbolized the Protestant establishment in America — Harvard, Yale, Princeton, and Army"
+    ],
+    "candidate_raw_answer": "Joseph LaFortune",
+    "candidate_parsed_answer": "Joseph LaFortune",
+    "candidate_answer": "Joseph LaFortune",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6574603915214539,
+      "entailment_score": 0.0002929291222244501,
+      "mean_entropy": 0.028995925657909538,
+      "coverage_score": 0.6653245687484741,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Joseph LaFortune",
+  "final_contexts": [
+    "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities",
+    "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities . LaFortune employs 35 part-time student staff and 29 full-time non-student staff and has an annual budget of $1.2 million. Many businesses, services, and divisions of The Office of Student Affairs are found within. The building also houses restaurants from national restaurant chains.",
+    "The success of its football team made Notre Dame a household name. The success of Note Dame reflected rising status of Irish Americans and Catholics in the 1920s . Catholics rallied up around the team and listen to the games on the radio, especially when it knocked off the schools that symbolized the Protestant establishment in America — Harvard, Yale, Princeton, and Army"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6574603915214539,
+    "entailment_score": 0.0002929291222244501,
+    "mean_entropy": 0.028995925657909538,
+    "coverage_score": 0.6653245687484741,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 3.1846125990000473
+}

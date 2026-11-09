@@ -1,0 +1,109 @@
+{
+  "sample_index": 112,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What is the primary seminary of the Congregation of the Holy Cross?",
+    "context_chunks": [
+      "In the Hebrew Bible, Abner ( ) was the cousin of King Saul and the commander-in-chief of his army. His name also appears as  \"Abiner son of Ner\", where the longer form Abiner means \"my father is Ner\".\n\nBiblical narrative\nAbner is initially mentioned incidentally in Saul's history, first appearing as",
+      "Anah or Ana (, ʾĀna, ), formerly also known as Anna, is an Iraqi town on the Euphrates river, approximately midway between the Gulf of Alexandretta and the Persian Gulf. Anah lies from west to east on the right bank along a bend of the river just before it turns south towards Hit.\n\nName\nThe town was",
+      "An abbreviation (from Latin , meaning short) is a shortened form of a word or phrase, by any method. It may consist of a group of letters or words taken from the full version of the word or phrase; for example, the word abbreviation itself can be abbreviated as abbr., abbrv., or abbrev.; NPO, for ni"
+    ],
+    "answer": "Moreau Seminary",
+    "label": "retrieval_failure"
+  },
+  "seed": 154,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0023892095778137445,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003730138414539397,
+      "retrieval_failure": 0.9981707334518433,
+      "grounding_failure": 0.0005162029410712421,
+      "confidence_failure": 0.0003101081820204854,
+      "coverage_failure": 0.0006299380329437554
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "In the Hebrew Bible, Abner ( ) was the cousin of King Saul and the commander-in-chief of his army. His name also appears as  \"Abiner son of Ner\", where the longer form Abiner means \"my father is Ner\".\n\nBiblical narrative\nAbner is initially mentioned incidentally in Saul's history, first appearing as",
+    "Anah or Ana (, ʾĀna, ), formerly also known as Anna, is an Iraqi town on the Euphrates river, approximately midway between the Gulf of Alexandretta and the Persian Gulf. Anah lies from west to east on the right bank along a bend of the river just before it turns south towards Hit.\n\nName\nThe town was",
+    "An abbreviation (from Latin , meaning short) is a shortened form of a word or phrase, by any method. It may consist of a group of letters or words taken from the full version of the word or phrase; for example, the word abbreviation itself can be abbreviated as abbr., abbrv., or abbrev.; NPO, for ni"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (The evidence does not provide any information about the Congregation of the Holy Cross or its seminaries.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.055617254227399826,
+    "entailment_score": 0.0011561937863007188,
+    "mean_entropy": 0.22689211961684796,
+    "coverage_score": 0.7021514773368835,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "Search query: \"Primary seminary of the Congregation of the Holy Cross\"\n\nOr:\n\nWhich seminary is recognized as the primary institution for the Congregation of the Holy Cross?",
+    "reranker_scores": [
+      6.72089958190918,
+      1.0774898529052734,
+      0.22869879007339478
+    ],
+    "candidate_contexts": [
+      "The university is the major seat of the Congregation of Holy Cross (albeit not its official headquarters, which are in Rome). Its main seminary, Moreau Seminary, is located on the campus across St. Joseph lake from the Main Building. Old College, the oldest building on campus and located near the shore of St. Mary lake, houses undergraduate seminarians. Retired priests and brothers reside in Fatima House (a former retreat center), Holy Cross House, as well as Columba Hall near the Grotto",
+      "Because of its Catholic identity, a number of religious buildings stand on campus. The Old College building has become one of two seminaries on campus run by the Congregation of Holy Cross. The current Basilica of the Sacred Heart is located on the spot of Fr . Sorin's original church, which became too small for the growing college. It is built in French Revival style and it is decorated by stained glass windows imported directly from France. The interior was painted by Luigi Gregori, an Italian painter invited by Fr. Sorin to be artist in residence",
+      "The university is affiliated with the Congregation of Holy Cross (Latin: Congregatio a Sancta Cruce, abbreviated postnominals: \"CSC\"). While religious affiliation is not a criterion for admission, more than 93% of students identify as Christian, with over 80% of the total being Catholic . Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community"
+    ],
+    "candidate_raw_answer": "Moreau Seminary",
+    "candidate_parsed_answer": "Moreau Seminary",
+    "candidate_answer": "Moreau Seminary",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5495877265930176,
+      "entailment_score": 0.04136381670832634,
+      "mean_entropy": 0.04146125018305611,
+      "coverage_score": 0.7021514773368835,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Moreau Seminary",
+  "final_contexts": [
+    "The university is the major seat of the Congregation of Holy Cross (albeit not its official headquarters, which are in Rome). Its main seminary, Moreau Seminary, is located on the campus across St. Joseph lake from the Main Building. Old College, the oldest building on campus and located near the shore of St. Mary lake, houses undergraduate seminarians. Retired priests and brothers reside in Fatima House (a former retreat center), Holy Cross House, as well as Columba Hall near the Grotto",
+    "Because of its Catholic identity, a number of religious buildings stand on campus. The Old College building has become one of two seminaries on campus run by the Congregation of Holy Cross. The current Basilica of the Sacred Heart is located on the spot of Fr . Sorin's original church, which became too small for the growing college. It is built in French Revival style and it is decorated by stained glass windows imported directly from France. The interior was painted by Luigi Gregori, an Italian painter invited by Fr. Sorin to be artist in residence",
+    "The university is affiliated with the Congregation of Holy Cross (Latin: Congregatio a Sancta Cruce, abbreviated postnominals: \"CSC\"). While religious affiliation is not a criterion for admission, more than 93% of students identify as Christian, with over 80% of the total being Catholic . Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.5495877265930176,
+    "entailment_score": 0.04136381670832634,
+    "mean_entropy": 0.04146125018305611,
+    "coverage_score": 0.7021514773368835,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 8.06017631099985
+}

@@ -1,0 +1,114 @@
+window.RAG_BENCHMARK = {
+  "version": "4.2",
+  "scope": "Final reused regression IDs; reporting assessment, not a new experiment.",
+  "dataset_rows": 1000,
+  "train_rows": 704,
+  "validation_rows": 158,
+  "regression_rows": 138,
+  "qa_rows": 120,
+  "coverage_rows": 18,
+  "execution_errors": 0,
+  "clean_accuracy": {
+    "correct": 27,
+    "samples": 30,
+    "fraction": 0.9
+  },
+  "answered_accuracy": {
+    "correct": 60,
+    "answered": 63,
+    "fraction": 0.9523809523809523
+  },
+  "refusal_compliance": {
+    "refusals": 18,
+    "designated_challenges": 18,
+    "fraction": 1.0
+  },
+  "answer_rate": {
+    "answered": 63,
+    "samples": 120,
+    "fraction": 0.525
+  },
+  "full_qa_exact_match": {
+    "correct": 60,
+    "samples": 120,
+    "fraction": 0.5
+  },
+  "qa_refusals": 57,
+  "token_f1": 0.5162698412698413,
+  "initial_exact_match": {
+    "correct": 26,
+    "samples": 120,
+    "fraction": 0.21666666666666667
+  },
+  "extra_exact_answers": 34,
+  "examples": [
+    {
+      "sample_index": 342,
+      "condition": "clean",
+      "query": "In what year was the Main Building at Notre Dame razed in a fire?",
+      "initial_answer": "I don't have enough information to answer this question.",
+      "final_answer": "1879",
+      "outcome": "unverified",
+      "action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+      "predicted_label": "grounding_failure"
+    },
+    {
+      "sample_index": 112,
+      "condition": "retrieval_failure",
+      "query": "What is the primary seminary of the Congregation of the Holy Cross?",
+      "initial_answer": "I don't have enough information to answer this question.",
+      "final_answer": "Moreau Seminary",
+      "outcome": "unverified",
+      "action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+      "predicted_label": "retrieval_failure"
+    },
+    {
+      "sample_index": 123,
+      "condition": "grounding_failure",
+      "query": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+      "initial_answer": "I don't have enough information to answer this question.",
+      "final_answer": "1987",
+      "outcome": "unverified",
+      "action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+      "predicted_label": "grounding_failure"
+    },
+    {
+      "sample_index": 75,
+      "condition": "confidence_failure",
+      "query": "Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?",
+      "initial_answer": "I don't have enough information to answer this question.",
+      "final_answer": "Fr. Matthew Walsh",
+      "outcome": "supported",
+      "action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+      "predicted_label": "confidence_failure"
+    },
+    {
+      "sample_index": 3,
+      "condition": "coverage_failure",
+      "query": "How many dragons are registered in the Welsh Dragon Preserve?",
+      "initial_answer": "I don't have enough information to answer this question.",
+      "final_answer": "I don't have enough information to answer this question.",
+      "outcome": "refusal",
+      "action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+      "predicted_label": "coverage_failure"
+    }
+  ],
+  "comparison": [
+    {
+      "name": "Self-RAG adaptation",
+      "exact_match": 0.075,
+      "token_f1": 0.1589,
+      "answered_qa": 120,
+      "coverage_refusals": 0
+    },
+    {
+      "name": "Our final system",
+      "exact_match": 0.5,
+      "token_f1": 0.5162698412698413,
+      "answered_qa": 63,
+      "coverage_refusals": 18
+    }
+  ],
+  "comparison_note": "Recorded configurations used different generators, corpus sizes and answer formats. These are reused regression IDs, not a new blind test or an isolated architecture comparison.",
+  "example_note": "Saved failure-injection records. Clicking a question runs fresh local retrieval without injecting its saved context, so the live answer and route may differ."
+};

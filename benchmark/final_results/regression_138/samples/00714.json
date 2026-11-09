@@ -1,0 +1,80 @@
+{
+  "sample_index": 714,
+  "injected_label": "clean",
+  "input": {
+    "query": "What was created at Notre Dame in 1962 to assist first year students?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What was created at Notre Dame in 1962 to assist first year students?' is The First Year of Studies program. This is well-documented and widely accepted."
+    ],
+    "answer": "The First Year of Studies program",
+    "label": "clean"
+  },
+  "seed": 756,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9923145174980164,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.995307981967926,
+      "retrieval_failure": 0.0006163459038361907,
+      "grounding_failure": 0.0026840593200176954,
+      "confidence_failure": 0.0007026128587312996,
+      "coverage_failure": 0.0006889146752655506
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "The First Year of Studies program.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What was created at Notre Dame in 1962 to assist first year students?' is The First Year of Studies program. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "The First Year of Studies program.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8377772569656372,
+    "entailment_score": 0.9969452023506165,
+    "mean_entropy": 0.12649232202080896,
+    "coverage_score": 0.6446399688720703,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "The First Year of Studies program.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What was created at Notre Dame in 1962 to assist first year students?' is The First Year of Studies program. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8377772569656372,
+    "entailment_score": 0.9969452023506165,
+    "mean_entropy": 0.12649232202080896,
+    "coverage_score": 0.6446399688720703,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.4000674860003528
+}

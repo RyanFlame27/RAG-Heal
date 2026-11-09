@@ -1,0 +1,80 @@
+{
+  "sample_index": 608,
+  "injected_label": "clean",
+  "input": {
+    "query": "What company did Ray Kroc own?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'What company did Ray Kroc own?' is McDonald's. This is well-documented and widely accepted."
+    ],
+    "answer": "McDonald's",
+    "label": "clean"
+  },
+  "seed": 650,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9912130236625671,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9949561953544617,
+      "retrieval_failure": 0.0005442535039037466,
+      "grounding_failure": 0.0029769001994282007,
+      "confidence_failure": 0.0007672614301554859,
+      "coverage_failure": 0.0007552476599812508
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "McDonald's",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'What company did Ray Kroc own?' is McDonald's. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "McDonald's",
+  "initial_signals": {
+    "retrieval_similarity": 0.7383159399032593,
+    "entailment_score": 0.9912130236625671,
+    "mean_entropy": 0.04827272354980128,
+    "coverage_score": 0.5425107479095459,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "McDonald's",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'What company did Ray Kroc own?' is McDonald's. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7383159399032593,
+    "entailment_score": 0.9912130236625671,
+    "mean_entropy": 0.04827272354980128,
+    "coverage_score": 0.5425107479095459,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.0766756090001763
+}

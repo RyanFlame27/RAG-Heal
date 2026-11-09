@@ -1,0 +1,107 @@
+{
+  "sample_index": 82,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How many dragons are registered in the Welsh Dragon Preserve?",
+    "context_chunks": [
+      "Anguilla ( ) is a British Overseas Territory in the Caribbean. It is one of the most northerly of the Leeward Islands in the Lesser Antilles, lying east of Puerto Rico and the Virgin Islands and directly north of Saint Martin. The territory consists of the main island of Anguilla, approximately  lon",
+      "Anaximenes of Lampsacus (; ; 320 BC) was a Greek rhetorician and historian. He was one of the teachers of Alexander the Great and accompanied him on his campaigns.\n\nFamily\nHis father was named Aristocles (). His nephew (son of his sister), was also named Anaximenes and was a historian.\n\nRhetorical w"
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 124,
+  "classifier_split": "test",
+  "stored_answer_grounding": 9.879352001007646e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.0003613650915212929,
+      "retrieval_failure": 0.0005619245348498225,
+      "grounding_failure": 0.00041189295006915927,
+      "confidence_failure": 0.0004443972429726273,
+      "coverage_failure": 0.9982203841209412
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Anguilla ( ) is a British Overseas Territory in the Caribbean. It is one of the most northerly of the Leeward Islands in the Lesser Antilles, lying east of Puerto Rico and the Virgin Islands and directly north of Saint Martin. The territory consists of the main island of Anguilla, approximately  lon",
+    "Anaximenes of Lampsacus (; ; 320 BC) was a Greek rhetorician and historian. He was one of the teachers of Alexander the Great and accompanied him on his campaigns.\n\nFamily\nHis father was named Aristocles (). His nephew (son of his sister), was also named Anaximenes and was a historian.\n\nRhetorical w"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Anguilla and Anaximenes do not provide information about dragons or a Welsh Dragon Preserve.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.05647057294845581,
+    "entailment_score": 9.879352001007646e-05,
+    "mean_entropy": 0.24792336260753547,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -9.292449951171875,
+      -9.563484191894531,
+      -9.870564460754395
+    ],
+    "candidate_contexts": [
+      ". Beauregard, U.S. Vice President Hubert Humphrey, Colin Powell and U.S. Secretary of State Hillary Clinton are also of Welsh heritage. The proportion of the population with a name of Welsh origin ranges from 9.5% in South Carolina to 1.1% in North Dakota. Typically, names of Welsh origin are concentrated in the mid-Atlantic states, New England,  the Carolinas, Georgia and Alabama and in Appalachia, West Virginia and Tennessee . By contrast, there are relatively fewer Welsh names in the northern Midwest and the Southwest.",
+      "The city's first Welsh-language school (Ysgol Gymraeg Bryntaf) was established in the 1950s. Welsh has since regained ground. Aided by Welsh-medium education and migration from other parts of Wales, there are now many more Welsh speakers: their numbers doubled between the 1991 and 2011 censuses, from 18,071 (6.6%) to 36,735 (11.1%) residents aged three years and above . The LSOA (Lower Layer Super Output Area) with the highest percentage of Welsh speakers in the city centre is found in Canton, at 25.5%. The LSOA with the highest percentage of Welsh speakers in the whole of Cardiff is Whitchurch, at 26%.",
+      "Mormon missionaries in Wales in the 1840s and 1850s proved persuasive, and many converts emigrated to Utah. By the mid-nineteenth century, Malad City, Idaho was established . It began largely as a Welsh Mormon settlement and lays claim to having more people of Welsh descent per capita than anywhere outside Wales. This may be around 20%. In 1951 the National Gymanfa Association of the United States and Canada sponsored a collection of Welsh books at the Harold B . Lee Library at Brigham Young University."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (There is no mention of dragons in the evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.39657020568847656,
+      "entailment_score": 0.0006377307581715286,
+      "mean_entropy": 0.10498859776669633,
+      "coverage_score": 0.5703861713409424,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Anguilla ( ) is a British Overseas Territory in the Caribbean. It is one of the most northerly of the Leeward Islands in the Lesser Antilles, lying east of Puerto Rico and the Virgin Islands and directly north of Saint Martin. The territory consists of the main island of Anguilla, approximately  lon",
+    "Anaximenes of Lampsacus (; ; 320 BC) was a Greek rhetorician and historian. He was one of the teachers of Alexander the Great and accompanied him on his campaigns.\n\nFamily\nHis father was named Aristocles (). His nephew (son of his sister), was also named Anaximenes and was a historian.\n\nRhetorical w"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.05647057294845581,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5703861713409424,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.56570911100016
+}

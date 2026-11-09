@@ -1,0 +1,110 @@
+{
+  "sample_index": 922,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "Forbes.com placed Notre Dame at what position compared to other US research universities?",
+    "context_chunks": [
+      "The Atlantic Ocean is the second largest of the world's oceans, that separates the old world from the new world.\n\nAtlantic may also refer to:\n\nPlaces\n\nIn Canada\n Atlantic, Nova Scotia\n Atlantic Canada\n\nIn the United States\n Atlantic, Iowa\n Atlantic, Massachusetts\n Atlantic, North Carolina, an uninco",
+      "An animal is a multicellular, eukaryotic organism of the kingdom Animalia or Metazoa.\n\nAnimal, Animals, or The Animal may also refer to:\n\nPeople\n The Animal (nickname), a list of people nicknamed \"The Animal\" or \"Animal\"\n Animal Hamaguchi, a ring name of Japanese retired professional wrestler Heigo ",
+      "In chemistry, an alcohol is a type of organic compound that carries at least one hydroxyl () functional group  bound to a saturated carbon atom. Alcohols range from the simple, like methanol and ethanol, to complex, like sucrose and cholesterol. The presence of an OH group strongly modifies the prop"
+    ],
+    "answer": "8th",
+    "label": "retrieval_failure"
+  },
+  "seed": 964,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0001802373444661498,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003764944267459214,
+      "retrieval_failure": 0.998155415058136,
+      "grounding_failure": 0.0005198155995458364,
+      "confidence_failure": 0.00030873159994371235,
+      "coverage_failure": 0.0006395081873051822
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "The Atlantic Ocean is the second largest of the world's oceans, that separates the old world from the new world.\n\nAtlantic may also refer to:\n\nPlaces\n\nIn Canada\n Atlantic, Nova Scotia\n Atlantic Canada\n\nIn the United States\n Atlantic, Iowa\n Atlantic, Massachusetts\n Atlantic, North Carolina, an uninco",
+    "An animal is a multicellular, eukaryotic organism of the kingdom Animalia or Metazoa.\n\nAnimal, Animals, or The Animal may also refer to:\n\nPeople\n The Animal (nickname), a list of people nicknamed \"The Animal\" or \"Animal\"\n Animal Hamaguchi, a ring name of Japanese retired professional wrestler Heigo ",
+    "In chemistry, an alcohol is a type of organic compound that carries at least one hydroxyl () functional group  bound to a saturated carbon atom. Alcohols range from the simple, like methanol and ethanol, to complex, like sucrose and cholesterol. The presence of an OH group strongly modifies the prop"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.03681479021906853,
+    "entailment_score": 4.839113898924552e-05,
+    "mean_entropy": 0.019112121645601013,
+    "coverage_score": 0.7144027948379517,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Forbes.com ranking: Notre Dame position in US research universities\"",
+    "reranker_scores": [
+      4.769528865814209,
+      4.541114330291748,
+      1.7872262001037598
+    ],
+    "candidate_contexts": [
+      "In 2015-2016, Notre Dame ranked 18th overall among \"national universities\" in the United States in U.S. News & World Report's Best Colleges 2016. In 2014, USA Today ranked Notre Dame 10th overall for American universities based on data from College Factual . Forbes.com's America's Best Colleges ranks Notre Dame 13th among colleges in the United States in 2015, 8th among Research Universities, and 1st in the Midwest. U.S. News & World Report also lists Notre Dame Law School as 22nd overall",
+      "In 2015-2016, Notre Dame ranked 18th overall among \"national universities\" in the United States in U.S. News & World Report's Best Colleges 2016. In 2014, USA Today ranked Notre Dame 10th overall for American universities based on data from College Factual . Forbes.com's America's Best Colleges ranks Notre Dame 13th among colleges in the United States in 2015, 8th among Research Universities, and 1st in the Midwest. U.S. News & World Report also lists Notre Dame Law School as 22nd overall . BusinessWeek ranks Mendoza College of Business undergraduate school as 1st overall. It ranks the MBA program as 20th overall",
+      "Besides its prominence in sports, Notre Dame is also a large, four-year, highly residential research University, and is consistently ranked among the top twenty universities in the United States  and as a major global university . The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize"
+    ],
+    "candidate_raw_answer": "Forbes.com placed Notre Dame at 8th position compared to other US research universities.",
+    "candidate_parsed_answer": "Forbes.com placed Notre Dame at 8th position compared to other US research universities.",
+    "candidate_answer": "Forbes.com placed Notre Dame at 8th position compared to other US research universities.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6181275248527527,
+      "entailment_score": 0.828493058681488,
+      "mean_entropy": 0.07941517803263988,
+      "coverage_score": 0.7144027948379517,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "The Atlantic Ocean is the second largest of the world's oceans, that separates the old world from the new world.\n\nAtlantic may also refer to:\n\nPlaces\n\nIn Canada\n Atlantic, Nova Scotia\n Atlantic Canada\n\nIn the United States\n Atlantic, Iowa\n Atlantic, Massachusetts\n Atlantic, North Carolina, an uninco",
+    "An animal is a multicellular, eukaryotic organism of the kingdom Animalia or Metazoa.\n\nAnimal, Animals, or The Animal may also refer to:\n\nPeople\n The Animal (nickname), a list of people nicknamed \"The Animal\" or \"Animal\"\n Animal Hamaguchi, a ring name of Japanese retired professional wrestler Heigo ",
+    "In chemistry, an alcohol is a type of organic compound that carries at least one hydroxyl () functional group  bound to a saturated carbon atom. Alcohols range from the simple, like methanol and ethanol, to complex, like sucrose and cholesterol. The presence of an OH group strongly modifies the prop"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.03681479021906853,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7144027948379517,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.382304811999347
+}

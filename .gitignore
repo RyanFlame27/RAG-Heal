@@ -1,0 +1,40 @@
+# Data files
+/data/*
+!/data/README.md
+!/data/source_documents.json
+!/data/bert_failure_classifier_runtime_v4/
+*.pkl
+*.faiss
+
+# Benchmark results
+benchmark/results/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+.pytest_cache/
+
+# Local credentials and frontend dependencies
+.env
+.env.*
+!.env.example
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (downloaded)
+models/

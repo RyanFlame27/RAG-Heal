@@ -1,0 +1,104 @@
+{
+  "sample_index": 307,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "What is the oldest structure at Notre Dame?",
+    "context_chunks": [
+      "Many sources discuss What is the oldest structure at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1969",
+    "label": "grounding_failure"
+  },
+  "seed": 349,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.00014395364269148558,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0004369232046883553,
+      "retrieval_failure": 0.0006793441716581583,
+      "grounding_failure": 0.9981448650360107,
+      "confidence_failure": 0.00048302655341103673,
+      "coverage_failure": 0.0002558998530730605
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss What is the oldest structure at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.878315806388855,
+    "entailment_score": 0.0007132815080694854,
+    "mean_entropy": 0.0005022772772655606,
+    "coverage_score": 0.6223955154418945,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      0.32640108466148376,
+      -0.3196970224380493,
+      -1.383583426475525
+    ],
+    "candidate_contexts": [
+      ". The forts and part of the ramparts were demolished at the beginning of the 20th century, when a line of forts occupying the heights of Bouzareah بوزريعة (at an elevation of  above the sea) took their place. Notre Dame d'Afrique, a church built (1858–1872) in a mixture of the Roman and Byzantine styles, is conspicuously situated overlooking the sea, on the shoulder of the Bouzareah hills, to the north of the city. Above the altar is a statue of the Virgin depicted as a black woman. The church also contains a solid silver statue of the archangel Michael, belonging to the confraternity of Neapolitan fishermen.",
+      "A Science Hall was built in 1883 under the direction of Fr. Zahm, but in 1950 it was converted to a student union building and named LaFortune Center, after Joseph LaFortune, an oil executive from Tulsa, Oklahoma . Commonly known as \"LaFortune\" or \"LaFun,\" it is a 4-story building of 83,000 square feet that provides the Notre Dame community with a meeting place for social, recreational, cultural, and educational activities . LaFortune employs 35 part-time student staff and 29 full-time non-student staff and has an annual budget of $1.2 million. Many businesses, services, and divisions of The Office of Student Affairs are found within. The building also houses restaurants from national restaurant chains.",
+      "The university is the major seat of the Congregation of Holy Cross (albeit not its official headquarters, which are in Rome). Its main seminary, Moreau Seminary, is located on the campus across St. Joseph lake from the Main Building. Old College, the oldest building on campus and located near the shore of St. Mary lake, houses undergraduate seminarians. Retired priests and brothers reside in Fatima House (a former retreat center), Holy Cross House, as well as Columba Hall near the Grotto . The university through the Moreau Seminary has ties to theologian Frederick Buechner. While not Catholic, Buechner has praised writers from Notre Dame and Moreau Seminary created a Buechner Prize for Preaching."
+    ],
+    "candidate_raw_answer": "Old College, 1832\n\n(Note: The evidence mentions Old College as the oldest building on campus, with a construction date of 1832.)",
+    "candidate_parsed_answer": "Old College, 1832",
+    "candidate_answer": "Old College, 1832",
+    "candidate_signals": {
+      "retrieval_similarity": 0.48814526200294495,
+      "entailment_score": 0.0002445933350827545,
+      "mean_entropy": 0.39700562153165836,
+      "coverage_score": 0.6223955154418945,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss What is the oldest structure at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.878315806388855,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6223955154418945,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 5.263958862999971
+}

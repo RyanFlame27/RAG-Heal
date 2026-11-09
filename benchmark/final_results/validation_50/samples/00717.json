@@ -1,0 +1,105 @@
+{
+  "sample_index": 717,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "Who is the patron saint of Notre Dame?",
+    "context_chunks": [
+      "Many sources discuss Who is the patron saint of Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Sydney",
+    "label": "grounding_failure"
+  },
+  "seed": 759,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 4.705574247054756e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0004546457203105092,
+      "retrieval_failure": 0.0006162644713185728,
+      "grounding_failure": 0.9982490539550781,
+      "confidence_failure": 0.00040668161818757653,
+      "coverage_failure": 0.0002734079316724092
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss Who is the patron saint of Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8380453586578369,
+    "entailment_score": 0.0007159453234635293,
+    "mean_entropy": 0.00030676634765296304,
+    "coverage_score": 0.640777051448822,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      7.015585422515869,
+      6.808363914489746,
+      -0.38673532009124756
+    ],
+    "candidate_contexts": [
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary . The main campus covers 1,250 acres in a suburban setting and it contains a number of recognizable landmarks, such as the Golden Dome, the \"Word of Life\" mural (commonly known as Touchdown Jesus), and the Basilica.",
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary",
+      "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame"
+    ],
+    "candidate_raw_answer": "The Virgin Mary",
+    "candidate_parsed_answer": "The Virgin Mary",
+    "candidate_answer": "The Virgin Mary",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5922350883483887,
+      "entailment_score": 0.003013623645529151,
+      "mean_entropy": 0.20076511935963026,
+      "coverage_score": 0.640777051448822,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "The Virgin Mary",
+  "final_contexts": [
+    "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary . The main campus covers 1,250 acres in a suburban setting and it contains a number of recognizable landmarks, such as the Golden Dome, the \"Word of Life\" mural (commonly known as Touchdown Jesus), and the Basilica.",
+    "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary",
+    "Holy Cross Father John Francis O'Hara was elected vice-president in 1933 and president of Notre Dame in 1934. During his tenure at Notre Dame, he brought numerous refugee intellectuals to campus; he selected Frank H. Spearman, Jeremiah D. M. Ford, Irvin Abell, and Josephine Brownson for the Laetare Medal, instituted in 1883. O'Hara strongly believed that the Fighting Irish football team could be an effective means to \"acquaint the public with the ideals that dominate\" Notre Dame"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.5922350883483887,
+    "entailment_score": 0.003013623645529151,
+    "mean_entropy": 0.20076511935963026,
+    "coverage_score": 0.640777051448822,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 2.8512231219997375
+}

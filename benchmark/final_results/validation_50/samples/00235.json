@@ -1,0 +1,104 @@
+{
+  "sample_index": 235,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "How many individual colleges are part of Notre Dame?",
+    "context_chunks": [
+      "Many sources discuss How many individual colleges are part of Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Tokyo",
+    "label": "grounding_failure"
+  },
+  "seed": 277,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 4.422667916514911e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00042284405208192766,
+      "retrieval_failure": 0.0006529436213895679,
+      "grounding_failure": 0.9982171654701233,
+      "confidence_failure": 0.0004318668507039547,
+      "coverage_failure": 0.00027528294594958425
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss How many individual colleges are part of Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8184672594070435,
+    "entailment_score": 0.0004718259733635932,
+    "mean_entropy": 0.00019942734723617133,
+    "coverage_score": 0.7409285306930542,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      5.253177165985107,
+      4.335770130157471,
+      4.132164478302002
+    ],
+    "candidate_contexts": [
+      "All of Notre Dame's undergraduate students are a part of one of the five undergraduate colleges at the school or are in the First Year of Studies program . The First Year of Studies program was established in 1962 to guide incoming freshmen in their first year at the school before they have declared a major",
+      "Besides its prominence in sports, Notre Dame is also a large, four-year, highly residential research University, and is consistently ranked among the top twenty universities in the United States  and as a major global university . The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize",
+      ". The undergraduate component of the university is organized into four colleges (Arts and Letters, Science, Engineering, Business) and the Architecture School. The latter is known for teaching New Classical Architecture and for awarding the globally renowned annual Driehaus Architecture Prize . Notre Dame's graduate program has more than 50 master's, doctoral and professional degree programs offered by the five schools, with the addition of the Notre Dame Law School and a MD-PhD program offered in combination with IU medical School . It maintains a system of libraries, cultural venues, artistic and scientific museums, including Hesburgh Library and the Snite Museum of Art"
+    ],
+    "candidate_raw_answer": "Five colleges",
+    "candidate_parsed_answer": "Five colleges",
+    "candidate_answer": "Five colleges",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5698474049568176,
+      "entailment_score": 0.0012233895249664783,
+      "mean_entropy": 0.6207172448436419,
+      "coverage_score": 0.7409285306930542,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Many sources discuss How many individual colleges are part of Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8184672594070435,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7409285306930542,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 2.640586156000154
+}

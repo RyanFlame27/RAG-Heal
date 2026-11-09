@@ -1,0 +1,109 @@
+{
+  "sample_index": 378,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What percentage of Notre Dame students decide to study abroad?",
+    "context_chunks": [
+      "Achill Island (; ) is the largest of the Irish isles and lies off the west coast of Ireland in County Mayo. It has a population of 2,345. Its area is . Achill is attached to the mainland by Michael Davitt Bridge, between the villages of Achill Sound and Polranny. A bridge was first completed here in",
+      "The natural history of Africa encompasses some of the well known megafauna of that continent.\n\nNatural history is the study and description of organisms and natural objects, especially their origins, evolution, and interrelationships.\n\nFlora\nThe vegetation of Africa follows very closely the distribu",
+      "Alexander II (Medieval Gaelic: ; Modern Gaelic: ; 24 August 1198 – 6 July 1249) was King of Scotland from 1214 until his death. He concluded the Treaty of York (1237) which defined the boundary between England and Scotland, virtually unchanged today.\n\nEarly life\n\nAlexander was born at Haddington, Ea"
+    ],
+    "answer": "57.6%",
+    "label": "retrieval_failure"
+  },
+  "seed": 420,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0005967149627394974,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00038307285285554826,
+      "retrieval_failure": 0.9981576800346375,
+      "grounding_failure": 0.0005111377686262131,
+      "confidence_failure": 0.0003166220267303288,
+      "coverage_failure": 0.0006314828060567379
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Achill Island (; ) is the largest of the Irish isles and lies off the west coast of Ireland in County Mayo. It has a population of 2,345. Its area is . Achill is attached to the mainland by Michael Davitt Bridge, between the villages of Achill Sound and Polranny. A bridge was first completed here in",
+    "The natural history of Africa encompasses some of the well known megafauna of that continent.\n\nNatural history is the study and description of organisms and natural objects, especially their origins, evolution, and interrelationships.\n\nFlora\nThe vegetation of Africa follows very closely the distribu",
+    "Alexander II (Medieval Gaelic: ; Modern Gaelic: ; 24 August 1198 – 6 July 1249) was King of Scotland from 1214 until his death. He concluded the Treaty of York (1237) which defined the boundary between England and Scotland, virtually unchanged today.\n\nEarly life\n\nAlexander was born at Haddington, Ea"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (The evidence does not provide any information about Notre Dame or its students deciding to study abroad.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.01260000467300415,
+    "entailment_score": 0.0004061614163219929,
+    "mean_entropy": 0.16266403161311233,
+    "coverage_score": 0.6837472915649414,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Percentage of Notre Dame students who study abroad\"",
+    "reranker_scores": [
+      8.789278030395508,
+      8.06873607635498,
+      6.7423014640808105
+    ],
+    "candidate_contexts": [
+      ". Additionally, the study abroad program ranks sixth in highest participation percentage in the nation, with 57.6% of students choosing to study abroad in 17 countries . According to payscale.com, undergraduate alumni of University of Notre Dame have a mid-career median salary $110,000, making it the 24th highest among colleges and universities in the United States. The median starting salary of $55,300 ranked 58th in the same peer group.",
+      ". It ranks the MBA program as 20th overall. The Philosophical Gourmet Report ranks Notre Dame's graduate philosophy program as 15th nationally, while ARCHITECT Magazine ranked the undergraduate architecture program as 12th nationally . Additionally, the study abroad program ranks sixth in highest participation percentage in the nation, with 57.6% of students choosing to study abroad in 17 countries . According to payscale.com, undergraduate alumni of University of Notre Dame have a mid-career median salary $110,000, making it the 24th highest among colleges and universities in the United States. The median starting salary of $55,300 ranked 58th in the same peer group.",
+      ". Admitted students came from 1,311 high schools and the average student traveled more than 750 miles to Notre Dame, making it arguably the most representative university in the United States . While all entering students begin in the College of the First Year of Studies, 25% have indicated they plan to study in the liberal arts or social sciences, 24% in engineering, 24% in business, 24% in science, and 3% in architecture."
+    ],
+    "candidate_raw_answer": "57.6% of students choose to study abroad.",
+    "candidate_parsed_answer": "57.6% of students choose to study abroad.",
+    "candidate_answer": "57.6%",
+    "candidate_signals": {
+      "retrieval_similarity": 0.7211124897003174,
+      "entailment_score": 0.020035557448863983,
+      "mean_entropy": 0.13164661700746835,
+      "coverage_score": 0.6837472915649414,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "57.6%",
+  "final_contexts": [
+    ". Additionally, the study abroad program ranks sixth in highest participation percentage in the nation, with 57.6% of students choosing to study abroad in 17 countries . According to payscale.com, undergraduate alumni of University of Notre Dame have a mid-career median salary $110,000, making it the 24th highest among colleges and universities in the United States. The median starting salary of $55,300 ranked 58th in the same peer group.",
+    ". It ranks the MBA program as 20th overall. The Philosophical Gourmet Report ranks Notre Dame's graduate philosophy program as 15th nationally, while ARCHITECT Magazine ranked the undergraduate architecture program as 12th nationally . Additionally, the study abroad program ranks sixth in highest participation percentage in the nation, with 57.6% of students choosing to study abroad in 17 countries . According to payscale.com, undergraduate alumni of University of Notre Dame have a mid-career median salary $110,000, making it the 24th highest among colleges and universities in the United States. The median starting salary of $55,300 ranked 58th in the same peer group.",
+    ". Admitted students came from 1,311 high schools and the average student traveled more than 750 miles to Notre Dame, making it arguably the most representative university in the United States . While all entering students begin in the College of the First Year of Studies, 25% have indicated they plan to study in the liberal arts or social sciences, 24% in engineering, 24% in business, 24% in science, and 3% in architecture."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7211124897003174,
+    "entailment_score": 0.020035557448863983,
+    "mean_entropy": 0.13164661700746835,
+    "coverage_score": 0.6837472915649414,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 6.763937017999979
+}

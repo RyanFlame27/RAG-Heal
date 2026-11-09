@@ -1,0 +1,80 @@
+{
+  "sample_index": 750,
+  "injected_label": "clean",
+  "input": {
+    "query": "How large in square feet is the LaFortune Center at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'How large in square feet is the LaFortune Center at Notre Dame?' is 83,000 square feet. This is well-documented and widely accepted."
+    ],
+    "answer": "83,000 square feet",
+    "label": "clean"
+  },
+  "seed": 792,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9386789798736572,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9949344992637634,
+      "retrieval_failure": 0.0005402448587119579,
+      "grounding_failure": 0.003104893025010824,
+      "confidence_failure": 0.0006641678628511727,
+      "coverage_failure": 0.0007562557002529502
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "83,000 square feet",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'How large in square feet is the LaFortune Center at Notre Dame?' is 83,000 square feet. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "83,000 square feet",
+  "initial_signals": {
+    "retrieval_similarity": 0.881013810634613,
+    "entailment_score": 0.9386789798736572,
+    "mean_entropy": 0.05761798635797155,
+    "coverage_score": 0.7770369648933411,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "83,000 square feet",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'How large in square feet is the LaFortune Center at Notre Dame?' is 83,000 square feet. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.881013810634613,
+    "entailment_score": 0.9386789798736572,
+    "mean_entropy": 0.05761798635797155,
+    "coverage_score": 0.7770369648933411,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.4847528919999604
+}

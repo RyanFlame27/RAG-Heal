@@ -1,0 +1,104 @@
+{
+  "sample_index": 386,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "What amount of the student body of Notre Dame identifies as Catholic?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly over 80%",
+    "label": "confidence_failure"
+  },
+  "seed": 428,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.00030065482133068144,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.0004064124368596822,
+      "retrieval_failure": 0.00024803305859677494,
+      "grounding_failure": 0.00036765707773156464,
+      "confidence_failure": 0.998661994934082,
+      "coverage_failure": 0.00031585589749738574
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.1041584461927414,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.00020880146441343712,
+    "coverage_score": 0.7024456858634949,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      4.7294206619262695,
+      2.3808815479278564,
+      2.293916940689087
+    ],
+    "candidate_contexts": [
+      "In 2014 the Notre Dame student body consisted of 12,179 students, with 8,448 undergraduates, 2,138 graduate and professional and 1,593 professional (Law, M.Div., Business, M.Ed.) students . Around 21–24% of students are children of alumni, and although 37% of students come from the Midwestern United States, the student body represents all 50 states and 100 countries",
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary . The main campus covers 1,250 acres in a suburban setting and it contains a number of recognizable landmarks, such as the Golden Dome, the \"Word of Life\" mural (commonly known as Touchdown Jesus), and the Basilica.",
+      "The university is affiliated with the Congregation of Holy Cross (Latin: Congregatio a Sancta Cruce, abbreviated postnominals: \"CSC\"). While religious affiliation is not a criterion for admission, more than 93% of students identify as Christian, with over 80% of the total being Catholic . Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community"
+    ],
+    "candidate_raw_answer": "Over 80% of the student body identifies as Catholic.",
+    "candidate_parsed_answer": "Over 80% of the student body identifies as Catholic.",
+    "candidate_answer": "Over 80% of the student body identifies as Catholic.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6328085660934448,
+      "entailment_score": 0.8967737555503845,
+      "mean_entropy": 0.03622962067235657,
+      "coverage_score": 0.7024456858634949,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.1041584461927414,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7024456858634949,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 3.5533707720001075
+}

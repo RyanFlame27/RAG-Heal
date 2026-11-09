@@ -1,0 +1,107 @@
+{
+  "sample_index": 265,
+  "injected_label": "coverage_failure",
+  "input": {
+    "query": "How many moons does planet Kepler-442b have according to the 2050 survey?",
+    "context_chunks": [
+      "Arachnophobia is a specific phobia brought about by the irrational fear of spiders and other arachnids such as scorpions and ticks. The word Arachnophobia comes from the Greek words arachne and phobia.\n\nSigns and symptoms\nPeople with arachnophobia tend to feel uneasy in any area they believe could h",
+      "Alessandro Giuseppe Antonio Anastasio Volta (, ; 18 February 1745 – 5 March 1827) was an Italian physicist and chemist who was a pioneer of electricity and power and is credited as the inventor of the electric battery and the discoverer of methane. He invented the voltaic pile in 1799, and reported "
+    ],
+    "answer": "I don't have enough information to answer this question.",
+    "label": "coverage_failure"
+  },
+  "seed": 307,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 0.00011962439748458564,
+  "stored_answer_prediction": {
+    "predicted_label": "coverage_failure",
+    "class_id": 4,
+    "probabilities": {
+      "clean": 0.00038363601197488606,
+      "retrieval_failure": 0.0006318691303022206,
+      "grounding_failure": 0.00044680951396003366,
+      "confidence_failure": 0.0004882198991253972,
+      "coverage_failure": 0.9980494976043701
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Arachnophobia is a specific phobia brought about by the irrational fear of spiders and other arachnids such as scorpions and ticks. The word Arachnophobia comes from the Greek words arachne and phobia.\n\nSigns and symptoms\nPeople with arachnophobia tend to feel uneasy in any area they believe could h",
+    "Alessandro Giuseppe Antonio Anastasio Volta (, ; 18 February 1745 – 5 March 1827) was an Italian physicist and chemist who was a pioneer of electricity and power and is credited as the inventor of the electric battery and the discoverer of methane. He invented the voltaic pile in 1799, and reported "
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no information about the number of moons for planet Kepler-442b in the provided evidence.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.01074127946048975,
+    "entailment_score": 0.00011962439748458564,
+    "mean_entropy": 0.17529776433254413,
+    "coverage_score": 0.544758141040802,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "coverage_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "coverage_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      -1.1507188081741333,
+      -1.4133530855178833,
+      -5.059028625488281
+    ],
+    "candidate_contexts": [
+      ". The rest of the near-Earth asteroids are driven out of the asteroid belt by gravitational interactions with Jupiter. Many asteroids have natural satellites (minor-planet moons). , there were 85 NEAs known to have at least one moon, including three known to have two moons . The asteroid 3122 Florence, one of the largest potentially hazardous asteroids with a diameter of , has two moons measuring  across, which were discovered by radar imaging during the asteroid's 2017 approach to Earth.",
+      "Many asteroids have natural satellites (minor-planet moons). , there were 85 NEAs known to have at least one moon, including three known to have two moons . The asteroid 3122 Florence, one of the largest potentially hazardous asteroids with a diameter of , has two moons measuring  across, which were discovered by radar imaging during the asteroid's 2017 approach to Earth. Near-Earth asteroids are divided into groups based on their semi-major axis (a), perihelion distance (q), and aphelion distance (Q):",
+      ". So far, every asteroid with moons has turned out to be a rubble pile, a loose conglomeration of rock and metal that may be half empty space by volume. The investigated asteroids are as large as 280 km in diameter, and include 121 Hermione (268×186×183 km), and 87 Sylvia (384×262×232 km) . Few asteroids are larger than 87 Sylvia, none of them have moons . The fact that such large asteroids as Sylvia may be rubble piles, presumably due to disruptive impacts, has important consequences for the formation of the Solar System: computer simulations of collisions involving solid bodies show them destroying each other as often as merging, but colliding"
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (Kepler-442b is not mentioned in the provided evidence.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.4593130052089691,
+      "entailment_score": 0.0001155750869656913,
+      "mean_entropy": 0.1613985505918706,
+      "coverage_score": 0.544758141040802,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Arachnophobia is a specific phobia brought about by the irrational fear of spiders and other arachnids such as scorpions and ticks. The word Arachnophobia comes from the Greek words arachne and phobia.\n\nSigns and symptoms\nPeople with arachnophobia tend to feel uneasy in any area they believe could h",
+    "Alessandro Giuseppe Antonio Anastasio Volta (, ; 18 February 1745 – 5 March 1827) was an Italian physicist and chemist who was a pioneer of electricity and power and is credited as the inventor of the electric battery and the discoverer of methane. He invented the voltaic pile in 1799, and reported "
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.01074127946048975,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.544758141040802,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.6207342520001475
+}

@@ -1,0 +1,105 @@
+{
+  "sample_index": 674,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "Which baseball stadium is found at Notre Dame?",
+    "context_chunks": [
+      "Many sources discuss Which baseball stadium is found at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1945",
+    "label": "grounding_failure"
+  },
+  "seed": 716,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 5.750172567786649e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00040595995960757136,
+      "retrieval_failure": 0.0006423626909963787,
+      "grounding_failure": 0.9982140064239502,
+      "confidence_failure": 0.00046993166324682534,
+      "coverage_failure": 0.0002677383308764547
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss Which baseball stadium is found at Notre Dame. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8761303424835205,
+    "entailment_score": 0.0008388343267142773,
+    "mean_entropy": 0.0016116607765971262,
+    "coverage_score": 0.6359577178955078,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      2.942150592803955,
+      1.2072006464004517,
+      -0.5564184188842773
+    ],
+    "candidate_contexts": [
+      ". Additionally the new hockey arena opened in the fall of 2011. The Stayer Center for Executive Education, which houses the Mendoza College of Business Executive Education Department opened in March 2013 just South of the Mendoza College of Business building . Because of its long athletic tradition, the university features also many building dedicated to sport. The most famous is Notre Dame Stadium, home of the Fighting Irish football team; it has been renovated several times and today it can hold more than 80 thousand people . Prominent venues include also the Edmund P. Joyce Center, with indoor basketball and volleyball courts, and the Compton Family Ice Arena, a two-rink facility dedicated to hockey. Also, there are many outdoor fields, as the Frank Eck Stadium for baseball.",
+      ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+      "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary"
+    ],
+    "candidate_raw_answer": "Frank Eck Stadium",
+    "candidate_parsed_answer": "Frank Eck Stadium",
+    "candidate_answer": "Frank Eck Stadium",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5625879168510437,
+      "entailment_score": 0.001893863664008677,
+      "mean_entropy": 0.03886997216086456,
+      "coverage_score": 0.6359577178955078,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Frank Eck Stadium",
+  "final_contexts": [
+    ". Additionally the new hockey arena opened in the fall of 2011. The Stayer Center for Executive Education, which houses the Mendoza College of Business Executive Education Department opened in March 2013 just South of the Mendoza College of Business building . Because of its long athletic tradition, the university features also many building dedicated to sport. The most famous is Notre Dame Stadium, home of the Fighting Irish football team; it has been renovated several times and today it can hold more than 80 thousand people . Prominent venues include also the Edmund P. Joyce Center, with indoor basketball and volleyball courts, and the Compton Family Ice Arena, a two-rink facility dedicated to hockey. Also, there are many outdoor fields, as the Frank Eck Stadium for baseball.",
+    ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+    "The University of Notre Dame du Lac (or simply Notre Dame /ˌnoʊtərˈdeɪm/ NOH-tər-DAYM) is a Catholic research university located adjacent to South Bend, Indiana, in the United States . In French, Notre Dame du Lac means \"Our Lady of the Lake\" and refers to the university's patron saint, the Virgin Mary"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.5625879168510437,
+    "entailment_score": 0.001893863664008677,
+    "mean_entropy": 0.03886997216086456,
+    "coverage_score": 0.6359577178955078,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 2.7608610380002574
+}

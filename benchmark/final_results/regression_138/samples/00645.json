@@ -1,0 +1,110 @@
+{
+  "sample_index": 645,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "What caused many intellectual Catholics to leave europe in the 1930s?",
+    "context_chunks": [
+      "\n\nEvents\n\nPre-1600\n 410 – The sacking of Rome by the Visigoths ends after three days.\n1172 – Henry the Young King and Margaret of France are crowned junior king and queen of England.\n1232 – Shikken Hojo Yasutoki of the Kamakura shogunate promulgates the Goseibai Shikimoku, the first Japanese legal c",
+      "The Alexander Technique, named after its developer Frederick Matthias Alexander (1869–1955), is a type of  alternative therapy based on the idea that poor posture gives rise to a range of health problems. The American National Center for Complementary and Integrative Health classifies it as a \"psych",
+      "An abbey is a type of monastery used by members of a religious order under the governance of an abbot or abbess. Abbeys provide a complex of buildings and land for religious activities, work, and housing of Christian monks and nuns.\n\nThe concept of the abbey has developed over many centuries from th"
+    ],
+    "answer": "The rise of Hitler and other dictators",
+    "label": "retrieval_failure"
+  },
+  "seed": 687,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0006022544694133103,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00033330480800941586,
+      "retrieval_failure": 0.9981899857521057,
+      "grounding_failure": 0.00047417680616490543,
+      "confidence_failure": 0.0003246427804697305,
+      "coverage_failure": 0.0006778944516554475
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "\n\nEvents\n\nPre-1600\n 410 – The sacking of Rome by the Visigoths ends after three days.\n1172 – Henry the Young King and Margaret of France are crowned junior king and queen of England.\n1232 – Shikken Hojo Yasutoki of the Kamakura shogunate promulgates the Goseibai Shikimoku, the first Japanese legal c",
+    "The Alexander Technique, named after its developer Frederick Matthias Alexander (1869–1955), is a type of  alternative therapy based on the idea that poor posture gives rise to a range of health problems. The American National Center for Complementary and Integrative Health classifies it as a \"psych",
+    "An abbey is a type of monastery used by members of a religious order under the governance of an abbot or abbess. Abbeys provide a complex of buildings and land for religious activities, work, and housing of Christian monks and nuns.\n\nThe concept of the abbey has developed over many centuries from th"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.13069027662277222,
+    "entailment_score": 0.0007773624383844435,
+    "mean_entropy": 0.007853606496881254,
+    "coverage_score": 0.6227848529815674,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "Search query: \"Intellectual Catholics emigration from Europe 1930s cause\"",
+    "reranker_scores": [
+      -6.137216091156006,
+      -6.18236780166626,
+      -6.448375225067139
+    ],
+    "candidate_contexts": [
+      "Especially pressing in Europe was the formation of nation states after the Napoleonic era. In all European countries, different Christian denominations found themselves in competition to greater or lesser extents with each other and with the state . Variables were the relative sizes of the denominations and the religious, political, and ideological orientation of the states. Urs Altermatt of the University of Fribourg, looking specifically at Catholicism in Europe, identifies four models for the European nations . In traditionally Catholic-majority countries such as Belgium, Spain, and Austria, to some extent, religious and national communities are more or less identical",
+      ". This conflict came to a head in the First Vatican Council, and in Germany would lead directly to the Kulturkampf. Christian commitment in Europe dropped as modernity and secularism came into their own, particularly in the Czech Republic and Estonia, while religious commitments in America have been generally high in comparison to Europe . Changes in worldwide Christianity over the last century have been significant, since 1900, Christianity has spread rapidly in the Global South and Third World countries",
+      ". At the Reformation, the previously Catholic islands converted to Calvinism under the influence of an influx of French-language pamphlets published in Geneva. Anglicanism was imposed in the seventeenth century, but the Non-Conformist local tendency returned with a strong adoption of Methodism . In the late twentieth century, a strong Catholic presence re-emerged with the arrival of numerous Portuguese workers (both from mainland Portugal and the island of Madeira). Their numbers have been reinforced by recent migrants from Poland and elsewhere in Eastern Europe . Today, Evangelical churches have been established. Services are held in a number of languages."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question.",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.49933508038520813,
+      "entailment_score": 5.9953272284474224e-05,
+      "mean_entropy": 0.014515026792773474,
+      "coverage_score": 0.6227848529815674,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "\n\nEvents\n\nPre-1600\n 410 – The sacking of Rome by the Visigoths ends after three days.\n1172 – Henry the Young King and Margaret of France are crowned junior king and queen of England.\n1232 – Shikken Hojo Yasutoki of the Kamakura shogunate promulgates the Goseibai Shikimoku, the first Japanese legal c",
+    "The Alexander Technique, named after its developer Frederick Matthias Alexander (1869–1955), is a type of  alternative therapy based on the idea that poor posture gives rise to a range of health problems. The American National Center for Complementary and Integrative Health classifies it as a \"psych",
+    "An abbey is a type of monastery used by members of a religious order under the governance of an abbot or abbess. Abbeys provide a complex of buildings and land for religious activities, work, and housing of Christian monks and nuns.\n\nThe concept of the abbey has developed over many centuries from th"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.13069027662277222,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6227848529815674,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 6.130663385999924
+}

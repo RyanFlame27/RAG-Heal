@@ -1,0 +1,105 @@
+{
+  "sample_index": 856,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "Gustavo Gutierrez is faculty of which institute?",
+    "context_chunks": [
+      "Many sources discuss Gustavo Gutierrez is faculty of which institute. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Cairo",
+    "label": "grounding_failure"
+  },
+  "seed": 898,
+  "classifier_split": "validation",
+  "stored_answer_grounding": 6.67168787913397e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0004005377704743296,
+      "retrieval_failure": 0.0005650260136462748,
+      "grounding_failure": 0.9983342289924622,
+      "confidence_failure": 0.000400335353333503,
+      "coverage_failure": 0.0002999311254825443
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss Gustavo Gutierrez is faculty of which institute. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9190223217010498,
+    "entailment_score": 0.0010371876414865255,
+    "mean_entropy": 0.00032120423931631265,
+    "coverage_score": 0.6547077894210815,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      2.9540457725524902,
+      -1.077459692955017,
+      -3.691161870956421
+    ],
+    "candidate_contexts": [
+      ". Notre Dame's dining services sources 40% of its food locally and offers sustainably caught seafood as well as many organic, fair-trade, and vegan options. On the Sustainable Endowments Institute's College Sustainability Report Card 2010, University of Notre Dame received a \"B\" grade . The university also houses the Kroc Institute for International Peace Studies. Father Gustavo Gutierrez, the founder of Liberation Theology is a current faculty member.",
+      ". The institute occupies facilities designed by Uruguayan architect Rafael Viñoly and Japanese architect Toshiko Mori. The institute was initially endowed by Thomas Watson Jr. (Class of 1937), former Ambassador to the Soviet Union and longtime president of IBM. Institute faculty and faculty emeritus include Italian prime minister and European Commission president Romano Prodi, Brazilian president Fernando Henrique Cardoso, Chilean president Ricardo Lagos Escobar, Mexican novelist and statesman Carlos Fuentes, Brazilian statesman and United Nations commission head Paulo Sérgio Pinheiro, Indian foreign minister and ambassador to the United States Nirupama Rao, American diplomat and Dayton Peace Accords author Richard Holbrooke (Class of 1962), and Sergei Khrushchev, editor of the papers of his",
+      "dean of the Instituto de Biologia da Universidade Estadual de Campinas (Institute of Biology) until a second retirement . He is currently an emeritus professor at both universities. Influence"
+    ],
+    "candidate_raw_answer": "University of Notre Dame",
+    "candidate_parsed_answer": "University of Notre Dame",
+    "candidate_answer": "University of Notre Dame",
+    "candidate_signals": {
+      "retrieval_similarity": 0.49926647543907166,
+      "entailment_score": 0.16666929423809052,
+      "mean_entropy": 0.05544641780589034,
+      "coverage_score": 0.6547077894210815,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "University of Notre Dame",
+  "final_contexts": [
+    ". Notre Dame's dining services sources 40% of its food locally and offers sustainably caught seafood as well as many organic, fair-trade, and vegan options. On the Sustainable Endowments Institute's College Sustainability Report Card 2010, University of Notre Dame received a \"B\" grade . The university also houses the Kroc Institute for International Peace Studies. Father Gustavo Gutierrez, the founder of Liberation Theology is a current faculty member.",
+    ". The institute occupies facilities designed by Uruguayan architect Rafael Viñoly and Japanese architect Toshiko Mori. The institute was initially endowed by Thomas Watson Jr. (Class of 1937), former Ambassador to the Soviet Union and longtime president of IBM. Institute faculty and faculty emeritus include Italian prime minister and European Commission president Romano Prodi, Brazilian president Fernando Henrique Cardoso, Chilean president Ricardo Lagos Escobar, Mexican novelist and statesman Carlos Fuentes, Brazilian statesman and United Nations commission head Paulo Sérgio Pinheiro, Indian foreign minister and ambassador to the United States Nirupama Rao, American diplomat and Dayton Peace Accords author Richard Holbrooke (Class of 1962), and Sergei Khrushchev, editor of the papers of his",
+    "dean of the Instituto de Biologia da Universidade Estadual de Campinas (Institute of Biology) until a second retirement . He is currently an emeritus professor at both universities. Influence"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.49926647543907166,
+    "entailment_score": 0.16666929423809052,
+    "mean_entropy": 0.05544641780589034,
+    "coverage_score": 0.6547077894210815,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 2.966656951999994
+}

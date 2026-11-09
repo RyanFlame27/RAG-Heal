@@ -1,0 +1,105 @@
+{
+  "sample_index": 153,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "How much money was spent on enhancing Notre Dame Stadium under John Jenkins?",
+    "context_chunks": [
+      "Many sources discuss How much money was spent on enhancing Notre Dame Stadium under John Jenkins. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "Marie Curie",
+    "label": "grounding_failure"
+  },
+  "seed": 195,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.00011674674169626087,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.0004040524654556066,
+      "retrieval_failure": 0.0005533412913791835,
+      "grounding_failure": 0.9983057975769043,
+      "confidence_failure": 0.0004547131829895079,
+      "coverage_failure": 0.0002820006338879466
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss How much money was spent on enhancing Notre Dame Stadium under John Jenkins. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8735904693603516,
+    "entailment_score": 0.0003008308121934533,
+    "mean_entropy": 0.00018910617693170304,
+    "coverage_score": 0.7615296840667725,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      5.589243412017822,
+      5.030503273010254,
+      1.421233892440796
+    ],
+    "candidate_contexts": [
+      ". In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies . During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+      ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+      "$350 million to more than $3 billion; the annual operating budget rose from $177 million to more than $650 million; and annual research funding improved from $15 million to more than $70 million . Notre Dame's most recent[when?] capital campaign raised $1.1 billion, far exceeding its goal of $767 million, and is the largest in the history of Catholic higher education."
+    ],
+    "candidate_raw_answer": "$400m",
+    "candidate_parsed_answer": "$400m",
+    "candidate_answer": "$400m",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6317645311355591,
+      "entailment_score": 0.02556709572672844,
+      "mean_entropy": 0.12802072338389628,
+      "coverage_score": 0.7615296840667725,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "$400m",
+  "final_contexts": [
+    ". In his inaugural address, Jenkins described his goals of making the university a leader in research that recognizes ethics and building the connection between faith and studies . During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+    ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium.",
+    "$350 million to more than $3 billion; the annual operating budget rose from $177 million to more than $650 million; and annual research funding improved from $15 million to more than $70 million . Notre Dame's most recent[when?] capital campaign raised $1.1 billion, far exceeding its goal of $767 million, and is the largest in the history of Catholic higher education."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6317645311355591,
+    "entailment_score": 0.02556709572672844,
+    "mean_entropy": 0.12802072338389628,
+    "coverage_score": 0.7615296840667725,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 2.926694973999929
+}

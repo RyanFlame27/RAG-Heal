@@ -1,0 +1,80 @@
+{
+  "sample_index": 693,
+  "injected_label": "clean",
+  "input": {
+    "query": "In which architectural style is the Basilica of the Sacred Heart at Notre Dame made?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'In which architectural style is the Basilica of the Sacred Heart at Notre Dame made?' is French Revival. This is well-documented and widely accepted."
+    ],
+    "answer": "French Revival",
+    "label": "clean"
+  },
+  "seed": 735,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.1360698938369751,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9954255223274231,
+      "retrieval_failure": 0.0006906159687787294,
+      "grounding_failure": 0.0024175657890737057,
+      "confidence_failure": 0.0007371699903160334,
+      "coverage_failure": 0.0007291927468031645
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "French Revival",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'In which architectural style is the Basilica of the Sacred Heart at Notre Dame made?' is French Revival. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "French Revival",
+  "initial_signals": {
+    "retrieval_similarity": 0.7842119932174683,
+    "entailment_score": 0.1360698938369751,
+    "mean_entropy": 0.041280485167590086,
+    "coverage_score": 0.6381286382675171,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "French Revival",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'In which architectural style is the Basilica of the Sacred Heart at Notre Dame made?' is French Revival. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7842119932174683,
+    "entailment_score": 0.1360698938369751,
+    "mean_entropy": 0.041280485167590086,
+    "coverage_score": 0.6381286382675171,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.181591108000248
+}

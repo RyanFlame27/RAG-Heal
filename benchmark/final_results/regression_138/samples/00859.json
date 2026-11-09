@@ -1,0 +1,110 @@
+{
+  "sample_index": 859,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "In which architectural style is the Basilica of the Sacred Heart at Notre Dame made?",
+    "context_chunks": [
+      "Alcaeus of Mytilene (; , Alkaios ho Mutilēnaios;  –  BC) was a lyric poet from the Greek island of Lesbos who is credited with inventing the Alcaic stanza. He was included in the canonical list of nine lyric poets by the scholars of Hellenistic Alexandria. He was a contemporary of Sappho, with whom ",
+      "Anna Sergeyevna Kournikova (; born 7 June 1981) is a Russian former professional tennis player and American television personality. Her appearance  and celebrity status made her one of the best known tennis stars worldwide. At the peak of her fame, fans looking for images of Kournikova made her name",
+      "Ataxia (from Greek α- [a negative prefix] + -τάξις [order] = \"lack of order\") is a neurological sign consisting of lack of voluntary coordination of muscle movements that can include gait abnormality, speech changes, and abnormalities in eye movements, that indicates dysfunction of parts of the nerv"
+    ],
+    "answer": "French Revival",
+    "label": "retrieval_failure"
+  },
+  "seed": 901,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0005857025971636176,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.0003517288132570684,
+      "retrieval_failure": 0.9981491565704346,
+      "grounding_failure": 0.0005466696457006037,
+      "confidence_failure": 0.0003623334632720798,
+      "coverage_failure": 0.0005901695694774389
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Alcaeus of Mytilene (; , Alkaios ho Mutilēnaios;  –  BC) was a lyric poet from the Greek island of Lesbos who is credited with inventing the Alcaic stanza. He was included in the canonical list of nine lyric poets by the scholars of Hellenistic Alexandria. He was a contemporary of Sappho, with whom ",
+    "Anna Sergeyevna Kournikova (; born 7 June 1981) is a Russian former professional tennis player and American television personality. Her appearance  and celebrity status made her one of the best known tennis stars worldwide. At the peak of her fame, fans looking for images of Kournikova made her name",
+    "Ataxia (from Greek α- [a negative prefix] + -τάξις [order] = \"lack of order\") is a neurological sign consisting of lack of voluntary coordination of muscle movements that can include gait abnormality, speech changes, and abnormalities in eye movements, that indicates dysfunction of parts of the nerv"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (The evidence does not provide any information about the architectural style of the Basilica of the Sacred Heart at Notre Dame.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.02009846456348896,
+    "entailment_score": 0.00023275878629647195,
+    "mean_entropy": 0.11183470066890575,
+    "coverage_score": 0.6381286382675171,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "What is the architectural style of the Basilica of the Sacred Heart at Notre Dame?",
+    "reranker_scores": [
+      3.0617544651031494,
+      2.270406723022461,
+      1.8507823944091797
+    ],
+    "candidate_contexts": [
+      "Because of its Catholic identity, a number of religious buildings stand on campus. The Old College building has become one of two seminaries on campus run by the Congregation of Holy Cross. The current Basilica of the Sacred Heart is located on the spot of Fr . Sorin's original church, which became too small for the growing college. It is built in French Revival style and it is decorated by stained glass windows imported directly from France. The interior was painted by Luigi Gregori, an Italian painter invited by Fr. Sorin to be artist in residence",
+      "Architecturally, the school has a Catholic character. Atop the Main Building's gold dome is a golden statue of the Virgin Mary. Immediately in front of the Main Building and facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad Me Omnes\" . Next to the Main Building is the Basilica of the Sacred Heart. Immediately behind the basilica is the Grotto, a Marian place of prayer and reflection. It is a replica of the grotto at Lourdes, France where the Virgin Mary reputedly appeared to Saint Bernadette Soubirous in 1858 . At the end of the main drive (and in a direct line that connects through 3 statues and the Gold Dome), is a simple, modern stone statue of Mary.",
+      ". Some religious buildings from the interwar era were also constructed in that style, such as the Church of St. John the Baptist (1932) in Molenbeek and the Church of St. Augustine (1935) in Forest. Completed only in 1969, and combining Art Deco with neo-Byzantine elements, the Basilica of the Sacred Heart in Koekelberg is one of the largest churches by area in the world, and its cupola provides a panoramic view of Brussels and its outskirts . Another example are the exhibition halls of the Centenary Palace, built for the 1935 World's Fair on the Heysel/Heizel Plateau in northern Brussels, home to the Brussels Exhibition Centre (Brussels Expo)."
+    ],
+    "candidate_raw_answer": "The Basilica of the Sacred Heart at Notre Dame is made in French Revival style.",
+    "candidate_parsed_answer": "The Basilica of the Sacred Heart at Notre Dame is made in French Revival style.",
+    "candidate_answer": "The Basilica of the Sacred Heart at Notre Dame is made in French Revival style.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5971976518630981,
+      "entailment_score": 0.9281154274940491,
+      "mean_entropy": 0.0035562229588542186,
+      "coverage_score": 0.6381286382675171,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Alcaeus of Mytilene (; , Alkaios ho Mutilēnaios;  –  BC) was a lyric poet from the Greek island of Lesbos who is credited with inventing the Alcaic stanza. He was included in the canonical list of nine lyric poets by the scholars of Hellenistic Alexandria. He was a contemporary of Sappho, with whom ",
+    "Anna Sergeyevna Kournikova (; born 7 June 1981) is a Russian former professional tennis player and American television personality. Her appearance  and celebrity status made her one of the best known tennis stars worldwide. At the peak of her fame, fans looking for images of Kournikova made her name",
+    "Ataxia (from Greek α- [a negative prefix] + -τάξις [order] = \"lack of order\") is a neurological sign consisting of lack of voluntary coordination of muscle movements that can include gait abnormality, speech changes, and abnormalities in eye movements, that indicates dysfunction of parts of the nerv"
+  ],
+  "final_signals": {
+    "retrieval_similarity": -0.02009846456348896,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6381286382675171,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 8.955764597000325
+}

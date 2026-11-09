@@ -1,0 +1,80 @@
+{
+  "sample_index": 852,
+  "injected_label": "clean",
+  "input": {
+    "query": "How many students at Notre Dame received the Heisman Trophy?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'How many students at Notre Dame received the Heisman Trophy?' is seven. This is well-documented and widely accepted."
+    ],
+    "answer": "seven",
+    "label": "clean"
+  },
+  "seed": 894,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9913108348846436,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9950616955757141,
+      "retrieval_failure": 0.0005494149518199265,
+      "grounding_failure": 0.00293904822319746,
+      "confidence_failure": 0.0006911956006661057,
+      "coverage_failure": 0.0007585476851090789
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Seven.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'How many students at Notre Dame received the Heisman Trophy?' is seven. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Seven.",
+  "initial_signals": {
+    "retrieval_similarity": 0.8087019920349121,
+    "entailment_score": 0.005024124402552843,
+    "mean_entropy": 0.3768333171804746,
+    "coverage_score": 0.6324010491371155,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Seven.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'How many students at Notre Dame received the Heisman Trophy?' is seven. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.8087019920349121,
+    "entailment_score": 0.005024124402552843,
+    "mean_entropy": 0.3768333171804746,
+    "coverage_score": 0.6324010491371155,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.0719242599998324
+}

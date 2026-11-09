@@ -1,0 +1,105 @@
+{
+  "sample_index": 537,
+  "injected_label": "grounding_failure",
+  "input": {
+    "query": "What is the primary seminary of the Congregation of the Holy Cross?",
+    "context_chunks": [
+      "Many sources discuss What is the primary seminary of the Congregation of the Holy Cross. However, the details are often debated and there is significant disagreement among experts on this topic."
+    ],
+    "answer": "1945",
+    "label": "grounding_failure"
+  },
+  "seed": 579,
+  "classifier_split": "test",
+  "stored_answer_grounding": 4.061288200318813e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "grounding_failure",
+    "class_id": 2,
+    "probabilities": {
+      "clean": 0.00041647476609796286,
+      "retrieval_failure": 0.0005335721652954817,
+      "grounding_failure": 0.9983506202697754,
+      "confidence_failure": 0.0004146001592744142,
+      "coverage_failure": 0.0002846453571692109
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Many sources discuss What is the primary seminary of the Congregation of the Holy Cross. However, the details are often debated and there is significant disagreement among experts on this topic."
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.9009750485420227,
+    "entailment_score": 0.0006301978137344122,
+    "mean_entropy": 0.000320967664930112,
+    "coverage_score": 0.7021514773368835,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "grounding_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "grounding_failure",
+    "candidate_used": true,
+    "rewritten_query": null,
+    "reranker_scores": [
+      6.72089958190918,
+      1.0774898529052734,
+      0.22869879007339478
+    ],
+    "candidate_contexts": [
+      "The university is the major seat of the Congregation of Holy Cross (albeit not its official headquarters, which are in Rome). Its main seminary, Moreau Seminary, is located on the campus across St. Joseph lake from the Main Building. Old College, the oldest building on campus and located near the shore of St. Mary lake, houses undergraduate seminarians. Retired priests and brothers reside in Fatima House (a former retreat center), Holy Cross House, as well as Columba Hall near the Grotto",
+      "Because of its Catholic identity, a number of religious buildings stand on campus. The Old College building has become one of two seminaries on campus run by the Congregation of Holy Cross. The current Basilica of the Sacred Heart is located on the spot of Fr . Sorin's original church, which became too small for the growing college. It is built in French Revival style and it is decorated by stained glass windows imported directly from France. The interior was painted by Luigi Gregori, an Italian painter invited by Fr. Sorin to be artist in residence",
+      "The university is affiliated with the Congregation of Holy Cross (Latin: Congregatio a Sancta Cruce, abbreviated postnominals: \"CSC\"). While religious affiliation is not a criterion for admission, more than 93% of students identify as Christian, with over 80% of the total being Catholic . Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community"
+    ],
+    "candidate_raw_answer": "Moreau Seminary",
+    "candidate_parsed_answer": "Moreau Seminary",
+    "candidate_answer": "Moreau Seminary",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5495877265930176,
+      "entailment_score": 0.04136381670832634,
+      "mean_entropy": 0.04146125018305611,
+      "coverage_score": 0.7021514773368835,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Moreau Seminary",
+  "final_contexts": [
+    "The university is the major seat of the Congregation of Holy Cross (albeit not its official headquarters, which are in Rome). Its main seminary, Moreau Seminary, is located on the campus across St. Joseph lake from the Main Building. Old College, the oldest building on campus and located near the shore of St. Mary lake, houses undergraduate seminarians. Retired priests and brothers reside in Fatima House (a former retreat center), Holy Cross House, as well as Columba Hall near the Grotto",
+    "Because of its Catholic identity, a number of religious buildings stand on campus. The Old College building has become one of two seminaries on campus run by the Congregation of Holy Cross. The current Basilica of the Sacred Heart is located on the spot of Fr . Sorin's original church, which became too small for the growing college. It is built in French Revival style and it is decorated by stained glass windows imported directly from France. The interior was painted by Luigi Gregori, an Italian painter invited by Fr. Sorin to be artist in residence",
+    "The university is affiliated with the Congregation of Holy Cross (Latin: Congregatio a Sancta Cruce, abbreviated postnominals: \"CSC\"). While religious affiliation is not a criterion for admission, more than 93% of students identify as Christian, with over 80% of the total being Catholic . Collectively, Catholic Mass is celebrated over 100 times per week on campus, and a large campus ministry program provides for the faith needs of the community"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.5495877265930176,
+    "entailment_score": 0.04136381670832634,
+    "mean_entropy": 0.04146125018305611,
+    "coverage_score": 0.7021514773368835,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 2.90432921799993
+}

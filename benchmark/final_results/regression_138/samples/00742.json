@@ -1,0 +1,80 @@
+{
+  "sample_index": 742,
+  "injected_label": "clean",
+  "input": {
+    "query": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'In what year did the student paper Common Sense begin publication at Notre Dame?' is 1987. This is well-documented and widely accepted."
+    ],
+    "answer": "1987",
+    "label": "clean"
+  },
+  "seed": 784,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.9902584552764893,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9956761002540588,
+      "retrieval_failure": 0.0005932171479798853,
+      "grounding_failure": 0.0022732175420969725,
+      "confidence_failure": 0.0007286358741112053,
+      "coverage_failure": 0.0007287272601388395
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": false,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "1987",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'In what year did the student paper Common Sense begin publication at Notre Dame?' is 1987. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "1987",
+  "initial_signals": {
+    "retrieval_similarity": 0.9034522771835327,
+    "entailment_score": 0.9902584552764893,
+    "mean_entropy": 0.05082420935349319,
+    "coverage_score": 0.4898611307144165,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "1987",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'In what year did the student paper Common Sense begin publication at Notre Dame?' is 1987. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.9034522771835327,
+    "entailment_score": 0.9902584552764893,
+    "mean_entropy": 0.05082420935349319,
+    "coverage_score": 0.4898611307144165,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 1.2205103860001145
+}

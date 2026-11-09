@@ -1,0 +1,104 @@
+{
+  "sample_index": 731,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly 1882",
+    "label": "confidence_failure"
+  },
+  "seed": 773,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0006128891836851835,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.00039850783650763333,
+      "retrieval_failure": 0.00024515745462849736,
+      "grounding_failure": 0.000377259508240968,
+      "confidence_failure": 0.998663067817688,
+      "coverage_failure": 0.0003159779589623213
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.07903227210044861,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.00020115986109640988,
+    "coverage_score": 0.5799010992050171,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.63360333442688,
+      -1.0074987411499023,
+      -1.0983741283416748
+    ],
+    "candidate_contexts": [
+      "In 1882, Albert Zahm (John Zahm's brother) built an early wind tunnel used to compare lift to drag of aeronautical models. Around 1899, Professor Jerome Green became the first American to send a wireless message . In 1931, Father Julius Nieuwland performed early work on basic reactions that was used to create neoprene",
+      "The Albertus typeface is named after him. At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy.",
+      "At the University of Notre Dame du Lac in Notre Dame, Indiana, the Zahm Hall Chapel is dedicated to St. Albert the Great. Fr. John Zahm, C.S.C., after whom the men's residence hall is named, looked to St. Albert's example of using religion to illumine scientific discovery. Fr . Fr. Zahm's work with the Bible and evolution is sometimes seen as a continuation of St. Albert's legacy. The second largest student's fraternity of the Netherlands, located in the city of Groningen, is named Albertus Magnus, in honor of the saint."
+    ],
+    "candidate_raw_answer": "I don't have enough information to answer this question. (The evidence does not provide the year Albert Zahm began comparing aeronautical models at Notre Dame.)",
+    "candidate_parsed_answer": "I don't have enough information to answer this question.",
+    "candidate_answer": "I don't have enough information to answer this question.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.5239523649215698,
+      "entailment_score": 0.001225185813382268,
+      "mean_entropy": 0.16591289341516102,
+      "coverage_score": 0.5799010992050171,
+      "is_refusal": true
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.07903227210044861,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.5799010992050171,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 5.133164244999989
+}

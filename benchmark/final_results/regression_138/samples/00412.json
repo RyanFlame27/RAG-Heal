@@ -1,0 +1,104 @@
+{
+  "sample_index": 412,
+  "injected_label": "confidence_failure",
+  "input": {
+    "query": "For what cause is money raised at the Bengal Bouts tournament at Notre Dame?",
+    "context_chunks": [
+      "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+    ],
+    "answer": "It is unclear, but possibly the Holy Cross Missions in Bangladesh",
+    "label": "confidence_failure"
+  },
+  "seed": 454,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0016791288508102298,
+  "stored_answer_prediction": {
+    "predicted_label": "confidence_failure",
+    "class_id": 3,
+    "probabilities": {
+      "clean": 0.0003864966274704784,
+      "retrieval_failure": 0.0002596512495074421,
+      "grounding_failure": 0.00036195237771607935,
+      "confidence_failure": 0.9986752867698669,
+      "coverage_failure": 0.00031652950565330684
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question.",
+  "initial_signals": {
+    "retrieval_similarity": 0.04091404378414154,
+    "entailment_score": 0.002023150911554694,
+    "mean_entropy": 0.0003289186806009289,
+    "coverage_score": 0.6247677206993103,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "confidence_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "confidence_failure",
+    "candidate_used": false,
+    "rewritten_query": null,
+    "reranker_scores": [
+      3.0240020751953125,
+      -3.358410358428955,
+      -6.845454216003418
+    ],
+    "candidate_contexts": [
+      ". With 6,000 participants, the university's intramural sports program was named in 2004 by Sports Illustrated as the best program in the country, while in 2007 The Princeton Review named it as the top school where \"Everyone Plays Intramural Sports.\" The annual Bookstore Basketball tournament is the largest outdoor five-on-five tournament in the world with over 700 teams participating each year, while the Notre Dame Men's Boxing Club hosts the annual Bengal Bouts tournament that raises money for the Holy Cross Missions in Bangladesh.",
+      "$350 million to more than $3 billion; the annual operating budget rose from $177 million to more than $650 million; and annual research funding improved from $15 million to more than $70 million . Notre Dame's most recent[when?] capital campaign raised $1.1 billion, far exceeding its goal of $767 million, and is the largest in the history of Catholic higher education.",
+      ". During his tenure, Notre Dame has increased its endowment, enlarged its student body, and undergone many construction projects on campus, including Compton Family Ice Arena, a new architecture hall, additional residence halls, and the Campus Crossroads, a $400m enhancement and expansion of Notre Dame Stadium."
+    ],
+    "candidate_raw_answer": "Money is raised for the Holy Cross Missions in Bangladesh at the Bengal Bouts tournament at Notre Dame.",
+    "candidate_parsed_answer": "Money is raised for the Holy Cross Missions in Bangladesh at the Bengal Bouts tournament at Notre Dame.",
+    "candidate_answer": "Money is raised for the Holy Cross Missions in Bangladesh at the Bengal Bouts tournament at Notre Dame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.4945143759250641,
+      "entailment_score": 0.9902228116989136,
+      "mean_entropy": 0.03621797460781387,
+      "coverage_score": 0.6247677206993103,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "There are multiple perspectives on this topic. Some sources suggest one answer while others disagree. The evidence is inconclusive and further researc"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.04091404378414154,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.6247677206993103,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 4.341556465999929
+}

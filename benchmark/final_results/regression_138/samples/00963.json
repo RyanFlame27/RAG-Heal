@@ -1,0 +1,80 @@
+{
+  "sample_index": 963,
+  "injected_label": "clean",
+  "input": {
+    "query": "Who was the president of Notre Dame in 1879?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'Who was the president of Notre Dame in 1879?' is Rev. William Corby. This is well-documented and widely accepted."
+    ],
+    "answer": "Rev. William Corby",
+    "label": "clean"
+  },
+  "seed": 1005,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0002789924619719386,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9931168556213379,
+      "retrieval_failure": 0.0007186625734902918,
+      "grounding_failure": 0.004612735006958246,
+      "confidence_failure": 0.0009718053042888641,
+      "coverage_failure": 0.0005798859056085348
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "Rev. William Corby",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'Who was the president of Notre Dame in 1879?' is Rev. William Corby. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "Rev. William Corby",
+  "initial_signals": {
+    "retrieval_similarity": 0.832686722278595,
+    "entailment_score": 0.0002789924619719386,
+    "mean_entropy": 0.048029142590356365,
+    "coverage_score": 0.6191995143890381,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "Rev. William Corby",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'Who was the president of Notre Dame in 1879?' is Rev. William Corby. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.832686722278595,
+    "entailment_score": 0.0002789924619719386,
+    "mean_entropy": 0.048029142590356365,
+    "coverage_score": 0.6191995143890381,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.2444180030006464
+}

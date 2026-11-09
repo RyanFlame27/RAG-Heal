@@ -1,0 +1,109 @@
+{
+  "sample_index": 872,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "In what year was the Main Building at Notre Dame razed in a fire?",
+    "context_chunks": [
+      "Austrian German (), Austrian Standard German (ASG), Standard Austrian German (), Austrian High German (), or simply just Austrian (), is an official and standard variety of Standard High German written and spoken in Austria and Italian South Tyrol. It has the highest sociolinguistic prestige locally",
+      "The Aegean Sea is an elongated embayment of the Mediterranean Sea between Europe and Asia. It is located between the Balkans and Anatolia, and covers an area of some . In the north, the Aegean is connected to the Marmara Sea, which in turn connects to the Black Sea, by the straits of the Dardanelles",
+      "\n\nEvents\n\nPre-1600\n43 BC – Legions loyal to the Roman Senate, commanded by Gaius Pansa, defeat the forces of Mark Antony in the Battle of Forum Gallorum.\n69 – Vitellius, commanding Rhine-based armies, defeats Roman emperor Otho in the First Battle of Bedriacum to take power over Rome.\n 966 – Followi"
+    ],
+    "answer": "1879",
+    "label": "retrieval_failure"
+  },
+  "seed": 914,
+  "classifier_split": "test",
+  "stored_answer_grounding": 3.878969437209889e-05,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00038680213037878275,
+      "retrieval_failure": 0.9981611371040344,
+      "grounding_failure": 0.0005083702853880823,
+      "confidence_failure": 0.0003071366809308529,
+      "coverage_failure": 0.0006366162560880184
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Austrian German (), Austrian Standard German (ASG), Standard Austrian German (), Austrian High German (), or simply just Austrian (), is an official and standard variety of Standard High German written and spoken in Austria and Italian South Tyrol. It has the highest sociolinguistic prestige locally",
+    "The Aegean Sea is an elongated embayment of the Mediterranean Sea between Europe and Asia. It is located between the Balkans and Anatolia, and covers an area of some . In the north, the Aegean is connected to the Marmara Sea, which in turn connects to the Black Sea, by the straits of the Dardanelles",
+    "\n\nEvents\n\nPre-1600\n43 BC – Legions loyal to the Roman Senate, commanded by Gaius Pansa, defeat the forces of Mark Antony in the Battle of Forum Gallorum.\n69 – Vitellius, commanding Rhine-based armies, defeats Roman emperor Otho in the First Battle of Bedriacum to take power over Rome.\n 966 – Followi"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (The evidence does not provide any information about the Main Building at Notre Dame or any year related to it.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.005121245980262756,
+    "entailment_score": 3.2784315408207476e-05,
+    "mean_entropy": 0.25812403789860616,
+    "coverage_score": 0.7107855677604675,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Notre Dame Main Building fire year\"\n\nOr:\n\n\"Year of Notre Dame Main Building fire\"\n\nOr:\n\n\"Notre Dame Main Building",
+    "reranker_scores": [
+      4.891664505004883,
+      3.8487184047698975,
+      0.04901380091905594
+    ],
+    "candidate_contexts": [
+      "1661 – King Charles II of England, Scotland and Ireland is crowned in Westminster Abbey.\n1815 – The Second Serbian Uprising: A second phase of the national revolution of the Serbs against the Ottoman Empire, erupts shortly after the annexation of the country to the Ottoman Empire. 1879 – Fire burns down the second main building and dome of the University of Notre Dame, which prompts the construction of the third, and current, Main Building with its golden dome.\n1891 – Chilean Civil War: The ironclad Blanco Encalada is sunk at Caldera Bay by torpedo boats. 1901–present\n1918 – World War I: The British Royal Navy makes a raid in an attempt to neutralise the Belgian port of Bruges-Zeebrugge.\n1919 – The Estonian Constituent Assembly is held in Estonia, which marks the birth of the Estonian Parliament, the Riigikogu.",
+      "This Main Building, and the library collection, was entirely destroyed by a fire in April 1879, and the school closed immediately and students were sent home. The university founder, Fr. Sorin and the president at the time, the Rev. William Corby, immediately planned for the rebuilding of the structure that had housed virtually the entire University",
+      ". The forts and part of the ramparts were demolished at the beginning of the 20th century, when a line of forts occupying the heights of Bouzareah بوزريعة (at an elevation of  above the sea) took their place. Notre Dame d'Afrique, a church built (1858–1872) in a mixture of the Roman and Byzantine styles, is conspicuously situated overlooking the sea, on the shoulder of the Bouzareah hills, to the north of the city. Above the altar is a statue of the Virgin depicted as a black woman. The church also contains a solid silver statue of the archangel Michael, belonging to the confraternity of Neapolitan fishermen."
+    ],
+    "candidate_raw_answer": "1879",
+    "candidate_parsed_answer": "1879",
+    "candidate_answer": "1879",
+    "candidate_signals": {
+      "retrieval_similarity": 0.48687300086021423,
+      "entailment_score": 0.0009790303884074092,
+      "mean_entropy": 0.04254542789136432,
+      "coverage_score": 0.7107855677604675,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "1879",
+  "final_contexts": [
+    "1661 – King Charles II of England, Scotland and Ireland is crowned in Westminster Abbey.\n1815 – The Second Serbian Uprising: A second phase of the national revolution of the Serbs against the Ottoman Empire, erupts shortly after the annexation of the country to the Ottoman Empire. 1879 – Fire burns down the second main building and dome of the University of Notre Dame, which prompts the construction of the third, and current, Main Building with its golden dome.\n1891 – Chilean Civil War: The ironclad Blanco Encalada is sunk at Caldera Bay by torpedo boats. 1901–present\n1918 – World War I: The British Royal Navy makes a raid in an attempt to neutralise the Belgian port of Bruges-Zeebrugge.\n1919 – The Estonian Constituent Assembly is held in Estonia, which marks the birth of the Estonian Parliament, the Riigikogu.",
+    "This Main Building, and the library collection, was entirely destroyed by a fire in April 1879, and the school closed immediately and students were sent home. The university founder, Fr. Sorin and the president at the time, the Rev. William Corby, immediately planned for the rebuilding of the structure that had housed virtually the entire University",
+    ". The forts and part of the ramparts were demolished at the beginning of the 20th century, when a line of forts occupying the heights of Bouzareah بوزريعة (at an elevation of  above the sea) took their place. Notre Dame d'Afrique, a church built (1858–1872) in a mixture of the Roman and Byzantine styles, is conspicuously situated overlooking the sea, on the shoulder of the Bouzareah hills, to the north of the city. Above the altar is a statue of the Virgin depicted as a black woman. The church also contains a solid silver statue of the archangel Michael, belonging to the confraternity of Neapolitan fishermen."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.48687300086021423,
+    "entailment_score": 0.0009790303884074092,
+    "mean_entropy": 0.04254542789136432,
+    "coverage_score": 0.7107855677604675,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 8.221539888999814
+}

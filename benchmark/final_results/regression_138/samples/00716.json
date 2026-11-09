@@ -1,0 +1,110 @@
+{
+  "sample_index": 716,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "How many national titles were won when Knute Rockne coached at Notre Dame?",
+    "context_chunks": [
+      "Anacharsis (; ) was a Scythian prince and philosopher of uncertain historicity who lived in the 6th century BC.\n\nLife\nAnacharsis was the brother of the Scythian king Saulius, and both of them were the sons of the previous Scythian king, Gnurus.\n\nFew concrete details are known about the life of the h",
+      "\n\nEvents\n\nPre-1600\n48 BC – Caesar's Civil War: Battle of Pharsalus: Julius Caesar decisively defeats Pompey at Pharsalus and Pompey flees to Egypt.\n 378 – Gothic War: Battle of Adrianople: A large Roman army led by Emperor Valens is defeated by the Visigoths. Valens is killed along with over half of",
+      "An American in Paris is a jazz-influenced symphonic poem (or tone poem) for orchestra by American composer George Gershwin first performed in 1928. It was inspired by the time that Gershwin had spent in Paris and evokes the sights and energy of the French capital during the .\n\nGershwin scored the pi"
+    ],
+    "answer": "three",
+    "label": "retrieval_failure"
+  },
+  "seed": 758,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.005513266194611788,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00038869515992701054,
+      "retrieval_failure": 0.9981305003166199,
+      "grounding_failure": 0.000502914423123002,
+      "confidence_failure": 0.00028331149951554835,
+      "coverage_failure": 0.0006944827036932111
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "Anacharsis (; ) was a Scythian prince and philosopher of uncertain historicity who lived in the 6th century BC.\n\nLife\nAnacharsis was the brother of the Scythian king Saulius, and both of them were the sons of the previous Scythian king, Gnurus.\n\nFew concrete details are known about the life of the h",
+    "\n\nEvents\n\nPre-1600\n48 BC – Caesar's Civil War: Battle of Pharsalus: Julius Caesar decisively defeats Pompey at Pharsalus and Pompey flees to Egypt.\n 378 – Gothic War: Battle of Adrianople: A large Roman army led by Emperor Valens is defeated by the Visigoths. Valens is killed along with over half of",
+    "An American in Paris is a jazz-influenced symphonic poem (or tone poem) for orchestra by American composer George Gershwin first performed in 1928. It was inspired by the time that Gershwin had spent in Paris and evokes the sights and energy of the French capital during the .\n\nGershwin scored the pi"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (Anacharsis-related evidence does not provide information about Notre Dame or Knute Rockne.)",
+  "initial_signals": {
+    "retrieval_similarity": 0.08538564294576645,
+    "entailment_score": 0.028859226033091545,
+    "mean_entropy": 0.23171451521124847,
+    "coverage_score": 0.7750253081321716,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": false,
+    "rewritten_query": "\"Number of national championships won by Knute Rockne while coaching at Notre Dame\"",
+    "reranker_scores": [
+      7.985921382904053,
+      7.7380595207214355,
+      7.577834606170654
+    ],
+    "candidate_contexts": [
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City.",
+      "One of the main driving forces in the growth of the University was its football team, the Notre Dame Fighting Irish. Knute Rockne became head coach in 1918. Under Rockne, the Irish would post a record of 105 wins, 12 losses, and five ties . During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history",
+      ". During his 13 years the Irish won three national championships, had five undefeated seasons, won the Rose Bowl in 1925, and produced players such as George Gipp and the \"Four Horsemen\". Knute Rockne has the highest winning percentage (.881) in NCAA Division I/FBS football history . Rockne's offenses employed the Notre Dame Box and his defenses ran a 7–2–2 scheme. The last game Rockne coached was on December 14, 1930 when he led a group of Notre Dame all-stars against the New York Giants in New York City."
+    ],
+    "candidate_raw_answer": "Three national titles were won when Knute Rockne coached at Notre Dame.",
+    "candidate_parsed_answer": "Three national titles were won when Knute Rockne coached at Notre Dame.",
+    "candidate_answer": "Three national titles were won when Knute Rockne coached at Notre Dame.",
+    "candidate_signals": {
+      "retrieval_similarity": 0.7617818713188171,
+      "entailment_score": 0.9965169429779053,
+      "mean_entropy": 0.05604506364325233,
+      "coverage_score": 0.7750253081321716,
+      "is_refusal": false
+    },
+    "extractive_span_supported": false,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged",
+    "reason": "No supported answer span found in retrieved evidence."
+  },
+  "final_answer": "I don't have enough information to answer this question.",
+  "final_contexts": [
+    "Anacharsis (; ) was a Scythian prince and philosopher of uncertain historicity who lived in the 6th century BC.\n\nLife\nAnacharsis was the brother of the Scythian king Saulius, and both of them were the sons of the previous Scythian king, Gnurus.\n\nFew concrete details are known about the life of the h",
+    "\n\nEvents\n\nPre-1600\n48 BC – Caesar's Civil War: Battle of Pharsalus: Julius Caesar decisively defeats Pompey at Pharsalus and Pompey flees to Egypt.\n 378 – Gothic War: Battle of Adrianople: A large Roman army led by Emperor Valens is defeated by the Visigoths. Valens is killed along with over half of",
+    "An American in Paris is a jazz-influenced symphonic poem (or tone poem) for orchestra by American composer George Gershwin first performed in 1928. It was inspired by the time that Gershwin had spent in Paris and evokes the sights and energy of the French capital during the .\n\nGershwin scored the pi"
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.08538564294576645,
+    "entailment_score": 0.0,
+    "mean_entropy": null,
+    "coverage_score": 0.7750253081321716,
+    "is_refusal": true
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": false,
+    "outcome": "refusal"
+  },
+  "error": null,
+  "elapsed_seconds": 8.159422679999807
+}

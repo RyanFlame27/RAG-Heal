@@ -1,0 +1,80 @@
+{
+  "sample_index": 815,
+  "injected_label": "clean",
+  "input": {
+    "query": "For what cause is money raised at the Bengal Bouts tournament at Notre Dame?",
+    "context_chunks": [
+      "According to reliable sources, the answer to the question 'For what cause is money raised at the Bengal Bouts tournament at Notre Dame?' is the Holy Cross Missions in Bangladesh. This is well-documented and widely accepted."
+    ],
+    "answer": "the Holy Cross Missions in Bangladesh",
+    "label": "clean"
+  },
+  "seed": 857,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.028037279844284058,
+  "stored_answer_prediction": {
+    "predicted_label": "clean",
+    "class_id": 0,
+    "probabilities": {
+      "clean": 0.9952402114868164,
+      "retrieval_failure": 0.0006074933335185051,
+      "grounding_failure": 0.002754455665126443,
+      "confidence_failure": 0.0006969756213948131,
+      "coverage_failure": 0.0007007759995758533
+    },
+    "is_failure": false,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": false,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "The money is raised for the Holy Cross Missions in Bangladesh.",
+  "initial_contexts": [
+    "According to reliable sources, the answer to the question 'For what cause is money raised at the Bengal Bouts tournament at Notre Dame?' is the Holy Cross Missions in Bangladesh. This is well-documented and widely accepted."
+  ],
+  "initial_raw_answer": "The money is raised for the Holy Cross Missions in Bangladesh.",
+  "initial_signals": {
+    "retrieval_similarity": 0.7808346748352051,
+    "entailment_score": 0.002795789623633027,
+    "mean_entropy": 0.058464903708886594,
+    "coverage_score": 0.6247677206993103,
+    "is_refusal": false
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "predicted_label": "clean",
+  "recovery_action": "None (BERT clean route retained)",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "clean",
+    "candidate_used": false
+  },
+  "final_answer": "The money is raised for the Holy Cross Missions in Bangladesh.",
+  "final_contexts": [
+    "According to reliable sources, the answer to the question 'For what cause is money raised at the Bengal Bouts tournament at Notre Dame?' is the Holy Cross Missions in Bangladesh. This is well-documented and widely accepted."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.7808346748352051,
+    "entailment_score": 0.002795789623633027,
+    "mean_entropy": 0.058464903708886594,
+    "coverage_score": 0.6247677206993103,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "unverified"
+  },
+  "error": null,
+  "elapsed_seconds": 1.856682668999838
+}

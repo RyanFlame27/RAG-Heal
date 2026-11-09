@@ -1,0 +1,109 @@
+{
+  "sample_index": 870,
+  "injected_label": "retrieval_failure",
+  "input": {
+    "query": "Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?",
+    "context_chunks": [
+      "ACN may refer to:\n Accenture, professional services company, listed on the NYSE as ACN\n Achang language, a Tibeto-Burman language of China\n Achnasheen railway station, UK, National Rail code\n Acineta, a genus of orchid\n ACN Inc., multi-level marketing company providing telecommunications and other s",
+      "In mathematics and statistics, the arithmetic mean ( ), arithmetic average, or just the mean or average (when the context is clear) is the sum of a collection of numbers divided by the count of numbers in the collection. The collection is often a set of results from an experiment, an observational s",
+      "An aircraft carrier is a warship that serves as a seagoing airbase, equipped with a full-length flight deck and facilities for carrying, arming, deploying, and recovering aircraft. Typically, it is the capital ship of a fleet, as it allows a naval force to project air power worldwide without dependi"
+    ],
+    "answer": "Fr. Matthew Walsh",
+    "label": "retrieval_failure"
+  },
+  "seed": 912,
+  "classifier_split": "test",
+  "stored_answer_grounding": 0.0005976769607514143,
+  "stored_answer_prediction": {
+    "predicted_label": "retrieval_failure",
+    "class_id": 1,
+    "probabilities": {
+      "clean": 0.00036921774153597653,
+      "retrieval_failure": 0.9981813430786133,
+      "grounding_failure": 0.0005134434904903173,
+      "confidence_failure": 0.00033647616510279477,
+      "coverage_failure": 0.0005994430393911898
+    },
+    "is_failure": true,
+    "classifier_backend": "bert"
+  },
+  "detector_flags": {
+    "retrieval": true,
+    "stored_grounding": true,
+    "generated_confidence": false,
+    "coverage": false
+  },
+  "initial_answer": "I don't have enough information to answer this question.",
+  "initial_contexts": [
+    "ACN may refer to:\n Accenture, professional services company, listed on the NYSE as ACN\n Achang language, a Tibeto-Burman language of China\n Achnasheen railway station, UK, National Rail code\n Acineta, a genus of orchid\n ACN Inc., multi-level marketing company providing telecommunications and other s",
+    "In mathematics and statistics, the arithmetic mean ( ), arithmetic average, or just the mean or average (when the context is clear) is the sum of a collection of numbers divided by the count of numbers in the collection. The collection is often a set of results from an experiment, an observational s",
+    "An aircraft carrier is a warship that serves as a seagoing airbase, equipped with a full-length flight deck and facilities for carrying, arming, deploying, and recovering aircraft. Typically, it is the capital ship of a fleet, as it allows a naval force to project air power worldwide without dependi"
+  ],
+  "initial_raw_answer": "I don't have enough information to answer this question. (There is no mention of a college president of Notre Dame in the provided evidence related to ACN or mathematics and statistics, aircraft carriers, or the KKK.)",
+  "initial_signals": {
+    "retrieval_similarity": -0.06689606606960297,
+    "entailment_score": 0.0001955854386324063,
+    "mean_entropy": 0.2726265220233816,
+    "coverage_score": 0.6914269924163818,
+    "is_refusal": true
+  },
+  "initial_assessment": {
+    "accepted": false,
+    "grounded_answer": false,
+    "refusal": true,
+    "signals_available": true,
+    "outcome": "refusal"
+  },
+  "predicted_label": "retrieval_failure",
+  "recovery_action": "Fresh local retrieval + adjacent context + relevance reranking + concise regeneration",
+  "recovery_trace": {
+    "version": "4.2",
+    "route": "retrieval_failure",
+    "candidate_used": true,
+    "rewritten_query": "\"Notre Dame college president who prevented clashes with KKK: Who is he?\"\n\nOr,\n\n\"Who is the Notre Dame college president known for preventing KKK",
+    "reranker_scores": [
+      5.358645915985107,
+      4.186821937561035,
+      4.101140022277832
+    ],
+    "candidate_contexts": [
+      ". Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia . On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes",
+      ". Matthew Walsh prevented any further clashes. The next day, football coach Knute Rockne spoke at a campus rally and implored the students to obey the college president and refrain from further violence . A few days later the Klavern broke up, but the hostility shown by the students was an omen and a contribution to the downfall of the KKK in Indiana.",
+      ". On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes. The next day, football coach Knute Rockne spoke at a campus rally and implored the students to obey the college president and refrain from further violence . A few days later the Klavern broke up, but the hostility shown by the students was an omen and a contribution to the downfall of the KKK in Indiana."
+    ],
+    "candidate_raw_answer": "Fr. Matthew Walsh",
+    "candidate_parsed_answer": "Fr. Matthew Walsh",
+    "candidate_answer": "Fr. Matthew Walsh",
+    "candidate_signals": {
+      "retrieval_similarity": 0.6538798809051514,
+      "entailment_score": 0.9935581088066101,
+      "mean_entropy": 0.02974069545877948,
+      "coverage_score": 0.6914269924163818,
+      "is_refusal": false
+    },
+    "extractive_span_supported": true,
+    "candidate_policy": "Verbatim span in positively ranked local evidence; shared audit unchanged"
+  },
+  "final_answer": "Fr. Matthew Walsh",
+  "final_contexts": [
+    ". Nativism and anti-Catholicism, especially when directed towards immigrants, were cornerstones of the KKK's rhetoric, and Notre Dame was seen as a symbol of the threat posed by the Catholic Church. The Klan decided to have a week-long Klavern in South Bend . Clashes with the student body started on March 17, when students, aware of the anti-Catholic animosity, blocked the Klansmen from descending from their trains in the South Bend station and ripped the KKK clothes and regalia . On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes",
+    ". On May 19 thousands of students massed downtown protesting the Klavern, and only the arrival of college president Fr. Matthew Walsh prevented any further clashes. The next day, football coach Knute Rockne spoke at a campus rally and implored the students to obey the college president and refrain from further violence . A few days later the Klavern broke up, but the hostility shown by the students was an omen and a contribution to the downfall of the KKK in Indiana.",
+    ". Matthew Walsh prevented any further clashes. The next day, football coach Knute Rockne spoke at a campus rally and implored the students to obey the college president and refrain from further violence . A few days later the Klavern broke up, but the hostility shown by the students was an omen and a contribution to the downfall of the KKK in Indiana."
+  ],
+  "final_signals": {
+    "retrieval_similarity": 0.6538798809051514,
+    "entailment_score": 0.9935581088066101,
+    "mean_entropy": 0.02974069545877948,
+    "coverage_score": 0.6914269924163818,
+    "is_refusal": false
+  },
+  "final_assessment": {
+    "accepted": true,
+    "grounded_answer": true,
+    "refusal": false,
+    "signals_available": true,
+    "outcome": "supported"
+  },
+  "error": null,
+  "elapsed_seconds": 8.79077031199995
+}
